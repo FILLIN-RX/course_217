@@ -1,0 +1,23 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 391,
+                            "functionName": "centerIn",
+                            "line": 8,
+                            "message": ""
+                        }
+                    ],
+                    "filePath": "C:/Users/Fillin/Documents/course_217/Files/pages/SessionsPage.qml"
+                }
+            ],
+            "moduleId": "course_217(appcourse_217)"
+        }
+    ]
+}

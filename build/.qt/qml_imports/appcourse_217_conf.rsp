@@ -1,0 +1,15 @@
+-rootPath
+C:/Users/Fillin/Documents/course_217
+-cmake-output
+-output-file
+C:/Users/Fillin/Documents/course_217/build/.qt/qml_imports/appcourse_217_conf.cmake
+-importPath
+C:/Users/Fillin/Documents/course_217/build/course_217
+-importPath
+C:/Users/Fillin/Documents/course_217/build
+-importPath
+C:/Qt/6.10.1/mingw_64/qml
+-qrcFiles
+C:/Users/Fillin/Documents/course_217/build/.qt/rcc/qmake_course_217.qrc
+C:/Users/Fillin/Documents/course_217/build/.qt/rcc/appcourse_217_raw_qml_0.qrc
+C:/Users/Fillin/Documents/course_217/build/.qt/rcc/appcourse_217_raw_qml_0_extra_qmldirs.qrc

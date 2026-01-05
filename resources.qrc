@@ -1,0 +1,8 @@
+<!DOCTYPE RCC>
+<RCC version="1.0">
+  <qresource prefix="/">
+    <file>assets/icons/calender.svg</file>
+    <file>assets/icons/dashboard.svg</file>
+    <file>assets/icons/person.svg</file>
+  </qresource>
+</RCC>

@@ -1,0 +1,9 @@
+<RCC>
+  <qresource prefix="/qt/qml/course_217/">
+    <file alias="Files/qmldir">C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/qmldir</file>
+    <file alias="Files/layout/qmldir">C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/layout/qmldir</file>
+    <file alias="Files/components/qmldir">C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/components/qmldir</file>
+    <file alias="Files/pages/qmldir">C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/pages/qmldir</file>
+  </qresource>
+</RCC>
+

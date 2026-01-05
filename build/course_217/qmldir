@@ -1,0 +1,17 @@
+module course_217
+typeinfo appcourse_217.qmltypes
+prefer :/qt/qml/course_217/
+Main 254.0 Files/Main.qml
+MainPage 254.0 Files/layout/MainPage.qml
+Sidebar 254.0 Files/components/Sidebar.qml
+DashboardPage 254.0 Files/pages/DashboardPage.qml
+Login 254.0 Files/pages/Login.qml
+Register 254.0 Files/pages/Register.qml
+ReportsPage 254.0 Files/pages/ReportsPage.qml
+RoomsPage 254.0 Files/pages/RoomsPage.qml
+SchedulePage 254.0 Files/pages/SchedulePage.qml
+SessionsPage 254.0 Files/pages/SessionsPage.qml
+SettingsPage 254.0 Files/pages/SettingsPage.qml
+TeachersPage 254.0 Files/pages/TeachersPage.qml
+depends QtQuick
+

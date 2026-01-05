@@ -1,0 +1,63 @@
+{
+    "formatRevision": 1,
+    "modules": [
+        {
+            "moduleFiles": [
+                {
+                    "entries": [
+                        {
+                            "codegenResult": 0,
+                            "column": 26,
+                            "durationMicroseconds": 957,
+                            "functionName": "sourceComponent",
+                            "line": 20,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 106,
+                            "functionName": "fill",
+                            "line": 19,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 29,
+                            "durationMicroseconds": 205,
+                            "functionName": "onGoToRegister",
+                            "line": 26,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 29,
+                            "durationMicroseconds": 151,
+                            "functionName": "onLoginSuccess",
+                            "line": 27,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 26,
+                            "durationMicroseconds": 127,
+                            "functionName": "onGoToLogin",
+                            "line": 34,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 32,
+                            "durationMicroseconds": 126,
+                            "functionName": "onRegisterSuccess",
+                            "line": 35,
+                            "message": ""
+                        }
+                    ],
+                    "filePath": "C:/Users/Fillin/Documents/course_217/Files/Main.qml"
+                }
+            ],
+            "moduleId": "course_217(appcourse_217)"
+        }
+    ]
+}

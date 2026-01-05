@@ -1,0 +1,17 @@
+<RCC>
+  <qresource prefix="/qt/qml/course_217/">
+    <file alias="Files/Main.qml">C:/Users/Fillin/Documents/course_217/Files/Main.qml</file>
+    <file alias="Files/layout/MainPage.qml">C:/Users/Fillin/Documents/course_217/Files/layout/MainPage.qml</file>
+    <file alias="Files/components/Sidebar.qml">C:/Users/Fillin/Documents/course_217/Files/components/Sidebar.qml</file>
+    <file alias="Files/pages/DashboardPage.qml">C:/Users/Fillin/Documents/course_217/Files/pages/DashboardPage.qml</file>
+    <file alias="Files/pages/Login.qml">C:/Users/Fillin/Documents/course_217/Files/pages/Login.qml</file>
+    <file alias="Files/pages/Register.qml">C:/Users/Fillin/Documents/course_217/Files/pages/Register.qml</file>
+    <file alias="Files/pages/ReportsPage.qml">C:/Users/Fillin/Documents/course_217/Files/pages/ReportsPage.qml</file>
+    <file alias="Files/pages/RoomsPage.qml">C:/Users/Fillin/Documents/course_217/Files/pages/RoomsPage.qml</file>
+    <file alias="Files/pages/SchedulePage.qml">C:/Users/Fillin/Documents/course_217/Files/pages/SchedulePage.qml</file>
+    <file alias="Files/pages/SessionsPage.qml">C:/Users/Fillin/Documents/course_217/Files/pages/SessionsPage.qml</file>
+    <file alias="Files/pages/SettingsPage.qml">C:/Users/Fillin/Documents/course_217/Files/pages/SettingsPage.qml</file>
+    <file alias="Files/pages/TeachersPage.qml">C:/Users/Fillin/Documents/course_217/Files/pages/TeachersPage.qml</file>
+  </qresource>
+</RCC>
+
