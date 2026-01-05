@@ -6,7 +6,7 @@ import QtSvg 1.1
 Rectangle {
     id: sidebar
     width: 260
-    color: "#1E293B"
+    color: '#1e3b37'
     anchors.top: parent.top
     anchors.bottom: parent.bottom
     anchors.left: parent.left
@@ -78,18 +78,16 @@ Rectangle {
                 radius: 8
                 color: ListView.isCurrentItem ? "#6366F1" : "transparent"
 
-                property string itemCategory: category  // Définir la propriété ici
+                property string itemCategory: category
 
-                Behavior on color {
-                    ColorAnimation { duration: 150 }
-                }
+                Behavior on color { ColorAnimation { duration: 150 } }
 
                 MouseArea {
                     anchors.fill: parent
                     cursorShape: Qt.PointingHandCursor
                     onClicked: {
                         sidebar.currentIndex = index
-                        sidebar.menuSelected(index, category)  // category est maintenant accessible
+                        sidebar.menuSelected(index, category)
                     }
                 }
 
@@ -99,19 +97,23 @@ Rectangle {
                     anchors.leftMargin: 16
                     spacing: 12
 
-                    // Affiche SVG si le chemin commence par 'qrc:' sinon Material Icon
+                    // Utilisation de Image pour les SVG et Text pour Material Icons
                     Loader {
                         id: iconLoader
-                        sourceComponent: icon.startsWith("qrc:") ? svgIcon : materialIcon
+                        sourceComponent: icon.startsWith("qrc:") ? imageIcon : materialIcon
                     }
+
                     Component {
-                        id: svgIcon
+                        id: imageIcon
                         SvgImage {
-                            width: 22; height: 22
                             source: icon
-                            color: ListView.isCurrentItem ? "white" : "#CBD5E1"
+                            width: 22
+                            height: 22
+                            smooth: true
+                            opacity: ListView.isCurrentItem ? 1.0 : 0.6
                         }
                     }
+
                     Component {
                         id: materialIcon
                         Text {
@@ -177,40 +179,12 @@ Rectangle {
     ListModel {
         id: navModel
 
-        ListElement {
-            label: "Tableau de bord";
-            icon: "qrc:/assets/icons/dashboard.svg";
-            category: "dashboard"
-        }
-        ListElement {
-            label: "Emploi du temps";
-            icon: "qrc:/assets/icons/calender.svg";
-            category: "schedule"
-        }
-        ListElement {
-            label: "Séances";
-            icon: "\ue8ef";
-            category: "sessions"
-        }
-        ListElement {
-            label: "Enseignants";
-            icon: "qrc:/assets/icons/person.svg";
-            category: "teachers"
-        }
-        ListElement {
-            label: "Salles";
-            icon: "\ue8d4";
-            category: "rooms"
-        }
-        ListElement {
-            label: "Rapports";
-            icon: "\ue6e1";
-            category: "reports"
-        }
-        ListElement {
-            label: "Paramètres";
-            icon: "\ue8b8";
-            category: "settings"
-        }
+        ListElement { label: "Tableau de bord"; icon: "qrc:/assets/icons/dashboard.svg"; category: "dashboard" }
+        ListElement { label: "Emploi du temps"; icon: "qrc:/assets/icons/calender.svg"; category: "schedule" }
+        ListElement { label: "Séances"; icon: "\ue8ef"; category: "sessions" }
+        ListElement { label: "Enseignants"; icon: "qrc:/assets/icons/person.svg"; category: "teachers" }
+        ListElement { label: "Salles"; icon: "\ue8d4"; category: "rooms" }
+        ListElement { label: "Rapports"; icon: "\ue6e1"; category: "reports" }
+        ListElement { label: "Paramètres"; icon: "\ue8b8"; category: "settings" }
     }
 }

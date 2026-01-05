@@ -5,7 +5,7 @@ import QtQuick.Layouts 1.15
 Rectangle {
     id: sidebar
     width: 260
-    color: '#61aba0'
+    color: '#1e3b37'
     anchors.top: parent.top
     anchors.bottom: parent.bottom
     anchors.left: parent.left

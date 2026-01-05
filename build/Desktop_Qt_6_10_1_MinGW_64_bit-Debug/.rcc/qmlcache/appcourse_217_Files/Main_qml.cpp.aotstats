@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 26,
-                            "durationMicroseconds": 957,
+                            "durationMicroseconds": 778,
                             "functionName": "sourceComponent",
                             "line": 20,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 106,
+                            "durationMicroseconds": 86,
                             "functionName": "fill",
                             "line": 19,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 0,
                             "column": 29,
-                            "durationMicroseconds": 205,
+                            "durationMicroseconds": 147,
                             "functionName": "onGoToRegister",
                             "line": 26,
                             "message": ""
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 29,
-                            "durationMicroseconds": 151,
+                            "durationMicroseconds": 119,
                             "functionName": "onLoginSuccess",
                             "line": 27,
                             "message": ""
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 0,
                             "column": 26,
-                            "durationMicroseconds": 127,
+                            "durationMicroseconds": 267,
                             "functionName": "onGoToLogin",
                             "line": 34,
                             "message": ""
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 0,
                             "column": 32,
-                            "durationMicroseconds": 126,
+                            "durationMicroseconds": 187,
                             "functionName": "onRegisterSuccess",
                             "line": 35,
                             "message": ""

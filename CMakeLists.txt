@@ -4,7 +4,7 @@ project(course_217 VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-find_package(Qt6 REQUIRED COMPONENTS Quick Svg)
+find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.8)
 
@@ -41,7 +41,7 @@ set_target_properties(appcourse_217 PROPERTIES
 )
 
 target_link_libraries(appcourse_217
-    PRIVATE Qt6::Quick Qt6::Svg
+    PRIVATE Qt6::Quick
 )
 
 include(GNUInstallDirs)

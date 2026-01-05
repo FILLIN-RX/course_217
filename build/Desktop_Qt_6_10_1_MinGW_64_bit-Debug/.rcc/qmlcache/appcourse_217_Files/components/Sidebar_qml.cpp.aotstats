@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 18,
-                            "durationMicroseconds": 455,
+                            "durationMicroseconds": 486,
                             "functionName": "top",
                             "line": 9,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 21,
-                            "durationMicroseconds": 128,
+                            "durationMicroseconds": 143,
                             "functionName": "bottom",
                             "line": 10,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 0,
                             "column": 19,
-                            "durationMicroseconds": 109,
+                            "durationMicroseconds": 113,
                             "functionName": "left",
                             "line": 11,
                             "message": ""
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 84,
+                            "durationMicroseconds": 119,
                             "functionName": "fill",
                             "line": 17,
                             "message": ""
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 0,
                             "column": 41,
-                            "durationMicroseconds": 158,
+                            "durationMicroseconds": 154,
                             "functionName": "verticalCenter",
                             "line": 27,
                             "message": ""
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 115,
+                            "durationMicroseconds": 116,
                             "functionName": "left",
                             "line": 28,
                             "message": ""
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 0,
                             "column": 43,
-                            "durationMicroseconds": 71,
+                            "durationMicroseconds": 70,
                             "functionName": "centerIn",
                             "line": 39,
                             "message": ""
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 0,
                             "column": 20,
-                            "durationMicroseconds": 111,
+                            "durationMicroseconds": 112,
                             "functionName": "model",
                             "line": 71,
                             "message": ""
@@ -72,7 +72,7 @@
                         {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 99,
+                            "durationMicroseconds": 85,
                             "functionName": "currentIndex",
                             "line": 72,
                             "message": ""
@@ -80,7 +80,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 158,
+                            "durationMicroseconds": 148,
                             "functionName": "width",
                             "line": 75,
                             "message": ""
@@ -88,7 +88,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 361,
+                            "durationMicroseconds": 486,
                             "functionName": "color",
                             "line": 78,
                             "message": ""
@@ -96,7 +96,7 @@
                         {
                             "codegenResult": 2,
                             "column": 47,
-                            "durationMicroseconds": 291,
+                            "durationMicroseconds": 325,
                             "functionName": "itemCategory",
                             "line": 80,
                             "message": "Cannot access value for name category"
@@ -104,7 +104,7 @@
                         {
                             "codegenResult": 0,
                             "column": 34,
-                            "durationMicroseconds": 113,
+                            "durationMicroseconds": 110,
                             "functionName": "cursorShape",
                             "line": 86,
                             "message": ""
@@ -112,7 +112,7 @@
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 628,
+                            "durationMicroseconds": 744,
                             "functionName": "onClicked",
                             "line": 87,
                             "message": "Cannot access value for name sidebar"
@@ -120,7 +120,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 71,
+                            "durationMicroseconds": 78,
                             "functionName": "fill",
                             "line": 85,
                             "message": ""
@@ -128,7 +128,7 @@
                         {
                             "codegenResult": 0,
                             "column": 45,
-                            "durationMicroseconds": 109,
+                            "durationMicroseconds": 128,
                             "functionName": "verticalCenter",
                             "line": 94,
                             "message": ""
@@ -136,7 +136,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 106,
+                            "durationMicroseconds": 120,
                             "functionName": "left",
                             "line": 95,
                             "message": ""
@@ -144,7 +144,7 @@
                         {
                             "codegenResult": 2,
                             "column": 42,
-                            "durationMicroseconds": 253,
+                            "durationMicroseconds": 277,
                             "functionName": "sourceComponent",
                             "line": 102,
                             "message": "Cannot access value for name icon"
@@ -152,7 +152,7 @@
                         {
                             "codegenResult": 2,
                             "column": 37,
-                            "durationMicroseconds": 203,
+                            "durationMicroseconds": 280,
                             "functionName": "source",
                             "line": 108,
                             "message": "Cannot access value for name icon"
@@ -160,7 +160,7 @@
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 74,
+                            "durationMicroseconds": 159,
                             "functionName": "fillMode",
                             "line": 111,
                             "message": ""
@@ -168,7 +168,7 @@
                         {
                             "codegenResult": 0,
                             "column": 38,
-                            "durationMicroseconds": 139,
+                            "durationMicroseconds": 218,
                             "functionName": "opacity",
                             "line": 115,
                             "message": ""
@@ -176,7 +176,7 @@
                         {
                             "codegenResult": 2,
                             "column": 35,
-                            "durationMicroseconds": 219,
+                            "durationMicroseconds": 293,
                             "functionName": "text",
                             "line": 122,
                             "message": "Cannot access value for name icon"
@@ -184,7 +184,7 @@
                         {
                             "codegenResult": 0,
                             "column": 36,
-                            "durationMicroseconds": 329,
+                            "durationMicroseconds": 266,
                             "functionName": "color",
                             "line": 125,
                             "message": ""
@@ -192,7 +192,7 @@
                         {
                             "codegenResult": 2,
                             "column": 31,
-                            "durationMicroseconds": 256,
+                            "durationMicroseconds": 326,
                             "functionName": "text",
                             "line": 130,
                             "message": "Cannot access value for name label"
@@ -200,7 +200,7 @@
                         {
                             "codegenResult": 0,
                             "column": 32,
-                            "durationMicroseconds": 264,
+                            "durationMicroseconds": 269,
                             "functionName": "color",
                             "line": 132,
                             "message": ""
@@ -208,7 +208,7 @@
                         {
                             "codegenResult": 0,
                             "column": 41,
-                            "durationMicroseconds": 100,
+                            "durationMicroseconds": 146,
                             "functionName": "verticalCenter",
                             "line": 145,
                             "message": ""
@@ -216,7 +216,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 68,
+                            "durationMicroseconds": 116,
                             "functionName": "left",
                             "line": 146,
                             "message": ""
@@ -224,7 +224,7 @@
                         {
                             "codegenResult": 0,
                             "column": 43,
-                            "durationMicroseconds": 42,
+                            "durationMicroseconds": 74,
                             "functionName": "centerIn",
                             "line": 157,
                             "message": ""
