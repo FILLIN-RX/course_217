@@ -3,221 +3,217 @@ import QtQuick.Controls
 import QtQuick.Layouts
 
 Item {
+    id: root
     width: parent.width
     height: 940
 
-    // Correct signal names (lowercase for QML convention)
     signal goToRegister
     signal loginSuccess
 
+    // Fond
     Rectangle {
         anchors.fill: parent
-        color: "#D4E8E6"
+        color: "#F8FAFC" 
 
+        // Conteneur Principal
         Rectangle {
-            width: 550
-            height: 520
-            radius: 16
+            id: loginCard
+            width: 480
+            height: 600
+            radius: 24
             color: "white"
             anchors.centerIn: parent
+            
+            // Remplacement de l'ombre par une bordure légère pour le contraste
+            border.color: "#E2E8F0"
+            border.width: 1
 
             ColumnLayout {
                 anchors.fill: parent
-                anchors.margins: 50
-                spacing: 16
+                anchors.margins: 40
+                spacing: 24
 
-                // Logo - Fixed: Use placeholder or ensure file exists
+                // Logo stylisé
                 Rectangle {
-                    width: 56
-                    height: 56
-                    radius: 8
-                    color: "#7C2AE8"
+                    width: 64
+                    height: 64
+                    radius: 16
+                    gradient: Gradient {
+                        GradientStop { position: 0.0; color: "#9333EA" }
+                        GradientStop { position: 1.0; color: "#7C2AE8" }
+                    }
                     Layout.alignment: Qt.AlignHCenter
-                    Layout.bottomMargin: 4
-
+                    
                     Text {
                         anchors.centerIn: parent
-                        text: "Logo"
+                        text: "◈"
                         color: "white"
-                        font.pixelSize: 12
+                        font.pixelSize: 32
                     }
                 }
 
-                Text {
-                    text: "Sign in Your Account"
-                    font.pixelSize: 24
-                    font.weight: Font.DemiBold
+                // En-tête
+                ColumnLayout {
                     Layout.alignment: Qt.AlignHCenter
-                    Layout.bottomMargin: 12
-                }
-
-                // Email
-                ColumnLayout {
                     spacing: 8
-                    Layout.fillWidth: true
-
                     Text {
-                        text: "Email"
-                        font.pixelSize: 14
-                        font.weight: Font.Medium
-                        color: "#1A1A1A"
+                        text: "Bienvenue"
+                        font.pixelSize: 28
+                        font.weight: Font.Bold
+                        color: "#1E293B"
+                        Layout.alignment: Qt.AlignHCenter
                     }
-
-                    Rectangle {
-                        Layout.fillWidth: true
-                        height: 48
-                        color: "#F5F5F5"
-                        radius: 8
-                        border.width: 1
-                        border.color: "#E0E0E0"
-
-                        RowLayout {
-                            anchors.fill: parent
-                            anchors.leftMargin: 16
-                            anchors.rightMargin: 16
-                            spacing: 10
-
-                            TextField {
-                                id: emailField
-                                Layout.fillWidth: true
-                                font.pixelSize: 14
-                                placeholderText: "Enter your email"
-                                verticalAlignment: Text.AlignVCenter
-                            }
-
-                            Text {
-                                text: "✉"
-                                font.pixelSize: 20
-                                color: "#666666"
-                            }
-                        }
+                    Text {
+                        text: "Connectez-vous pour continuer"
+                        font.pixelSize: 14
+                        color: "#64748B"
+                        Layout.alignment: Qt.AlignHCenter
                     }
                 }
 
-                // Password
+                // Formulaire
                 ColumnLayout {
-                    spacing: 8
                     Layout.fillWidth: true
+                    spacing: 20
 
-                    Text {
-                        text: "Mots de passe"
-                        font.pixelSize: 14
-                        font.weight: Font.Medium
-                        color: "#1A1A1A"
+                    InputGroup {
+                        label: "Email"
+                        placeholder: "nom@exemple.com"
+                        icon: "✉"
+                        Layout.fillWidth: true
                     }
 
-                    Rectangle {
+                    InputGroup {
+                        id: pwdInput
+                        label: "Mot de passe"
+                        placeholder: "••••••••"
+                        icon: "🔒"
+                        isPassword: true
                         Layout.fillWidth: true
-                        height: 48
-                        color: "#F5F5F5"
-                        radius: 8
-                        border.width: 1
-                        border.color: "#E0E0E0"
-
-                        RowLayout {
-                            anchors.fill: parent
-                            anchors.leftMargin: 16
-                            anchors.rightMargin: 16
-                            spacing: 10
-
-                            TextField {
-                                id: passwordField
-                                Layout.fillWidth: true
-                                font.pixelSize: 14
-                                placeholderText: "Enter your password"
-                                echoMode: TextInput.Password
-                                verticalAlignment: Text.AlignVCenter
-                            }
-
-                            Text {
-                                text: "🔒"
-                                font.pixelSize: 20
-                                color: "#666666"
-                            }
-                        }
                     }
                 }
 
-                // Remember + Forgot
+                // Options de compte
                 RowLayout {
                     Layout.fillWidth: true
-                    Layout.topMargin: 4
-                    spacing: 0
-
-                    RowLayout {
-                        spacing: 6
-
-                        Rectangle {
-                            width: 18
-                            height: 18
-                            radius: 3
-                            border.width: 2
-                            border.color: "#CCCCCC"
-                            color: "transparent"
-                        }
-
-                        Text {
-                            text: "Remember my preference"
+                    CheckBox {
+                        id: rememberMe
+                        text: "Se souvenir de moi"
+                        contentItem: Text {
+                            text: rememberMe.text
                             font.pixelSize: 13
-                            color: "#666666"
+                            color: "#64748B"
+                            leftPadding: rememberMe.indicator.width + rememberMe.spacing
+                            verticalAlignment: Text.AlignVCenter
                         }
                     }
-
                     Item { Layout.fillWidth: true }
-
                     Text {
-                        text: "Forgot Password?"
-                        color: "#7C2AE8"
+                        text: "Mot de passe oublié ?"
                         font.pixelSize: 13
+                        font.weight: Font.Medium
+                        color: "#7C2AE8"
                         MouseArea {
                             anchors.fill: parent
                             cursorShape: Qt.PointingHandCursor
-                            onClicked: console.log("Forgot password clicked")
                         }
                     }
                 }
 
-                // Spacer
-                Item {
-                    Layout.fillHeight: true
-                    Layout.minimumHeight: 10
-                }
-
-                // Sign In Button - FIXED: Simplified to avoid style conflicts
+                // Bouton Connexion
                 Button {
-                    text: "Sign In"
+                    id: loginBtn
                     Layout.fillWidth: true
-                    height: 48
-
-                    // Use Material-compatible styling
-                    palette.button: "#7C2AE8"
-                    palette.buttonText: "white"
-
-                    onClicked: {
-                        console.log("Login attempt:", emailField.text)
-                        loginSuccess()  // Emit signal
+                    Layout.preferredHeight: 50
+                    
+                    contentItem: Text {
+                        text: "Se connecter"
+                        color: "white"
+                        font.pixelSize: 16
+                        font.weight: Font.DemiBold
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
                     }
+
+                    background: Rectangle {
+                        radius: 12
+                        color: loginBtn.pressed ? "#6D28D9" : (loginBtn.hovered ? "#8B5CF6" : "#7C2AE8")
+                        Behavior on color { ColorAnimation { duration: 150 } }
+                    }
+                    
+                    onClicked: loginSuccess()
                 }
 
-                // Sign up text
+                // Footer
                 RowLayout {
                     Layout.alignment: Qt.AlignHCenter
-                    Layout.topMargin: 8
                     spacing: 4
-
                     Text {
-                        text: "Pas de compte?"
-                        font.pixelSize: 13
-                        color: "#666666"
+                        text: "Pas encore de compte ?"
+                        color: "#64748B"
+                        font.pixelSize: 14
                     }
-
-                    Button {
-                        text: "Sign up"
-                        font.pixelSize: 13
+                    Text {
+                        text: "S'inscrire"
+                        color: "#7C2AE8"
                         font.weight: Font.Bold
-                        flat: true  // Makes it look like text
-                        onClicked: goToRegister()  // Emit signal
+                        font.pixelSize: 14
+                        MouseArea {
+                            anchors.fill: parent
+                            cursorShape: Qt.PointingHandCursor
+                            onClicked: goToRegister()
+                        }
                     }
+                }
+            }
+        }
+    }
+
+    // --- Composant interne pour les champs de saisie ---
+    component InputGroup : ColumnLayout {
+        property string label: ""
+        property string placeholder: ""
+        property string icon: ""
+        property bool isPassword: false
+        spacing: 8
+
+        Text {
+            text: label
+            font.pixelSize: 13
+            font.weight: Font.Medium
+            color: "#334155"
+        }
+
+        Rectangle {
+            id: inputContainer
+            Layout.fillWidth: true
+            height: 48
+            radius: 12
+            color: "#F1F5F9"
+            border.width: 1
+            border.color: inputField.activeFocus ? "#7C2AE8" : "transparent"
+            
+            Behavior on border.color { ColorAnimation { duration: 200 } }
+
+            RowLayout {
+                anchors.fill: parent
+                anchors.leftMargin: 16
+                anchors.rightMargin: 16
+                
+                TextField {
+                    id: inputField
+                    placeholderText: label === "Email" ? "nom@exemple.com" : "••••••••"
+                    echoMode: isPassword ? TextInput.Password : TextInput.Normal
+                    Layout.fillWidth: true
+                    font.pixelSize: 14
+                    color: "#1E293B"
+                    background: null 
+                }
+
+                Text {
+                    text: icon
+                    color: "#94A3B8"
+                    font.pixelSize: 18
                 }
             }
         }

@@ -7,6 +7,8 @@ C:/Users/Fillin/Documents/course_217/build/.qt/rcc/qmake_course_217.qrc
 --resource
 C:/Users/Fillin/Documents/course_217/build/.qt/rcc/appcourse_217_raw_qml_0.qrc
 --resource
+C:/Users/Fillin/Documents/course_217/build/.qt/rcc/appcourse_217_raw_res_0.qrc
+--resource
 C:/Users/Fillin/Documents/course_217/build/.qt/rcc/appcourse_217_raw_qml_0_extra_qmldirs.qrc
 --module
 course_217

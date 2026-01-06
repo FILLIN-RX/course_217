@@ -26,6 +26,13 @@ namespace _qt_qml_course_217_Files_components_Sidebar_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_course_217_Files_components_TeacherCard_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 namespace _qt_qml_course_217_Files_pages_DashboardPage_qml { 
     extern const unsigned char qmlData[];
     extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
@@ -89,6 +96,41 @@ namespace _qt_qml_course_217_Files_pages_TeachersPage_qml {
         reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
     };
 }
+namespace _qt_qml_course_217_Files_components_StatCard_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_course_217_Files_components_DailySessionItem_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_course_217_Files_components_ScheduleCard_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_course_217_Files_components_LegendItem_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
+namespace _qt_qml_course_217_Files_components_RoomCard_qml { 
+    extern const unsigned char qmlData[];
+    extern const QQmlPrivate::AOTCompiledFunction aotBuiltFunctions[];
+    const QQmlPrivate::CachedQmlUnit unit = {
+        reinterpret_cast<const QV4::CompiledData::Unit*>(&qmlData), &aotBuiltFunctions[0], nullptr
+    };
+}
 
 }
 namespace {
@@ -106,6 +148,7 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/Main.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_Main_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/layout/MainPage.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_layout_MainPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/components/Sidebar.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_components_Sidebar_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/components/TeacherCard.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_components_TeacherCard_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/pages/DashboardPage.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_pages_DashboardPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/pages/Login.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_pages_Login_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/pages/Register.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_pages_Register_qml::unit);
@@ -115,6 +158,11 @@ Registry::Registry() {
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/pages/SessionsPage.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_pages_SessionsPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/pages/SettingsPage.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_pages_SettingsPage_qml::unit);
     resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/pages/TeachersPage.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_pages_TeachersPage_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/components/StatCard.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_components_StatCard_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/components/DailySessionItem.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_components_DailySessionItem_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/components/ScheduleCard.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_components_ScheduleCard_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/components/LegendItem.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_components_LegendItem_qml::unit);
+    resourcePathToCachedUnit.insert(QStringLiteral("/qt/qml/course_217/Files/components/RoomCard.qml"), &QmlCacheGeneratedCode::_qt_qml_course_217_Files_components_RoomCard_qml::unit);
     QQmlPrivate::RegisterQmlUnitCacheHook registration;
     registration.structVersion = 0;
     registration.lookupCachedQmlUnit = &lookupCachedUnit;

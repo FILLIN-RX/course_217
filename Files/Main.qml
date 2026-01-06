@@ -12,6 +12,12 @@ Window {
     visible: true
     title: qsTr("Course 217")
 
+        FontLoader {
+            id: materialFont
+            source: "qrc:/qt/qml/course_217/assets/MaterialIcons-Regular.ttf"
+        }
+    readonly property string iconFontFamily: materialFont.name
+
     property string currentPage: "login" // "login", "register", "main"
 
     Loader {
@@ -38,6 +44,10 @@ Window {
 
     Component {
         id: mainComponent
-        MainPage {}
+        MainPage {
+            Component.onCompleted: {
+                root.visibility = Window.Maximized // Passe en plein écran au login
+            }
+        }
     }
 }

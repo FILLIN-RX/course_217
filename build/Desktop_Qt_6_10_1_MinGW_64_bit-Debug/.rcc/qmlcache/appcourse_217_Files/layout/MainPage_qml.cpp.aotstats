@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 19,
-                            "durationMicroseconds": 360,
+                            "durationMicroseconds": 314,
                             "functionName": "fill",
                             "line": 7,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 2,
                             "column": 25,
-                            "durationMicroseconds": 550,
+                            "durationMicroseconds": 482,
                             "functionName": "onMenuSelected",
                             "line": 17,
                             "message": "Cannot retrieve a non-object type by ID: contentStack"
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 0,
                             "column": 25,
-                            "durationMicroseconds": 76,
+                            "durationMicroseconds": 74,
                             "functionName": "onMenuSelected",
                             "line": 17,
                             "message": ""
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 22,
-                            "durationMicroseconds": 162,
+                            "durationMicroseconds": 155,
                             "functionName": "top",
                             "line": 12,
                             "message": ""
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 0,
                             "column": 25,
-                            "durationMicroseconds": 196,
+                            "durationMicroseconds": 115,
                             "functionName": "bottom",
                             "line": 13,
                             "message": ""
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 269,
+                            "durationMicroseconds": 102,
                             "functionName": "left",
                             "line": 14,
                             "message": ""
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 0,
                             "column": 22,
-                            "durationMicroseconds": 136,
+                            "durationMicroseconds": 101,
                             "functionName": "top",
                             "line": 34,
                             "message": ""
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 0,
                             "column": 25,
-                            "durationMicroseconds": 156,
+                            "durationMicroseconds": 117,
                             "functionName": "bottom",
                             "line": 35,
                             "message": ""
@@ -72,7 +72,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 139,
+                            "durationMicroseconds": 110,
                             "functionName": "left",
                             "line": 36,
                             "message": ""
@@ -80,7 +80,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 111,
+                            "durationMicroseconds": 96,
                             "functionName": "right",
                             "line": 37,
                             "message": ""

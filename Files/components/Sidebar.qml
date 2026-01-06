@@ -1,11 +1,12 @@
-import QtQuick 2.15
-import QtQuick.Controls 2.15
-import QtQuick.Layouts 1.15
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
+import Qt5Compat.GraphicalEffects // Indispensable pour la couleur des SVG (Qt 6)
 
 Rectangle {
     id: sidebar
     width: 260
-    color: '#1e3b37'
+    color: "#0F172A" // Fond Slate 950
     anchors.top: parent.top
     anchors.bottom: parent.bottom
     anchors.left: parent.left
@@ -17,176 +18,163 @@ Rectangle {
         anchors.fill: parent
         spacing: 0
 
-        /* ===== LOGO ===== */
+        /* ===== LOGO SECTION ===== */
         Rectangle {
-            height: 64
+            height: 80
             Layout.fillWidth: true
-            color: "#0F172A"
+            color: "transparent"
 
             Row {
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.left: parent.left
-                anchors.leftMargin: 16
+                anchors.centerIn: parent
                 spacing: 12
 
                 Rectangle {
-                    width: 40
-                    height: 40
-                    radius: 8
+                    width: 40; height: 40; radius: 8
                     color: "#6366F1"
-
                     Text {
                         anchors.centerIn: parent
-                        text: "\ue80c"              // school
-                        font.family: "Material Icons"
+                        text: "\ue80c" // Icône school
+                        font.family: materialFont.name
                         font.pixelSize: 22
                         color: "white"
                     }
                 }
 
                 Column {
-                    spacing: 2
                     Text {
                         text: "Univ. Yaoundé I"
-                        font.pixelSize: 12
-                        font.bold: true
-                        color: "white"
+                        font.pixelSize: 14; font.bold: true; color: "white"
                     }
                     Text {
                         text: "Gestion Académique"
-                        font.pixelSize: 10
-                        color: "#94A3B8"
+                        font.pixelSize: 11; color: "#94A3B8"
                     }
                 }
             }
         }
 
-        /* ===== NAVIGATION ===== */
+        /* ===== NAVIGATION LIST ===== */
         ListView {
             id: menu
             Layout.fillWidth: true
             Layout.fillHeight: true
+            Layout.margins: 12
             spacing: 4
-            clip: true
             model: navModel
             currentIndex: sidebar.currentIndex
+            clip: true
 
-            delegate: Rectangle {
+            delegate: Item {
                 width: ListView.view.width
-                height: 44
-                radius: 8
-                color: ListView.isCurrentItem ? "#6366F1" : "transparent"
+                height: 48
 
-                property string itemCategory: category
-
-                Behavior on color { ColorAnimation { duration: 150 } }
+                Rectangle {
+                    anchors.fill: parent
+                    anchors.margins: 4
+                    radius: 8
+                    color: ListView.isCurrentItem ? "#1E293B" : (mouseArea.containsMouse ? "#1E293B66" : "transparent")
+                }
 
                 MouseArea {
+                    id: mouseArea
                     anchors.fill: parent
-                    cursorShape: Qt.PointingHandCursor
+                    hoverEnabled: true
                     onClicked: {
                         sidebar.currentIndex = index
                         sidebar.menuSelected(index, category)
                     }
                 }
 
-                Row {
-                    anchors.verticalCenter: parent.verticalCenter
-                    anchors.left: parent.left
-                    anchors.leftMargin: 16
+                RowLayout {
+                    anchors.fill: parent
+                    anchors.leftMargin: 20
                     spacing: 12
 
-                    // Utilisation de Image pour les SVG et Text pour Material Icons
-                    Loader {
-                        id: iconLoader
-                        sourceComponent: icon.startsWith("qrc:") ? imageIcon : materialIcon
-                    }
+                    // --- LOGIQUE D'AFFICHAGE DES ICONES ---
+                    Item {
+                        width: 20; height: 20
 
-                    Component {
-                        id: imageIcon
+                        // Si c'est un SVG (Chemin commençant par qrc)
                         Image {
-                            source: icon
-                            width: 22
-                            height: 22
+                            id: iconImg
+                            source: model.icon.startsWith("qrc") ? model.icon : ""
+                            anchors.fill: parent
                             fillMode: Image.PreserveAspectFit
-                            smooth: true
-                            layer.enabled: true
-                            // changer la couleur si sélectionné (simple filtre)
-                            opacity: ListView.isCurrentItem ? 1.0 : 0.6
+                            visible: false // On cache pour appliquer le ColorOverlay
                         }
-                    }
 
-                    Component {
-                        id: materialIcon
+                        ColorOverlay {
+                            anchors.fill: iconImg
+                            source: iconImg
+                            color: ListView.isCurrentItem ? "white" : "#64748B"
+                            visible: model.icon.startsWith("qrc")
+                        }
+
+                        // Si c'est une icône texte Material
                         Text {
-                            text: icon
-                            font.family: "Material Icons"
-                            font.pixelSize: 18
-                            color: ListView.isCurrentItem ? "white" : "#CBD5E1"
+                            anchors.centerIn: parent
+                            text: !model.icon.startsWith("qrc") ? model.icon : ""
+                            font.family: materialFont.name
+                            font.pixelSize: 20
+                            color: ListView.isCurrentItem ? "white" : "#64748B"
+                            visible: !model.icon.startsWith("qrc")
                         }
                     }
 
                     Text {
-                        text: label
-                        font.pixelSize: 13
-                        color: ListView.isCurrentItem ? "white" : "#CBD5E1"
+                        text: model.label
+                        Layout.fillWidth: true
+                        font.pixelSize: 14
+                        color: ListView.isCurrentItem ? "white" : "#94A3B8"
+                        font.weight: ListView.isCurrentItem ? Font.DemiBold : Font.Normal
                     }
                 }
             }
         }
 
-        /* ===== FOOTER ===== */
+        /* ===== USER PROFILE FOOTER ===== */
         Rectangle {
-            height: 72
+            height: 80
             Layout.fillWidth: true
-            color: "#0F172A"
+            color: "#1E293B"
+            radius: 12
+            Layout.margins: 12
 
-            Row {
-                anchors.verticalCenter: parent.verticalCenter
-                anchors.left: parent.left
-                anchors.leftMargin: 16
-                spacing: 12
+            RowLayout {
+                anchors.fill: parent
+                anchors.margins: 12
 
                 Rectangle {
-                    width: 36
-                    height: 36
-                    radius: 18
-                    color: "#334155"
-
-                    Text {
-                        anchors.centerIn: parent
-                        text: "CD"
-                        font.bold: true
-                        color: "white"
-                    }
+                    width: 36; height: 36; radius: 18; color: "#334155"
+                    Text { anchors.centerIn: parent; text: "JD"; color: "white"; font.bold: true }
                 }
 
                 Column {
-                    Text {
-                        text: "Chef Département"
-                        font.pixelSize: 12
-                        color: "white"
-                    }
-                    Text {
-                        text: "Informatique"
-                        font.pixelSize: 10
-                        color: "#94A3B8"
-                    }
+                    Layout.fillWidth: true
+                    Text { text: "Dr. Jean Dupont"; color: "white"; font.pixelSize: 12; font.bold: true }
+                    Text { text: "Chef de dépt."; color: "#94A3B8"; font.pixelSize: 10 }
+                }
+
+                Text {
+                    text: "\ue8ac" // Logout
+                    font.family: materialFont.name
+                    font.pixelSize: 18
+                    color: "#64748B"
                 }
             }
         }
     }
 
-    /* ===== MENU DATA ===== */
+    /* ===== MODÈLE DE DONNÉES ===== */
     ListModel {
         id: navModel
-
-        ListElement { label: "Tableau de bord"; icon: "qrc:/assets/icons/dashboard.svg"; category: "dashboard" }
-        ListElement { label: "Emploi du temps"; icon: "qrc:/assets/icons/calender.svg"; category: "schedule" }
-        ListElement { label: "Séances"; icon: "\ue8ef"; category: "sessions" }
-        ListElement { label: "Enseignants"; icon: "qrc:/assets/icons/person.svg"; category: "teachers" }
-        ListElement { label: "Salles"; icon: "\ue8d4"; category: "rooms" }
-        ListElement { label: "Rapports"; icon: "\ue6e1"; category: "reports" }
-        ListElement { label: "Paramètres"; icon: "\ue8b8"; category: "settings" }
+        // Utilisez les codes exacts correspondant à Material Icons
+        ListElement { label: "Tableau de bord"; icon: "\ue871"; category: "dashboard" } // dashboard icon
+        ListElement { label: "Emploi du temps"; icon: "\ue916"; category: "schedule" }  // calendar icon
+        ListElement { label: "Séances"; icon: "\ue8df"; category: "sessions" }          // event icon
+        ListElement { label: "Enseignants"; icon: "\ue7ef"; category: "teachers" }      // group icon
+        ListElement { label: "Salles"; icon: "\ue88a"; category: "rooms" }             // meeting room icon
+        ListElement { label: "Rapports"; icon: "\ue85c"; category: "reports" }           // assessment icon
+        ListElement { label: "Paramètres"; icon: "\ue8b8"; category: "settings" }        // settings icon
     }
 }

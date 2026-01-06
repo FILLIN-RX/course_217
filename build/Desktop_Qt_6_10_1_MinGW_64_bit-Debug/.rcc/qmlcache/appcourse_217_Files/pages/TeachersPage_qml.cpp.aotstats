@@ -6,12 +6,84 @@
                 {
                     "entries": [
                         {
-                            "codegenResult": 0,
-                            "column": 27,
-                            "durationMicroseconds": 365,
-                            "functionName": "centerIn",
+                            "codegenResult": 2,
+                            "column": 19,
+                            "durationMicroseconds": 0,
+                            "functionName": "contentWidth",
+                            "line": 9,
+                            "message": "Could not find property \"contentWidth\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 19,
+                            "durationMicroseconds": 0,
+                            "functionName": "fill",
                             "line": 8,
+                            "message": "Could not find property \"fill\"."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 16,
+                            "durationMicroseconds": 435,
+                            "functionName": "width",
+                            "line": 14,
                             "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 88,
+                            "functionName": "fill",
+                            "line": 42,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 58,
+                            "durationMicroseconds": 93,
+                            "functionName": "weight",
+                            "line": 70,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 159,
+                            "functionName": "color",
+                            "line": 75,
+                            "message": "Cannot access value for name addBtn"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 195,
+                            "functionName": "courses",
+                            "line": 89,
+                            "message": "Cannot generate efficient code for storing an array in a non-sequence type"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 135,
+                            "functionName": "courses",
+                            "line": 97,
+                            "message": "Cannot generate efficient code for storing an array in a non-sequence type"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 148,
+                            "functionName": "courses",
+                            "line": 105,
+                            "message": "Cannot generate efficient code for storing an array in a non-sequence type"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 26,
+                            "durationMicroseconds": 138,
+                            "functionName": "courses",
+                            "line": 113,
+                            "message": "Cannot generate efficient code for storing an array in a non-sequence type"
                         }
                     ],
                     "filePath": "C:/Users/Fillin/Documents/course_217/Files/pages/TeachersPage.qml"

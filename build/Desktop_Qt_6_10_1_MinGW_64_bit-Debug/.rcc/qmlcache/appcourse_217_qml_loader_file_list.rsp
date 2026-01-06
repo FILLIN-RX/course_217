@@ -3,10 +3,13 @@ C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
 --resource
 C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/appcourse_217_raw_qml_0.qrc
 --resource
+C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/appcourse_217_raw_res_0.qrc
+--resource
 C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/rcc/appcourse_217_raw_qml_0_extra_qmldirs.qrc
 /qt/qml/course_217/Files/Main.qml
 /qt/qml/course_217/Files/layout/MainPage.qml
 /qt/qml/course_217/Files/components/Sidebar.qml
+/qt/qml/course_217/Files/components/TeacherCard.qml
 /qt/qml/course_217/Files/pages/DashboardPage.qml
 /qt/qml/course_217/Files/pages/Login.qml
 /qt/qml/course_217/Files/pages/Register.qml
@@ -16,3 +19,8 @@ C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
 /qt/qml/course_217/Files/pages/SessionsPage.qml
 /qt/qml/course_217/Files/pages/SettingsPage.qml
 /qt/qml/course_217/Files/pages/TeachersPage.qml
+/qt/qml/course_217/Files/components/StatCard.qml
+/qt/qml/course_217/Files/components/DailySessionItem.qml
+/qt/qml/course_217/Files/components/ScheduleCard.qml
+/qt/qml/course_217/Files/components/LegendItem.qml
+/qt/qml/course_217/Files/components/RoomCard.qml

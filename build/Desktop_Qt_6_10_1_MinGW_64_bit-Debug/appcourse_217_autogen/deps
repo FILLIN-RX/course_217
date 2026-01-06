@@ -59,6 +59,14 @@ appcourse_217_autogen/timestamp: \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Core/Qt6CoreVersionlessAliasTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatAdditionalTargetInfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfig.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfigVersion.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfigVersionImpl.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatDependencies.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargets-relwithdebinfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Core5Compat/Qt6Core5CompatVersionlessAliasTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake \
@@ -173,6 +181,10 @@ appcourse_217_autogen/timestamp: \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6OpenGL/Qt6OpenGLTargets-relwithdebinfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6OpenGL/Qt6OpenGLTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6OpenGL/Qt6OpenGLVersionlessAliasTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6GraphspluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6GraphspluginConfig.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6GraphspluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6GraphspluginTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsPlatformpluginAdditionalTargetInfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsPlatformpluginConfig.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsPlatformpluginTargets-relwithdebinfo.cmake \
@@ -181,6 +193,14 @@ appcourse_217_autogen/timestamp: \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsSynchronizerpluginConfig.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsSynchronizerpluginTargets-relwithdebinfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LabsSynchronizerpluginTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LottieVectorImageHelperspluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LottieVectorImageHelperspluginConfig.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LottieVectorImageHelperspluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LottieVectorImageHelperspluginTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LottiepluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LottiepluginConfig.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LottiepluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6LottiepluginTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6QmlAssetDownloaderpluginAdditionalTargetInfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6QmlAssetDownloaderpluginConfig.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6QmlAssetDownloaderpluginDependencies.cmake \
@@ -246,6 +266,10 @@ appcourse_217_autogen/timestamp: \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwavefrontmeshpluginConfig.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwavefrontmeshpluginTargets-relwithdebinfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwavefrontmeshpluginTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwebsocketsAdditionalTargetInfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwebsocketsConfig.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwebsocketsTargets-relwithdebinfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlwebsocketsTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlxmllistmodelpluginAdditionalTargetInfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlxmllistmodelpluginConfig.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qmlxmllistmodelpluginTargets-relwithdebinfo.cmake \
@@ -270,6 +294,14 @@ appcourse_217_autogen/timestamp: \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtchartsqml2Config.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtchartsqml2Targets-relwithdebinfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtchartsqml2Targets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginConfig.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateAdditionalTargetInfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateConfig.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateTargets-relwithdebinfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlcorepluginAdditionalTargetInfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlcorepluginConfig.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Qml/QmlPlugins/Qt6qtqmlcorepluginTargets-relwithdebinfo.cmake \
@@ -528,6 +560,10 @@ appcourse_217_autogen/timestamp: \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QmlWorkerScript/Qt6QmlWorkerScriptTargets-relwithdebinfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QmlWorkerScript/Qt6QmlWorkerScriptTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QmlWorkerScript/Qt6QmlWorkerScriptVersionlessAliasTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Quick/Qt6QLottieVectorImagePluginAdditionalTargetInfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Quick/Qt6QLottieVectorImagePluginConfig.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Quick/Qt6QLottieVectorImagePluginTargets-relwithdebinfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Quick/Qt6QLottieVectorImagePluginTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Quick/Qt6QuickAdditionalTargetInfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Quick/Qt6QuickConfig.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Quick/Qt6QuickConfigVersion.cmake \
@@ -537,6 +573,22 @@ appcourse_217_autogen/timestamp: \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Quick/Qt6QuickTargets-relwithdebinfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Quick/Qt6QuickTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Quick/Qt6QuickVersionlessAliasTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2AdditionalTargetInfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2Config.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2ConfigVersion.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2ConfigVersionImpl.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2Dependencies.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2Targets-relwithdebinfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2Targets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickControls2/Qt6QuickControls2VersionlessAliasTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2AdditionalTargetInfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Config.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2ConfigVersion.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2ConfigVersionImpl.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Dependencies.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Targets-relwithdebinfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2Targets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTemplates2/Qt6QuickTemplates2VersionlessAliasTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsAdditionalTargetInfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsConfig.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsConfigVersion.cmake \
@@ -545,6 +597,14 @@ appcourse_217_autogen/timestamp: \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets-relwithdebinfo.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsTargets.cmake \
 	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6QuickTools/Qt6QuickToolsVersionlessTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Svg/Qt6SvgAdditionalTargetInfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Svg/Qt6SvgConfig.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Svg/Qt6SvgConfigVersion.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Svg/Qt6SvgConfigVersionImpl.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Svg/Qt6SvgDependencies.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Svg/Qt6SvgTargets-relwithdebinfo.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Svg/Qt6SvgTargets.cmake \
+	C:/Qt/6.10.1/mingw_64/lib/cmake/Qt6Svg/Qt6SvgVersionlessAliasTargets.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCXXInformation.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCheckCompilerFlagCommonPatterns.cmake \
 	C:/Qt/Tools/CMake_64/share/cmake-3.30/Modules/CMakeCommonLanguageInclude.cmake \

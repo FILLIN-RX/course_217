@@ -7,50 +7,66 @@
                     "entries": [
                         {
                             "codegenResult": 0,
-                            "column": 26,
-                            "durationMicroseconds": 778,
-                            "functionName": "sourceComponent",
-                            "line": 20,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 23,
-                            "durationMicroseconds": 86,
-                            "functionName": "fill",
+                            "column": 46,
+                            "durationMicroseconds": 357,
+                            "functionName": "iconFontFamily",
                             "line": 19,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 29,
-                            "durationMicroseconds": 147,
-                            "functionName": "onGoToRegister",
+                            "column": 26,
+                            "durationMicroseconds": 1846,
+                            "functionName": "sourceComponent",
                             "line": 26,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 1307,
+                            "functionName": "fill",
+                            "line": 25,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
                             "column": 29,
-                            "durationMicroseconds": 119,
+                            "durationMicroseconds": 1679,
+                            "functionName": "onGoToRegister",
+                            "line": 32,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 29,
+                            "durationMicroseconds": 201,
                             "functionName": "onLoginSuccess",
-                            "line": 27,
+                            "line": 33,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 26,
-                            "durationMicroseconds": 267,
+                            "durationMicroseconds": 142,
                             "functionName": "onGoToLogin",
-                            "line": 34,
+                            "line": 40,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 32,
-                            "durationMicroseconds": 187,
+                            "durationMicroseconds": 137,
                             "functionName": "onRegisterSuccess",
-                            "line": 35,
+                            "line": 41,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 36,
+                            "durationMicroseconds": 199,
+                            "functionName": "onCompleted",
+                            "line": 48,
                             "message": ""
                         }
                     ],

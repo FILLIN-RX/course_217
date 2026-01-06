@@ -4,6 +4,7 @@ prefer :/qt/qml/course_217/
 Main 254.0 Files/Main.qml
 MainPage 254.0 Files/layout/MainPage.qml
 Sidebar 254.0 Files/components/Sidebar.qml
+TeacherCard 254.0 Files/components/TeacherCard.qml
 DashboardPage 254.0 Files/pages/DashboardPage.qml
 Login 254.0 Files/pages/Login.qml
 Register 254.0 Files/pages/Register.qml
@@ -13,5 +14,10 @@ SchedulePage 254.0 Files/pages/SchedulePage.qml
 SessionsPage 254.0 Files/pages/SessionsPage.qml
 SettingsPage 254.0 Files/pages/SettingsPage.qml
 TeachersPage 254.0 Files/pages/TeachersPage.qml
+StatCard 254.0 Files/components/StatCard.qml
+DailySessionItem 254.0 Files/components/DailySessionItem.qml
+ScheduleCard 254.0 Files/components/ScheduleCard.qml
+LegendItem 254.0 Files/components/LegendItem.qml
+RoomCard 254.0 Files/components/RoomCard.qml
 depends QtQuick
 

@@ -8,6 +8,8 @@ set(src_and_dest_list
     "C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/layout/MainPage.qml"
     "C:/Users/Fillin/Documents/course_217/Files/components/Sidebar.qml"
     "C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/components/Sidebar.qml"
+    "C:/Users/Fillin/Documents/course_217/Files/components/TeacherCard.qml"
+    "C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/components/TeacherCard.qml"
     "C:/Users/Fillin/Documents/course_217/Files/pages/DashboardPage.qml"
     "C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/pages/DashboardPage.qml"
     "C:/Users/Fillin/Documents/course_217/Files/pages/Login.qml"
@@ -26,6 +28,18 @@ set(src_and_dest_list
     "C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/pages/SettingsPage.qml"
     "C:/Users/Fillin/Documents/course_217/Files/pages/TeachersPage.qml"
     "C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/pages/TeachersPage.qml"
+    "C:/Users/Fillin/Documents/course_217/Files/components/StatCard.qml"
+    "C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/components/StatCard.qml"
+    "C:/Users/Fillin/Documents/course_217/Files/components/DailySessionItem.qml"
+    "C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/components/DailySessionItem.qml"
+    "C:/Users/Fillin/Documents/course_217/Files/components/ScheduleCard.qml"
+    "C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/components/ScheduleCard.qml"
+    "C:/Users/Fillin/Documents/course_217/assets/MaterialIcons-Regular.ttf"
+    "C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/assets/MaterialIcons-Regular.ttf"
+    "C:/Users/Fillin/Documents/course_217/Files/components/LegendItem.qml"
+    "C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/components/LegendItem.qml"
+    "C:/Users/Fillin/Documents/course_217/Files/components/RoomCard.qml"
+    "C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/components/RoomCard.qml"
 
 )
 set(timestamp_file "C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/.qt/appcourse_217_qml.txt")
