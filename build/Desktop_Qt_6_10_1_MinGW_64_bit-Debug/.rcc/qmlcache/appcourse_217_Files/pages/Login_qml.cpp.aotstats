@@ -8,129 +8,161 @@
                         {
                             "codegenResult": 0,
                             "column": 12,
-                            "durationMicroseconds": 334,
+                            "durationMicroseconds": 379,
                             "functionName": "width",
                             "line": 7,
                             "message": ""
                         },
                         {
+                            "codegenResult": 2,
+                            "column": 17,
+                            "durationMicroseconds": 119,
+                            "functionName": "target",
+                            "line": 15,
+                            "message": "Cannot access value for name authController"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 9,
+                            "durationMicroseconds": 0,
+                            "functionName": "onSignUpSuccess",
+                            "line": 18,
+                            "message": "Functions without type annotations won't be compiled"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 9,
+                            "durationMicroseconds": 0,
+                            "functionName": "onErrorOccurred",
+                            "line": 24,
+                            "message": "Functions without type annotations won't be compiled"
+                        },
+                        {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 97,
-                            "functionName": "fill",
-                            "line": 15,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 31,
-                            "durationMicroseconds": 65,
-                            "functionName": "centerIn",
-                            "line": 25,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 31,
-                            "durationMicroseconds": 66,
+                            "durationMicroseconds": 119,
                             "functionName": "fill",
                             "line": 32,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 81,
+                            "functionName": "centerIn",
+                            "line": 42,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 91,
+                            "functionName": "fill",
+                            "line": 47,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 102,
+                            "durationMicroseconds": 133,
                             "functionName": "alignment",
-                            "line": 45,
+                            "line": 60,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 43,
-                            "durationMicroseconds": 67,
+                            "durationMicroseconds": 74,
                             "functionName": "centerIn",
-                            "line": 48,
+                            "line": 63,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 90,
+                            "durationMicroseconds": 100,
                             "functionName": "alignment",
-                            "line": 57,
+                            "line": 72,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 38,
-                            "durationMicroseconds": 83,
+                            "durationMicroseconds": 105,
                             "functionName": "weight",
-                            "line": 62,
+                            "line": 77,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 43,
-                            "durationMicroseconds": 79,
+                            "durationMicroseconds": 104,
                             "functionName": "alignment",
-                            "line": 64,
+                            "line": 79,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 43,
-                            "durationMicroseconds": 82,
+                            "durationMicroseconds": 75,
                             "functionName": "alignment",
-                            "line": 70,
+                            "line": 85,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 73,
+                            "functionName": "alignment",
+                            "line": 118,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 35,
-                            "durationMicroseconds": 73,
+                            "durationMicroseconds": 78,
                             "functionName": "text",
-                            "line": 103,
+                            "line": 128,
                             "message": "Cannot access value for name rememberMe"
                         },
                         {
                             "codegenResult": 2,
                             "column": 42,
-                            "durationMicroseconds": 109,
+                            "durationMicroseconds": 99,
                             "functionName": "leftPadding",
-                            "line": 106,
+                            "line": 131,
                             "message": "Cannot access value for name rememberMe"
                         },
                         {
                             "codegenResult": 0,
                             "column": 48,
-                            "durationMicroseconds": 81,
+                            "durationMicroseconds": 111,
                             "functionName": "verticalAlignment",
-                            "line": 107,
+                            "line": 132,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 38,
-                            "durationMicroseconds": 70,
+                            "durationMicroseconds": 110,
                             "functionName": "weight",
-                            "line": 114,
+                            "line": 139,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 42,
-                            "durationMicroseconds": 85,
+                            "durationMicroseconds": 97,
                             "functionName": "cursorShape",
-                            "line": 118,
+                            "line": 143,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 43,
-                            "durationMicroseconds": 80,
+                            "durationMicroseconds": 71,
                             "functionName": "fill",
-                            "line": 117,
+                            "line": 142,
                             "message": ""
                         },
                         {
@@ -138,15 +170,15 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 144,
+                            "line": 169,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
                             "codegenResult": 0,
                             "column": 46,
-                            "durationMicroseconds": 87,
+                            "durationMicroseconds": 127,
                             "functionName": "horizontalAlignment",
-                            "line": 134,
+                            "line": 159,
                             "message": ""
                         },
                         {
@@ -154,95 +186,95 @@
                             "column": 44,
                             "durationMicroseconds": 89,
                             "functionName": "verticalAlignment",
-                            "line": 135,
+                            "line": 160,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 38,
-                            "durationMicroseconds": 101,
+                            "durationMicroseconds": 114,
                             "functionName": "weight",
-                            "line": 133,
+                            "line": 158,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 128,
+                            "durationMicroseconds": 149,
                             "functionName": "color",
-                            "line": 140,
+                            "line": 165,
                             "message": "Cannot access value for name loginBtn"
                         },
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 80,
+                            "durationMicroseconds": 122,
                             "functionName": "alignment",
-                            "line": 149,
+                            "line": 183,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 38,
-                            "durationMicroseconds": 83,
+                            "durationMicroseconds": 112,
                             "functionName": "weight",
-                            "line": 159,
+                            "line": 193,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 42,
-                            "durationMicroseconds": 83,
+                            "durationMicroseconds": 94,
                             "functionName": "cursorShape",
-                            "line": 163,
+                            "line": 197,
                             "message": ""
                         },
                         {
-                            "codegenResult": 2,
+                            "codegenResult": 0,
                             "column": 40,
-                            "durationMicroseconds": 364,
+                            "durationMicroseconds": 1989,
                             "functionName": "onClicked",
-                            "line": 164,
-                            "message": "method goToRegister cannot be resolved."
+                            "line": 198,
+                            "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 43,
-                            "durationMicroseconds": 74,
+                            "durationMicroseconds": 103,
                             "functionName": "fill",
-                            "line": 162,
+                            "line": 196,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 19,
-                            "durationMicroseconds": 35,
+                            "durationMicroseconds": 55,
                             "functionName": "text",
-                            "line": 181,
+                            "line": 219,
                             "message": "Cannot access value for name label"
                         },
                         {
                             "codegenResult": 0,
                             "column": 26,
-                            "durationMicroseconds": 86,
+                            "durationMicroseconds": 107,
                             "functionName": "weight",
-                            "line": 183,
+                            "line": 221,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 27,
-                            "durationMicroseconds": 63,
+                            "durationMicroseconds": 77,
                             "functionName": "color",
-                            "line": 194,
+                            "line": 232,
                             "message": "Cannot retrieve a non-object type by ID: inputField"
                         },
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 73,
+                            "durationMicroseconds": 125,
                             "functionName": "fill",
-                            "line": 199,
+                            "line": 237,
                             "message": ""
                         },
                         {
@@ -250,7 +282,7 @@
                             "column": 38,
                             "durationMicroseconds": 0,
                             "functionName": "placeholderText",
-                            "line": 205,
+                            "line": 243,
                             "message": "Could not find property \"placeholderText\"."
                         },
                         {
@@ -258,16 +290,24 @@
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "echoMode",
-                            "line": 206,
+                            "line": 244,
                             "message": "Could not find property \"echoMode\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 27,
-                            "durationMicroseconds": 35,
+                            "durationMicroseconds": 45,
                             "functionName": "text",
-                            "line": 214,
+                            "line": 252,
                             "message": "Cannot access value for name icon"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 34,
+                            "durationMicroseconds": 50,
+                            "functionName": "family",
+                            "line": 255,
+                            "message": "Cannot access value for name root"
                         }
                     ],
                     "filePath": "C:/Users/Fillin/Documents/course_217/Files/pages/Login.qml"

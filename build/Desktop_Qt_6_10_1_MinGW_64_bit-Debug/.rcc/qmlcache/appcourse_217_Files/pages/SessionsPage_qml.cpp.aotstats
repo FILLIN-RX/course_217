@@ -7,10 +7,114 @@
                     "entries": [
                         {
                             "codegenResult": 0,
-                            "column": 27,
-                            "durationMicroseconds": 375,
-                            "functionName": "centerIn",
+                            "column": 19,
+                            "durationMicroseconds": 318,
+                            "functionName": "fill",
                             "line": 8,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 20,
+                            "durationMicroseconds": 312,
+                            "functionName": "model",
+                            "line": 30,
+                            "message": "Cannot generate efficient code for storing an array in a non-sequence type"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
+                            "durationMicroseconds": 0,
+                            "functionName": "text",
+                            "line": 32,
+                            "message": "Could not find property \"text\"."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 20,
+                            "durationMicroseconds": 494,
+                            "functionName": "width",
+                            "line": 46,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 82,
+                            "functionName": "onClicked",
+                            "line": 51,
+                            "message": "Cannot retrieve a non-object type by ID: detailPopup"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 46,
+                            "functionName": "onClicked",
+                            "line": 55,
+                            "message": "Cannot retrieve a non-object type by ID: detailPopup"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 28,
+                            "durationMicroseconds": 43,
+                            "functionName": "onClicked",
+                            "line": 59,
+                            "message": "Cannot retrieve a non-object type by ID: detailPopup"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 17,
+                            "durationMicroseconds": 0,
+                            "functionName": "parent",
+                            "line": 67,
+                            "message": "Could not find property \"parent\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 22,
+                            "durationMicroseconds": 0,
+                            "functionName": "closePolicy",
+                            "line": 70,
+                            "message": "Could not find property \"closePolicy\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 27,
+                            "durationMicroseconds": 0,
+                            "functionName": "centerIn",
+                            "line": 68,
+                            "message": "Could not find property \"centerIn\"."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 27,
+                            "durationMicroseconds": 99,
+                            "functionName": "fill",
+                            "line": 75,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 60,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 82,
+                            "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 31,
+                            "durationMicroseconds": 123,
+                            "functionName": "wrapMode",
+                            "line": 116,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 35,
+                            "durationMicroseconds": 102,
+                            "functionName": "fill",
+                            "line": 114,
                             "message": ""
                         }
                     ],

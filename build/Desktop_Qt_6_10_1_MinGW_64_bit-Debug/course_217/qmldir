@@ -19,5 +19,6 @@ DailySessionItem 254.0 Files/components/DailySessionItem.qml
 ScheduleCard 254.0 Files/components/ScheduleCard.qml
 LegendItem 254.0 Files/components/LegendItem.qml
 RoomCard 254.0 Files/components/RoomCard.qml
+SessionCard 254.0 Files/components/SessionCard.qml
 depends QtQuick
 

@@ -888,7 +888,15 @@
 	"CROSS_CONFIG" : false,
 	"DEP_FILE" : "C:/Users/Fillin/Documents/course_217/build/appcourse_217_autogen/deps",
 	"DEP_FILE_RULE_NAME" : "appcourse_217_autogen/timestamp",
-	"HEADERS" : [],
+	"HEADERS" : 
+	[
+		[
+			"C:/Users/Fillin/Documents/course_217/controllers/authcontroller.h",
+			"MU",
+			"7CL2LH2DRO/moc_authcontroller.cpp",
+			null
+		]
+	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
 	"INCLUDE_DIR" : "C:/Users/Fillin/Documents/course_217/build/appcourse_217_autogen/include",
 	"MOC_COMPILATION_FILE" : "C:/Users/Fillin/Documents/course_217/build/appcourse_217_autogen/mocs_compilation.cpp",
@@ -973,6 +981,7 @@
 		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/LegendItem_qml.cpp",
 		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/RoomCard_qml.cpp",
 		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/ScheduleCard_qml.cpp",
+		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/SessionCard_qml.cpp",
 		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/Sidebar_qml.cpp",
 		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/StatCard_qml.cpp",
 		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/TeacherCard_qml.cpp",
@@ -1014,6 +1023,7 @@
 		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/LegendItem_qml.cpp",
 		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/RoomCard_qml.cpp",
 		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/ScheduleCard_qml.cpp",
+		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/SessionCard_qml.cpp",
 		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/Sidebar_qml.cpp",
 		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/StatCard_qml.cpp",
 		"C:/Users/Fillin/Documents/course_217/build/.rcc/qmlcache/appcourse_217_Files/components/TeacherCard_qml.cpp",

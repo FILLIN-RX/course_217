@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 0,
                             "column": 16,
-                            "durationMicroseconds": 634,
+                            "durationMicroseconds": 437,
                             "functionName": "width",
                             "line": 12,
                             "message": ""
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 46,
-                            "durationMicroseconds": 120,
+                            "durationMicroseconds": 99,
                             "functionName": "fill",
                             "line": 42,
                             "message": ""
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 0,
                             "column": 46,
-                            "durationMicroseconds": 67,
+                            "durationMicroseconds": 71,
                             "functionName": "fill",
                             "line": 50,
                             "message": ""
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 0,
                             "column": 46,
-                            "durationMicroseconds": 89,
+                            "durationMicroseconds": 74,
                             "functionName": "fill",
                             "line": 58,
                             "message": ""
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 60,
+                            "durationMicroseconds": 67,
                             "functionName": "fill",
                             "line": 69,
                             "message": ""
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 196,
+                            "durationMicroseconds": 225,
                             "functionName": "equipment",
                             "line": 88,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
@@ -72,7 +72,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 146,
+                            "durationMicroseconds": 162,
                             "functionName": "equipment",
                             "line": 92,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"

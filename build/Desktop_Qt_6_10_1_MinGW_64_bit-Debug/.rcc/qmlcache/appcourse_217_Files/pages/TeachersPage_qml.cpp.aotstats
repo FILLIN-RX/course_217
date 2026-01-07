@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 0,
                             "column": 16,
-                            "durationMicroseconds": 435,
+                            "durationMicroseconds": 494,
                             "functionName": "width",
                             "line": 14,
                             "message": ""
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 88,
+                            "durationMicroseconds": 104,
                             "functionName": "fill",
                             "line": 42,
                             "message": ""
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 0,
                             "column": 58,
-                            "durationMicroseconds": 93,
+                            "durationMicroseconds": 107,
                             "functionName": "weight",
                             "line": 70,
                             "message": ""
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 159,
+                            "durationMicroseconds": 190,
                             "functionName": "color",
                             "line": 75,
                             "message": "Cannot access value for name addBtn"
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 2,
                             "column": 26,
-                            "durationMicroseconds": 195,
+                            "durationMicroseconds": 476,
                             "functionName": "courses",
                             "line": 89,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 2,
                             "column": 26,
-                            "durationMicroseconds": 135,
+                            "durationMicroseconds": 171,
                             "functionName": "courses",
                             "line": 97,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
@@ -72,7 +72,7 @@
                         {
                             "codegenResult": 2,
                             "column": 26,
-                            "durationMicroseconds": 148,
+                            "durationMicroseconds": 153,
                             "functionName": "courses",
                             "line": 105,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
@@ -80,7 +80,7 @@
                         {
                             "codegenResult": 2,
                             "column": 26,
-                            "durationMicroseconds": 138,
+                            "durationMicroseconds": 180,
                             "functionName": "courses",
                             "line": 113,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"

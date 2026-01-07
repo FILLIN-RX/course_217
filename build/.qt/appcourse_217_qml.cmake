@@ -28,6 +28,8 @@ set(src_and_dest_list
     "C:/Users/Fillin/Documents/course_217/build/course_217/Files/pages/SettingsPage.qml"
     "C:/Users/Fillin/Documents/course_217/Files/pages/TeachersPage.qml"
     "C:/Users/Fillin/Documents/course_217/build/course_217/Files/pages/TeachersPage.qml"
+    "C:/Users/Fillin/Documents/course_217/controllers/authcontroller.h"
+    "C:/Users/Fillin/Documents/course_217/build/course_217/controllers/authcontroller.h"
     "C:/Users/Fillin/Documents/course_217/Files/components/StatCard.qml"
     "C:/Users/Fillin/Documents/course_217/build/course_217/Files/components/StatCard.qml"
     "C:/Users/Fillin/Documents/course_217/Files/components/DailySessionItem.qml"
@@ -40,6 +42,8 @@ set(src_and_dest_list
     "C:/Users/Fillin/Documents/course_217/build/course_217/Files/components/LegendItem.qml"
     "C:/Users/Fillin/Documents/course_217/Files/components/RoomCard.qml"
     "C:/Users/Fillin/Documents/course_217/build/course_217/Files/components/RoomCard.qml"
+    "C:/Users/Fillin/Documents/course_217/Files/components/SessionCard.qml"
+    "C:/Users/Fillin/Documents/course_217/build/course_217/Files/components/SessionCard.qml"
 
 )
 set(timestamp_file "C:/Users/Fillin/Documents/course_217/build/.qt/appcourse_217_qml.txt")

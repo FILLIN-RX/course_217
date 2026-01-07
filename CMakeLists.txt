@@ -4,7 +4,7 @@ project(course_217 VERSION 0.1 LANGUAGES CXX)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 # 1. On ajoute Core5Compat pour le ColorOverlay (si tu l'utilises)
-find_package(Qt6 REQUIRED COMPONENTS Quick QuickControls2 Svg Core5Compat)
+find_package(Qt6 REQUIRED COMPONENTS Quick QuickControls2 Svg Core5Compat Network)
 
 qt_standard_project_setup(REQUIRES 6.8)
 
@@ -26,6 +26,8 @@ qt_add_qml_module(appcourse_217
         Files/pages/SessionsPage.qml
         Files/pages/SettingsPage.qml
         Files/pages/TeachersPage.qml
+        controllers/authcontroller.h   # Ajoute-les ici
+    
     RESOURCES # <-- C'EST ICI QUE TES SVG DOIVENT ÊTRE
         assets/icons/dashboard.svg
         assets/icons/calender.svg
@@ -36,6 +38,7 @@ qt_add_qml_module(appcourse_217
         assets/MaterialIcons-Regular.ttf
         QML_FILES Files/components/LegendItem.qml
         QML_FILES Files/components/RoomCard.qml
+        QML_FILES Files/components/SessionCard.qml
 )
 
 # 2. On lie Core5Compat ici aussi
@@ -45,6 +48,7 @@ target_link_libraries(appcourse_217
         Qt6::QuickControls2
         Qt6::Svg
         Qt6::Core5Compat
+        Qt6::Network
 )
 
 include(GNUInstallDirs)

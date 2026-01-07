@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 18,
-                            "durationMicroseconds": 402,
+                            "durationMicroseconds": 409,
                             "functionName": "top",
                             "line": 10,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 21,
-                            "durationMicroseconds": 123,
+                            "durationMicroseconds": 125,
                             "functionName": "bottom",
                             "line": 11,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 0,
                             "column": 19,
-                            "durationMicroseconds": 112,
+                            "durationMicroseconds": 120,
                             "functionName": "left",
                             "line": 12,
                             "message": ""
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 106,
+                            "durationMicroseconds": 116,
                             "functionName": "fill",
                             "line": 18,
                             "message": ""
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 83,
+                            "durationMicroseconds": 84,
                             "functionName": "centerIn",
                             "line": 28,
                             "message": ""
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 0,
                             "column": 43,
-                            "durationMicroseconds": 63,
+                            "durationMicroseconds": 64,
                             "functionName": "centerIn",
                             "line": 35,
                             "message": ""
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 2,
                             "column": 38,
-                            "durationMicroseconds": 531,
+                            "durationMicroseconds": 506,
                             "functionName": "family",
                             "line": 37,
                             "message": "Cannot access value for name materialFont"
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 0,
                             "column": 20,
-                            "durationMicroseconds": 102,
+                            "durationMicroseconds": 135,
                             "functionName": "model",
                             "line": 63,
                             "message": ""
@@ -72,7 +72,7 @@
                         {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 92,
+                            "durationMicroseconds": 93,
                             "functionName": "currentIndex",
                             "line": 64,
                             "message": ""
@@ -80,7 +80,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 121,
+                            "durationMicroseconds": 135,
                             "functionName": "width",
                             "line": 68,
                             "message": ""
@@ -88,7 +88,7 @@
                         {
                             "codegenResult": 0,
                             "column": 28,
-                            "durationMicroseconds": 455,
+                            "durationMicroseconds": 14411,
                             "functionName": "color",
                             "line": 75,
                             "message": ""
@@ -96,7 +96,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 70,
+                            "durationMicroseconds": 104,
                             "functionName": "fill",
                             "line": 72,
                             "message": ""
@@ -104,7 +104,7 @@
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 717,
+                            "durationMicroseconds": 909,
                             "functionName": "onClicked",
                             "line": 82,
                             "message": "Cannot access value for name sidebar"
@@ -112,7 +112,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 92,
+                            "durationMicroseconds": 109,
                             "functionName": "fill",
                             "line": 80,
                             "message": ""
@@ -120,7 +120,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 72,
+                            "durationMicroseconds": 88,
                             "functionName": "fill",
                             "line": 89,
                             "message": ""
@@ -128,7 +128,7 @@
                         {
                             "codegenResult": 2,
                             "column": 37,
-                            "durationMicroseconds": 143,
+                            "durationMicroseconds": 163,
                             "functionName": "source",
                             "line": 100,
                             "message": "Cannot access value for name model"
@@ -136,7 +136,7 @@
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 109,
+                            "durationMicroseconds": 116,
                             "functionName": "fillMode",
                             "line": 102,
                             "message": ""
@@ -144,7 +144,7 @@
                         {
                             "codegenResult": 0,
                             "column": 43,
-                            "durationMicroseconds": 69,
+                            "durationMicroseconds": 75,
                             "functionName": "fill",
                             "line": 101,
                             "message": ""
@@ -152,7 +152,7 @@
                         {
                             "codegenResult": 0,
                             "column": 37,
-                            "durationMicroseconds": 78,
+                            "durationMicroseconds": 87,
                             "functionName": "source",
                             "line": 108,
                             "message": ""
@@ -160,7 +160,7 @@
                         {
                             "codegenResult": 0,
                             "column": 36,
-                            "durationMicroseconds": 294,
+                            "durationMicroseconds": 313,
                             "functionName": "color",
                             "line": 109,
                             "message": ""
@@ -168,7 +168,7 @@
                         {
                             "codegenResult": 2,
                             "column": 38,
-                            "durationMicroseconds": 77,
+                            "durationMicroseconds": 67,
                             "functionName": "visible",
                             "line": 110,
                             "message": "Cannot access value for name model"
@@ -176,7 +176,7 @@
                         {
                             "codegenResult": 0,
                             "column": 43,
-                            "durationMicroseconds": 76,
+                            "durationMicroseconds": 73,
                             "functionName": "fill",
                             "line": 107,
                             "message": ""
@@ -184,7 +184,7 @@
                         {
                             "codegenResult": 2,
                             "column": 35,
-                            "durationMicroseconds": 126,
+                            "durationMicroseconds": 154,
                             "functionName": "text",
                             "line": 116,
                             "message": "Cannot access value for name model"
@@ -192,7 +192,7 @@
                         {
                             "codegenResult": 0,
                             "column": 36,
-                            "durationMicroseconds": 276,
+                            "durationMicroseconds": 358,
                             "functionName": "color",
                             "line": 119,
                             "message": ""
@@ -200,7 +200,7 @@
                         {
                             "codegenResult": 2,
                             "column": 38,
-                            "durationMicroseconds": 65,
+                            "durationMicroseconds": 73,
                             "functionName": "visible",
                             "line": 120,
                             "message": "Cannot access value for name model"
@@ -208,7 +208,7 @@
                         {
                             "codegenResult": 0,
                             "column": 47,
-                            "durationMicroseconds": 72,
+                            "durationMicroseconds": 87,
                             "functionName": "centerIn",
                             "line": 115,
                             "message": ""
@@ -216,7 +216,7 @@
                         {
                             "codegenResult": 2,
                             "column": 42,
-                            "durationMicroseconds": 430,
+                            "durationMicroseconds": 469,
                             "functionName": "family",
                             "line": 117,
                             "message": "Cannot access value for name materialFont"
@@ -224,7 +224,7 @@
                         {
                             "codegenResult": 2,
                             "column": 31,
-                            "durationMicroseconds": 57,
+                            "durationMicroseconds": 54,
                             "functionName": "text",
                             "line": 125,
                             "message": "Cannot access value for name model"
@@ -232,7 +232,7 @@
                         {
                             "codegenResult": 0,
                             "column": 32,
-                            "durationMicroseconds": 239,
+                            "durationMicroseconds": 257,
                             "functionName": "color",
                             "line": 128,
                             "message": ""
@@ -240,7 +240,7 @@
                         {
                             "codegenResult": 0,
                             "column": 38,
-                            "durationMicroseconds": 269,
+                            "durationMicroseconds": 245,
                             "functionName": "weight",
                             "line": 129,
                             "message": ""
@@ -248,7 +248,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 78,
+                            "durationMicroseconds": 363,
                             "functionName": "fill",
                             "line": 144,
                             "message": ""
@@ -256,7 +256,7 @@
                         {
                             "codegenResult": 0,
                             "column": 46,
-                            "durationMicroseconds": 65,
+                            "durationMicroseconds": 89,
                             "functionName": "centerIn",
                             "line": 149,
                             "message": ""
@@ -264,7 +264,7 @@
                         {
                             "codegenResult": 2,
                             "column": 34,
-                            "durationMicroseconds": 391,
+                            "durationMicroseconds": 471,
                             "functionName": "family",
                             "line": 160,
                             "message": "Cannot access value for name materialFont"

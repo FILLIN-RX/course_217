@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 16,
-                            "durationMicroseconds": 378,
+                            "durationMicroseconds": 562,
                             "functionName": "width",
                             "line": 15,
                             "message": ""
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 2,
                             "column": 47,
-                            "durationMicroseconds": 129,
+                            "durationMicroseconds": 143,
                             "functionName": "text",
                             "line": 38,
                             "message": "Cannot load property text from (component in C:/Users/Fillin/Documents/course_217/Files/pages/SchedulePage.qml)::parent with type QQuickItem."
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 100,
+                            "durationMicroseconds": 157,
                             "functionName": "fill",
                             "line": 59,
                             "message": ""
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 364,
+                            "durationMicroseconds": 463,
                             "functionName": "model",
                             "line": 66,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 2,
                             "column": 64,
-                            "durationMicroseconds": 425,
+                            "durationMicroseconds": 626,
                             "functionName": "text",
                             "line": 70,
                             "message": "Cannot access value for name modelData"
@@ -72,7 +72,7 @@
                         {
                             "codegenResult": 0,
                             "column": 50,
-                            "durationMicroseconds": 79,
+                            "durationMicroseconds": 156,
                             "functionName": "centerIn",
                             "line": 70,
                             "message": ""
@@ -80,7 +80,7 @@
                         {
                             "codegenResult": 0,
                             "column": 28,
-                            "durationMicroseconds": 126,
+                            "durationMicroseconds": 200,
                             "functionName": "model",
                             "line": 76,
                             "message": ""
@@ -88,7 +88,7 @@
                         {
                             "codegenResult": 2,
                             "column": 38,
-                            "durationMicroseconds": 285,
+                            "durationMicroseconds": 688,
                             "functionName": "visible",
                             "line": 83,
                             "message": "Cannot access value for name index"
@@ -96,7 +96,7 @@
                         {
                             "codegenResult": 2,
                             "column": 35,
-                            "durationMicroseconds": 589,
+                            "durationMicroseconds": 649,
                             "functionName": "text",
                             "line": 85,
                             "message": "Cannot access value for name index"
@@ -104,7 +104,7 @@
                         {
                             "codegenResult": 0,
                             "column": 47,
-                            "durationMicroseconds": 97,
+                            "durationMicroseconds": 107,
                             "functionName": "centerIn",
                             "line": 84,
                             "message": ""
@@ -112,7 +112,7 @@
                         {
                             "codegenResult": 0,
                             "column": 20,
-                            "durationMicroseconds": 209,
+                            "durationMicroseconds": 243,
                             "functionName": "x",
                             "line": 95,
                             "message": ""
@@ -120,7 +120,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 227,
+                            "durationMicroseconds": 229,
                             "functionName": "width",
                             "line": 96,
                             "message": ""
@@ -128,7 +128,7 @@
                         {
                             "codegenResult": 0,
                             "column": 20,
-                            "durationMicroseconds": 237,
+                            "durationMicroseconds": 252,
                             "functionName": "x",
                             "line": 101,
                             "message": ""
@@ -136,7 +136,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 254,
+                            "durationMicroseconds": 248,
                             "functionName": "width",
                             "line": 102,
                             "message": ""
@@ -144,7 +144,7 @@
                         {
                             "codegenResult": 0,
                             "column": 20,
-                            "durationMicroseconds": 232,
+                            "durationMicroseconds": 274,
                             "functionName": "x",
                             "line": 107,
                             "message": ""
@@ -152,7 +152,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 205,
+                            "durationMicroseconds": 240,
                             "functionName": "width",
                             "line": 108,
                             "message": ""

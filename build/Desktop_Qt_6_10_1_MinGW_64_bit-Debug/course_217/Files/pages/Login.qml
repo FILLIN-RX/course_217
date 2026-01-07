@@ -10,6 +10,23 @@ Item {
     signal goToRegister
     signal loginSuccess
 
+    // --- CONNEXION AVEC LE CONTROLEUR C++ ---
+    Connections {
+        target: authController // Nom défini dans main.cpp
+
+        // En cas de succès (Supabase renvoie un utilisateur)
+        function onSignUpSuccess(user) { 
+            console.log("Connexion réussie !")
+            root.loginSuccess() 
+        }
+
+        // En cas d'erreur (Identifiants incorrects, etc.)
+        function onErrorOccurred(error) {
+            errorText.text = "Erreur : " + error
+            errorText.visible = true
+        }
+    }
+
     // Fond
     Rectangle {
         anchors.fill: parent
@@ -23,8 +40,6 @@ Item {
             radius: 24
             color: "white"
             anchors.centerIn: parent
-            
-            // Remplacement de l'ombre par une bordure légère pour le contraste
             border.color: "#E2E8F0"
             border.width: 1
 
@@ -77,9 +92,10 @@ Item {
                     spacing: 20
 
                     InputGroup {
+                        id: emailInput
                         label: "Email"
                         placeholder: "nom@exemple.com"
-                        icon: "✉"
+                        icon: "\ue0be"
                         Layout.fillWidth: true
                     }
 
@@ -87,10 +103,19 @@ Item {
                         id: pwdInput
                         label: "Mot de passe"
                         placeholder: "••••••••"
-                        icon: "🔒"
+                        icon: "\ue897"
                         isPassword: true
                         Layout.fillWidth: true
                     }
+                }
+
+                // Texte d'erreur
+                Text {
+                    id: errorText
+                    color: "#ef4444"
+                    font.pixelSize: 12
+                    visible: false
+                    Layout.alignment: Qt.AlignHCenter
                 }
 
                 // Options de compte
@@ -141,7 +166,16 @@ Item {
                         Behavior on color { ColorAnimation { duration: 150 } }
                     }
                     
-                    onClicked: loginSuccess()
+                    onClicked: {
+                        errorText.visible = false
+                        if (emailInput.text === "" || pwdInput.text === "") {
+                            errorText.text = "Veuillez remplir tous les champs"
+                            errorText.visible = true
+                        } else {
+                            // APPEL AU CONTROLEUR C++
+                            authController.signIn(emailInput.text, pwdInput.text)
+                        }
+                    }
                 }
 
                 // Footer
@@ -161,7 +195,7 @@ Item {
                         MouseArea {
                             anchors.fill: parent
                             cursorShape: Qt.PointingHandCursor
-                            onClicked: goToRegister()
+                            onClicked: root.goToRegister()
                         }
                     }
                 }
@@ -175,6 +209,10 @@ Item {
         property string placeholder: ""
         property string icon: ""
         property bool isPassword: false
+        
+        // Alias pour permettre au bouton de lire la valeur saisie
+        property alias text: inputField.text
+
         spacing: 8
 
         Text {
@@ -202,7 +240,7 @@ Item {
                 
                 TextField {
                     id: inputField
-                    placeholderText: label === "Email" ? "nom@exemple.com" : "••••••••"
+                    placeholderText: placeholder
                     echoMode: isPassword ? TextInput.Password : TextInput.Normal
                     Layout.fillWidth: true
                     font.pixelSize: 14
@@ -214,6 +252,7 @@ Item {
                     text: icon
                     color: "#94A3B8"
                     font.pixelSize: 18
+                    font.family: root.iconFontFamily // Utilise la police d'icônes chargée dans Main.qml
                 }
             }
         }

@@ -79,7 +79,7 @@ Item {
                     InputGroup {
                         label: "Email"
                         placeholder: "nom@exemple.com"
-                        icon: "✉"
+                        icon: "\ue0be"
                         Layout.fillWidth: true
                     }
 
@@ -87,7 +87,7 @@ Item {
                         id: pwdInput
                         label: "Mot de passe"
                         placeholder: "••••••••"
-                        icon: "🔒"
+                        icon: "\ue897"
                         isPassword: true
                         Layout.fillWidth: true
                     }

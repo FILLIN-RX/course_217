@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 46,
-                            "durationMicroseconds": 357,
+                            "durationMicroseconds": 487,
                             "functionName": "iconFontFamily",
                             "line": 19,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 26,
-                            "durationMicroseconds": 1846,
+                            "durationMicroseconds": 1547,
                             "functionName": "sourceComponent",
                             "line": 26,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 1307,
+                            "durationMicroseconds": 103,
                             "functionName": "fill",
                             "line": 25,
                             "message": ""
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 29,
-                            "durationMicroseconds": 1679,
+                            "durationMicroseconds": 377,
                             "functionName": "onGoToRegister",
                             "line": 32,
                             "message": ""
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 0,
                             "column": 29,
-                            "durationMicroseconds": 201,
+                            "durationMicroseconds": 160,
                             "functionName": "onLoginSuccess",
                             "line": 33,
                             "message": ""
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 0,
                             "column": 26,
-                            "durationMicroseconds": 142,
+                            "durationMicroseconds": 150,
                             "functionName": "onGoToLogin",
                             "line": 40,
                             "message": ""
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 0,
                             "column": 32,
-                            "durationMicroseconds": 137,
+                            "durationMicroseconds": 121,
                             "functionName": "onRegisterSuccess",
                             "line": 41,
                             "message": ""
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 0,
                             "column": 36,
-                            "durationMicroseconds": 199,
+                            "durationMicroseconds": 190,
                             "functionName": "onCompleted",
                             "line": 48,
                             "message": ""
