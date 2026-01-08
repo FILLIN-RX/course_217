@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 12,
-                            "durationMicroseconds": 463,
+                            "durationMicroseconds": 377,
                             "functionName": "width",
                             "line": 7,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 13,
-                            "durationMicroseconds": 156,
+                            "durationMicroseconds": 113,
                             "functionName": "height",
                             "line": 8,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 2,
                             "column": 17,
-                            "durationMicroseconds": 135,
+                            "durationMicroseconds": 150,
                             "functionName": "target",
                             "line": 14,
                             "message": "Cannot access value for name authController"
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 9,
-                            "durationMicroseconds": 1108,
+                            "durationMicroseconds": 721,
                             "functionName": "onSignUpSuccess",
                             "line": 15,
                             "message": ""
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 117,
+                            "durationMicroseconds": 116,
                             "functionName": "fill",
                             "line": 26,
                             "message": ""
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 82,
+                            "durationMicroseconds": 83,
                             "functionName": "centerIn",
                             "line": 34,
                             "message": ""
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 75,
+                            "durationMicroseconds": 72,
                             "functionName": "fill",
                             "line": 37,
                             "message": ""
@@ -72,7 +72,7 @@
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 128,
+                            "durationMicroseconds": 132,
                             "functionName": "alignment",
                             "line": 44,
                             "message": ""
@@ -80,7 +80,7 @@
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 123,
+                            "durationMicroseconds": 138,
                             "functionName": "alignment",
                             "line": 51,
                             "message": ""
@@ -112,7 +112,7 @@
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 137,
+                            "durationMicroseconds": 131,
                             "functionName": "alignment",
                             "line": 112,
                             "message": ""
@@ -120,7 +120,7 @@
                         {
                             "codegenResult": 0,
                             "column": 36,
-                            "durationMicroseconds": 179,
+                            "durationMicroseconds": 195,
                             "functionName": "onClicked",
                             "line": 115,
                             "message": ""
@@ -128,7 +128,7 @@
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 77,
+                            "durationMicroseconds": 93,
                             "functionName": "fill",
                             "line": 114,
                             "message": ""

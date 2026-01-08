@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 2,
                             "column": 5,
-                            "durationMicroseconds": 4164,
+                            "durationMicroseconds": 5059,
                             "functionName": "applyFilter",
                             "line": 19,
                             "message": "Cannot generate efficient code for lookup in QJSValue"
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 19,
-                            "durationMicroseconds": 157,
+                            "durationMicroseconds": 145,
                             "functionName": "fill",
                             "line": 8,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 580,
+                            "durationMicroseconds": 672,
                             "functionName": "onCompleted",
                             "line": 31,
                             "message": "Cannot access value for name root"
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 2,
                             "column": 25,
-                            "durationMicroseconds": 47,
+                            "durationMicroseconds": 65,
                             "functionName": "currentAdminId",
                             "line": 40,
                             "message": "Cannot access value for name root"
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 2,
                             "column": 25,
-                            "durationMicroseconds": 99,
+                            "durationMicroseconds": 115,
                             "functionName": "onTeacherSaved",
                             "line": 41,
                             "message": "Cannot find name isLoading"
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 2,
                             "column": 17,
-                            "durationMicroseconds": 79,
+                            "durationMicroseconds": 111,
                             "functionName": "target",
                             "line": 49,
                             "message": "Cannot access value for name teacherController"
@@ -80,7 +80,7 @@
                         {
                             "codegenResult": 0,
                             "column": 20,
-                            "durationMicroseconds": 128,
+                            "durationMicroseconds": 142,
                             "functionName": "width",
                             "line": 84,
                             "message": ""
@@ -88,7 +88,7 @@
                         {
                             "codegenResult": 2,
                             "column": 35,
-                            "durationMicroseconds": 77,
+                            "durationMicroseconds": 80,
                             "functionName": "color",
                             "line": 117,
                             "message": "Cannot retrieve a non-object type by ID: searchInput"
@@ -96,7 +96,7 @@
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 75,
+                            "durationMicroseconds": 79,
                             "functionName": "fill",
                             "line": 120,
                             "message": ""
@@ -104,7 +104,7 @@
                         {
                             "codegenResult": 0,
                             "column": 48,
-                            "durationMicroseconds": 108,
+                            "durationMicroseconds": 101,
                             "functionName": "verticalAlignment",
                             "line": 130,
                             "message": ""
@@ -128,7 +128,7 @@
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 99,
+                            "durationMicroseconds": 118,
                             "functionName": "color",
                             "line": 153,
                             "message": "Cannot load property down from (component in C:/Users/Fillin/Documents/course_217/Files/pages/TeachersPage.qml)::parent with type QQuickItem."
@@ -136,7 +136,7 @@
                         {
                             "codegenResult": 2,
                             "column": 31,
-                            "durationMicroseconds": 133,
+                            "durationMicroseconds": 85,
                             "functionName": "text",
                             "line": 157,
                             "message": "Cannot load property text from (component in C:/Users/Fillin/Documents/course_217/Files/pages/TeachersPage.qml)::parent with type QQuickItem."
@@ -144,7 +144,7 @@
                         {
                             "codegenResult": 0,
                             "column": 46,
-                            "durationMicroseconds": 249,
+                            "durationMicroseconds": 91,
                             "functionName": "horizontalAlignment",
                             "line": 160,
                             "message": ""
@@ -152,7 +152,7 @@
                         {
                             "codegenResult": 0,
                             "column": 44,
-                            "durationMicroseconds": 107,
+                            "durationMicroseconds": 70,
                             "functionName": "verticalAlignment",
                             "line": 161,
                             "message": ""
@@ -160,7 +160,7 @@
                         {
                             "codegenResult": 0,
                             "column": 28,
-                            "durationMicroseconds": 115,
+                            "durationMicroseconds": 96,
                             "functionName": "model",
                             "line": 173,
                             "message": ""
@@ -168,7 +168,7 @@
                         {
                             "codegenResult": 2,
                             "column": 31,
-                            "durationMicroseconds": 103,
+                            "durationMicroseconds": 88,
                             "functionName": "name",
                             "line": 176,
                             "message": "Cannot access value for name model"
@@ -176,7 +176,7 @@
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 36,
+                            "durationMicroseconds": 32,
                             "functionName": "title",
                             "line": 177,
                             "message": "Cannot access value for name model"
@@ -184,7 +184,7 @@
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 30,
+                            "durationMicroseconds": 27,
                             "functionName": "email",
                             "line": 178,
                             "message": "Cannot access value for name model"
@@ -192,7 +192,7 @@
                         {
                             "codegenResult": 2,
                             "column": 34,
-                            "durationMicroseconds": 36,
+                            "durationMicroseconds": 146,
                             "functionName": "courses",
                             "line": 179,
                             "message": "Cannot access value for name model"
@@ -200,7 +200,7 @@
                         {
                             "codegenResult": 2,
                             "column": 35,
-                            "durationMicroseconds": 126,
+                            "durationMicroseconds": 133,
                             "functionName": "initials",
                             "line": 180,
                             "message": "Cannot access value for name model"
@@ -208,7 +208,7 @@
                         {
                             "codegenResult": 2,
                             "column": 18,
-                            "durationMicroseconds": 37,
+                            "durationMicroseconds": 38,
                             "functionName": "visible",
                             "line": 191,
                             "message": "Cannot access value for name isLoading"
@@ -216,7 +216,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 85,
+                            "durationMicroseconds": 105,
                             "functionName": "fill",
                             "line": 189,
                             "message": ""
@@ -224,7 +224,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 71,
+                            "durationMicroseconds": 66,
                             "functionName": "centerIn",
                             "line": 195,
                             "message": ""
@@ -232,7 +232,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 110,
+                            "durationMicroseconds": 105,
                             "functionName": "alignment",
                             "line": 199,
                             "message": ""
@@ -240,7 +240,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 179,
+                            "durationMicroseconds": 119,
                             "functionName": "alignment",
                             "line": 205,
                             "message": ""

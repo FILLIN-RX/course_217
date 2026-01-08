@@ -123,7 +123,7 @@
                             }
                         ],
                         "index": 4,
-                        "lineNumber": 53,
+                        "lineNumber": 56,
                         "name": "addRoom",
                         "returnType": "void"
                     }
@@ -140,7 +140,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 86,
+                        "lineNumber": 89,
                         "name": "roomsLoaded",
                         "returnType": "void"
                     },
@@ -157,7 +157,7 @@
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 87,
+                        "lineNumber": 90,
                         "name": "roomSaved",
                         "returnType": "void"
                     },
@@ -170,7 +170,7 @@
                             }
                         ],
                         "index": 2,
-                        "lineNumber": 88,
+                        "lineNumber": 91,
                         "name": "errorOccurred",
                         "returnType": "void"
                     }
@@ -249,14 +249,14 @@
                             }
                         ],
                         "index": 5,
-                        "lineNumber": 63,
+                        "lineNumber": 64,
                         "name": "addSession",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "index": 6,
-                        "lineNumber": 93,
+                        "lineNumber": 103,
                         "name": "fetchTeachersList",
                         "returnType": "void"
                     }
@@ -273,7 +273,7 @@
                             }
                         ],
                         "index": 0,
-                        "lineNumber": 110,
+                        "lineNumber": 125,
                         "name": "sessionsLoaded",
                         "returnType": "void"
                     },
@@ -286,7 +286,7 @@
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 111,
+                        "lineNumber": 126,
                         "name": "sessionSaved",
                         "returnType": "void"
                     },
@@ -299,7 +299,7 @@
                             }
                         ],
                         "index": 2,
-                        "lineNumber": 112,
+                        "lineNumber": 127,
                         "name": "teachersLoaded",
                         "returnType": "void"
                     }

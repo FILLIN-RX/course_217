@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 19,
-                            "durationMicroseconds": 359,
+                            "durationMicroseconds": 357,
                             "functionName": "fill",
                             "line": 7,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 2,
                             "column": 19,
-                            "durationMicroseconds": 362,
+                            "durationMicroseconds": 316,
                             "functionName": "userName",
                             "line": 17,
                             "message": "Cannot access value for name root"
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 2,
                             "column": 19,
-                            "durationMicroseconds": 194,
+                            "durationMicroseconds": 179,
                             "functionName": "userRole",
                             "line": 18,
                             "message": "Cannot access value for name root"
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 2,
                             "column": 23,
-                            "durationMicroseconds": 949,
+                            "durationMicroseconds": 161,
                             "functionName": "userInitials",
                             "line": 19,
                             "message": "Cannot access value for name root"
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 2,
                             "column": 25,
-                            "durationMicroseconds": 826,
+                            "durationMicroseconds": 507,
                             "functionName": "onMenuSelected",
                             "line": 21,
                             "message": "Cannot retrieve a non-object type by ID: contentStack"
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 0,
                             "column": 25,
-                            "durationMicroseconds": 96,
+                            "durationMicroseconds": 81,
                             "functionName": "onMenuSelected",
                             "line": 21,
                             "message": ""
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 0,
                             "column": 22,
-                            "durationMicroseconds": 194,
+                            "durationMicroseconds": 200,
                             "functionName": "top",
                             "line": 12,
                             "message": ""
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 0,
                             "column": 25,
-                            "durationMicroseconds": 137,
+                            "durationMicroseconds": 133,
                             "functionName": "bottom",
                             "line": 13,
                             "message": ""
@@ -72,7 +72,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 140,
+                            "durationMicroseconds": 128,
                             "functionName": "left",
                             "line": 14,
                             "message": ""
@@ -80,7 +80,7 @@
                         {
                             "codegenResult": 0,
                             "column": 22,
-                            "durationMicroseconds": 159,
+                            "durationMicroseconds": 124,
                             "functionName": "top",
                             "line": 38,
                             "message": ""
@@ -88,7 +88,7 @@
                         {
                             "codegenResult": 0,
                             "column": 25,
-                            "durationMicroseconds": 141,
+                            "durationMicroseconds": 136,
                             "functionName": "bottom",
                             "line": 39,
                             "message": ""
@@ -96,7 +96,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 136,
+                            "durationMicroseconds": 213,
                             "functionName": "left",
                             "line": 40,
                             "message": ""
@@ -104,7 +104,7 @@
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 175,
+                            "durationMicroseconds": 129,
                             "functionName": "right",
                             "line": 41,
                             "message": ""

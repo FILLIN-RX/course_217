@@ -40,11 +40,14 @@ public:
         connect(reply, &QNetworkReply::finished, this, [this, reply]()
         {
             if (reply->error() == QNetworkReply::NoError) {
-                // Émet le signal avec les données JSON reçues 
-                emit roomsLoaded(reply->readAll());
-            } else {
-                qDebug() << "❌ Erreur Fetch Rooms :" << reply->readAll();
-            }
+    QByteArray response = reply->readAll();
+    qDebug() << "✅ Réponse brute :" << response; // Pour débogage
+    emit roomsLoaded(response);
+} else {
+    QByteArray error = reply->readAll();
+    qDebug() << "❌ Erreur Fetch Rooms :" << error;
+    emit errorOccurred(QString::fromUtf8(error));
+}
             reply->deleteLater();
         });
     }

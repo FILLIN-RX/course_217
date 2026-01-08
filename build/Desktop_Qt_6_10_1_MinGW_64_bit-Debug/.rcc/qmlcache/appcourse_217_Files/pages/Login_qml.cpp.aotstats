@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 12,
-                            "durationMicroseconds": 417,
+                            "durationMicroseconds": 425,
                             "functionName": "width",
                             "line": 7,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 13,
-                            "durationMicroseconds": 115,
+                            "durationMicroseconds": 112,
                             "functionName": "height",
                             "line": 8,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 2,
                             "column": 17,
-                            "durationMicroseconds": 142,
+                            "durationMicroseconds": 152,
                             "functionName": "target",
                             "line": 14,
                             "message": "Cannot access value for name authController"
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 116,
+                            "durationMicroseconds": 105,
                             "functionName": "fill",
                             "line": 34,
                             "message": ""
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 85,
+                            "durationMicroseconds": 101,
                             "functionName": "centerIn",
                             "line": 42,
                             "message": ""
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 77,
+                            "durationMicroseconds": 85,
                             "functionName": "fill",
                             "line": 46,
                             "message": ""
@@ -72,7 +72,7 @@
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 125,
+                            "durationMicroseconds": 144,
                             "functionName": "alignment",
                             "line": 53,
                             "message": ""
@@ -80,7 +80,7 @@
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 80,
+                            "durationMicroseconds": 94,
                             "functionName": "alignment",
                             "line": 60,
                             "message": ""
@@ -104,7 +104,7 @@
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 101,
+                            "durationMicroseconds": 99,
                             "functionName": "alignment",
                             "line": 89,
                             "message": ""
@@ -112,7 +112,7 @@
                         {
                             "codegenResult": 0,
                             "column": 36,
-                            "durationMicroseconds": 193,
+                            "durationMicroseconds": 642,
                             "functionName": "onClicked",
                             "line": 92,
                             "message": ""
@@ -120,7 +120,7 @@
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 81,
+                            "durationMicroseconds": 159,
                             "functionName": "fill",
                             "line": 91,
                             "message": ""

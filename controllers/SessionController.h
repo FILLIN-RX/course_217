@@ -60,51 +60,66 @@ public:
     }
 
     // --- 3. CRÉER UNE NOUVELLE SÉANCE (Planification) ---
-    Q_INVOKABLE void addSession(int matiereId, int enseignantId, int salleId, int groupeId, 
-                                QString type, QString date, QString debut, QString fin) {
-        QUrl url(Config::SUPABASE_URL + "/rest/v1/seance");
-        QNetworkRequest request(url);
-        
-        request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
-        request.setRawHeader("apikey", Config::SUPABASE_KEY.toUtf8());
-        request.setRawHeader("Authorization", "Bearer " + Config::SUPABASE_KEY.toUtf8());
+    // --- 3. CRÉER UNE NOUVELLE SÉANCE (Planification) ---
+Q_INVOKABLE void addSession(int matiereId, int enseignantId, int salleId, int groupeId, 
+                            QString type, QString date, QString debut, QString fin) {
+    QUrl url(Config::SUPABASE_URL + "/rest/v1/seance");
+    QNetworkRequest request(url);
+    
+    request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
+    request.setRawHeader("apikey", Config::SUPABASE_KEY.toUtf8());
+    request.setRawHeader("Authorization", "Bearer " + Config::SUPABASE_KEY.toUtf8());
+    request.setRawHeader("Prefer", "return=minimal"); // Important pour les INSERT
 
-        QJsonObject session;
-        session["matiere_id"] = matiereId;
-        session["enseignant_id"] = enseignantId;
-        session["salle_id"] = salleId;
-        session["groupe_id"] = groupeId;
-        session["type"] = type; // 'CM', 'TD' ou 'TP'
-        session["date_seance"] = date; // Format YYYY-MM-DD
-        session["heure_debut"] = debut; // Format HH:MM:SS
-        session["heure_fin"] = fin;
-        session["etat"] = "proposé";
+    QJsonObject session;
+    session["matiere_id"] = matiereId;
+    session["enseignant_id"] = enseignantId;
+    session["salle_id"] = salleId;
+    session["groupe_id"] = groupeId;
+    session["type"] = type;
+    session["date_seance"] = date;
+    session["heure_debut"] = debut;
+    session["heure_fin"] = fin;
+    session["etat"] = "proposé";
 
-        QNetworkReply *reply = manager->post(request, QJsonDocument(session).toJson());
-        connect(reply, &QNetworkReply::finished, this, [this, reply]() {
-            bool success = (reply->error() == QNetworkReply::NoError);
-            emit sessionSaved(success);
-            if (!success) qDebug() << "Erreur insertion séance:" << reply->readAll();
-            reply->deleteLater();
-        });
-    }
+    QByteArray jsonData = QJsonDocument(session).toJson();
+    qDebug() << "📤 Envoi session:" << jsonData;
+
+    QNetworkReply *reply = manager->post(request, jsonData);
+    connect(reply, &QNetworkReply::finished, this, [this, reply]() {
+        if (reply->error() == QNetworkReply::NoError) {
+            qDebug() << "✅ Séance créée avec succès!";
+            emit sessionSaved(true);
+        } else {
+            QString errorResponse = reply->readAll();
+            qDebug() << "❌ Erreur insertion séance:" << errorResponse;
+            emit sessionSaved(false);
+        }
+        reply->deleteLater();
+    });
+}
 
     // --- 4. RÉCUPÉRER LA LISTE DES ENSEIGNANTS POUR LES COMBOBOX ---
-    Q_INVOKABLE void fetchTeachersList() {
-        // Récupère l'ID enseignant et le nom de l'utilisateur lié
-        QUrl url(Config::SUPABASE_URL + "/rest/v1/enseignant?select=enseignant_id,utilisateurs(nom)");
-        QNetworkRequest request(url);
-        request.setRawHeader("apikey", Config::SUPABASE_KEY.toUtf8());
-        request.setRawHeader("Authorization", "Bearer " + Config::SUPABASE_KEY.toUtf8());
+  Q_INVOKABLE void fetchTeachersList() {
+    // Modification : utiliser !enseignant_utilisateur_id_fkey pour la jointure
+    QUrl url(Config::SUPABASE_URL + "/rest/v1/enseignant?select=enseignant_id,utilisateurs!enseignant_utilisateur_id_fkey(nom)");
+    
+    QNetworkRequest request(url);
+    request.setRawHeader("apikey", Config::SUPABASE_KEY.toUtf8());
+    request.setRawHeader("Authorization", "Bearer " + Config::SUPABASE_KEY.toUtf8());
 
-        QNetworkReply *reply = manager->get(request);
-        connect(reply, &QNetworkReply::finished, this, [this, reply]() {
-            if (reply->error() == QNetworkReply::NoError) {
-                emit teachersLoaded(reply->readAll());
-            }
-            reply->deleteLater();
-        });
-    }
+    QNetworkReply *reply = manager->get(request);
+    connect(reply, &QNetworkReply::finished, this, [this, reply]() {
+        if (reply->error() == QNetworkReply::NoError) {
+            QString response = reply->readAll();
+            qDebug() << "DEBUG: Teachers response:" << response; // Ajoutez ce log
+            emit teachersLoaded(response);
+        } else {
+            qDebug() << "Erreur fetchTeachersList:" << reply->errorString();
+        }
+        reply->deleteLater();
+    });
+}
 
 signals:
     void sessionsLoaded(QString data);
