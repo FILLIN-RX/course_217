@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 398,
+                            "durationMicroseconds": 327,
                             "functionName": "mondayDate",
                             "line": 15,
                             "message": ""
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 116,
+                            "durationMicroseconds": 115,
                             "functionName": "sessionsData",
                             "line": 16,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 119,
+                            "durationMicroseconds": 99,
                             "functionName": "sessionCards",
                             "line": 17,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 2,
                             "column": 5,
-                            "durationMicroseconds": 153,
+                            "durationMicroseconds": 130,
                             "functionName": "loadSessions",
                             "line": 35,
                             "message": "Cannot access value for name sessionController"
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 2,
                             "column": 5,
-                            "durationMicroseconds": 3725,
+                            "durationMicroseconds": 4387,
                             "functionName": "updateWeekLabel",
                             "line": 40,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
@@ -95,10 +95,10 @@
                         },
                         {
                             "codegenResult": 2,
-                            "column": 5,
+                            "column": 3,
                             "durationMicroseconds": 0,
                             "functionName": "placeSessionCards",
-                            "line": 109,
+                            "line": 108,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
@@ -112,7 +112,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 298,
+                            "durationMicroseconds": 279,
                             "functionName": "onCompleted",
                             "line": 28,
                             "message": "Cannot generate efficient code for call to untyped JavaScript function"
@@ -120,9 +120,9 @@
                         {
                             "codegenResult": 2,
                             "column": 17,
-                            "durationMicroseconds": 155,
+                            "durationMicroseconds": 102,
                             "functionName": "target",
-                            "line": 179,
+                            "line": 156,
                             "message": "Cannot access value for name sessionController"
                         },
                         {
@@ -130,7 +130,7 @@
                             "column": 9,
                             "durationMicroseconds": 0,
                             "functionName": "onSessionsLoaded",
-                            "line": 180,
+                            "line": 157,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
@@ -138,15 +138,15 @@
                             "column": 9,
                             "durationMicroseconds": 0,
                             "functionName": "onSessionSaved",
-                            "line": 195,
+                            "line": 172,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
                             "codegenResult": 0,
                             "column": 16,
-                            "durationMicroseconds": 140,
+                            "durationMicroseconds": 186,
                             "functionName": "width",
-                            "line": 209,
+                            "line": 186,
                             "message": ""
                         },
                         {
@@ -154,7 +154,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 240,
+                            "line": 217,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -162,7 +162,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 251,
+                            "line": 228,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -170,7 +170,7 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 261,
+                            "line": 238,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
@@ -178,183 +178,183 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 272,
+                            "line": 249,
                             "message": "Could not find signal \"clicked\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 31,
-                            "durationMicroseconds": 70,
+                            "durationMicroseconds": 76,
                             "functionName": "text",
-                            "line": 287,
+                            "line": 264,
                             "message": "Cannot access value for name newSessionBtn"
                         },
                         {
                             "codegenResult": 0,
                             "column": 46,
-                            "durationMicroseconds": 138,
+                            "durationMicroseconds": 139,
                             "functionName": "horizontalAlignment",
-                            "line": 290,
+                            "line": 267,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 44,
-                            "durationMicroseconds": 91,
+                            "durationMicroseconds": 84,
                             "functionName": "verticalAlignment",
-                            "line": 291,
+                            "line": 268,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 26,
-                            "durationMicroseconds": 117,
+                            "durationMicroseconds": 68,
                             "functionName": "visible",
-                            "line": 330,
+                            "line": 307,
                             "message": "Cannot access value for name sessionsData"
                         },
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 89,
+                            "durationMicroseconds": 79,
                             "functionName": "centerIn",
-                            "line": 326,
+                            "line": 303,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 90,
+                            "durationMicroseconds": 2263,
                             "functionName": "fill",
-                            "line": 335,
+                            "line": 312,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 372,
+                            "durationMicroseconds": 1029,
                             "functionName": "model",
-                            "line": 344,
+                            "line": 321,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
                         },
                         {
                             "codegenResult": 0,
                             "column": 47,
-                            "durationMicroseconds": 81,
+                            "durationMicroseconds": 148,
                             "functionName": "centerIn",
-                            "line": 353,
+                            "line": 330,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 39,
-                            "durationMicroseconds": 431,
+                            "durationMicroseconds": 425,
                             "functionName": "text",
-                            "line": 356,
+                            "line": 333,
                             "message": "Cannot access value for name modelData"
                         },
                         {
                             "codegenResult": 2,
                             "column": 39,
-                            "durationMicroseconds": 2027,
+                            "durationMicroseconds": 4202,
                             "functionName": "text",
-                            "line": 363,
+                            "line": 340,
                             "message": "Cannot access value for name index"
                         },
                         {
                             "codegenResult": 0,
                             "column": 28,
-                            "durationMicroseconds": 260,
+                            "durationMicroseconds": 194,
                             "functionName": "model",
-                            "line": 373,
+                            "line": 350,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 137,
+                            "durationMicroseconds": 166,
                             "functionName": "color",
-                            "line": 380,
+                            "line": 357,
                             "message": "Cannot access value for name index"
                         },
                         {
                             "codegenResult": 2,
                             "column": 48,
-                            "durationMicroseconds": 39,
+                            "durationMicroseconds": 31,
                             "functionName": "dayIndex",
-                            "line": 382,
+                            "line": 359,
                             "message": "Cannot access value for name index"
                         },
                         {
                             "codegenResult": 2,
                             "column": 49,
-                            "durationMicroseconds": 66,
+                            "durationMicroseconds": 65,
                             "functionName": "startHour",
-                            "line": 383,
+                            "line": 360,
                             "message": "Cannot access value for name index"
                         },
                         {
                             "codegenResult": 0,
                             "column": 50,
-                            "durationMicroseconds": 461,
+                            "durationMicroseconds": 509,
                             "functionName": "dayName",
-                            "line": 384,
+                            "line": 361,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 38,
-                            "durationMicroseconds": 202,
+                            "durationMicroseconds": 180,
                             "functionName": "visible",
-                            "line": 388,
+                            "line": 365,
                             "message": "Cannot load property dayIndex from (component in C:/Users/Fillin/Documents/course_217/Files/pages/SchedulePage.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 2,
                             "column": 35,
-                            "durationMicroseconds": 81,
+                            "durationMicroseconds": 75,
                             "functionName": "text",
-                            "line": 392,
+                            "line": 369,
                             "message": "Cannot load property startHour from (component in C:/Users/Fillin/Documents/course_217/Files/pages/SchedulePage.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 0,
                             "column": 44,
-                            "durationMicroseconds": 168,
+                            "durationMicroseconds": 316,
                             "functionName": "right",
-                            "line": 389,
+                            "line": 366,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 53,
-                            "durationMicroseconds": 218,
+                            "durationMicroseconds": 199,
                             "functionName": "verticalCenter",
-                            "line": 391,
+                            "line": 368,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 38,
-                            "durationMicroseconds": 99,
+                            "durationMicroseconds": 167,
                             "functionName": "enabled",
-                            "line": 402,
+                            "line": 379,
                             "message": "Cannot load property dayIndex from (component in C:/Users/Fillin/Documents/course_217/Files/pages/SchedulePage.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 2,
                             "column": 40,
-                            "durationMicroseconds": 1095,
+                            "durationMicroseconds": 1165,
                             "functionName": "onClicked",
-                            "line": 404,
+                            "line": 381,
                             "message": "Cannot load property startHour from (component in C:/Users/Fillin/Documents/course_217/Files/pages/SchedulePage.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 0,
                             "column": 43,
-                            "durationMicroseconds": 91,
+                            "durationMicroseconds": 89,
                             "functionName": "fill",
-                            "line": 400,
+                            "line": 377,
                             "message": ""
                         }
                     ],

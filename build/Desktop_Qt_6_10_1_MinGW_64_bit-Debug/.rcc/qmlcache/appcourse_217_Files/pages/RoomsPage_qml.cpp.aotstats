@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 2,
                             "column": 5,
-                            "durationMicroseconds": 4097,
+                            "durationMicroseconds": 3101,
                             "functionName": "applyFilter",
                             "line": 16,
                             "message": "Cannot generate efficient code for lookup in QJSValue"
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 990,
+                            "durationMicroseconds": 569,
                             "functionName": "onCompleted",
                             "line": 27,
                             "message": "Cannot access value for name root"
@@ -24,7 +24,7 @@
                         {
                             "codegenResult": 2,
                             "column": 17,
-                            "durationMicroseconds": 87,
+                            "durationMicroseconds": 80,
                             "functionName": "target",
                             "line": 35,
                             "message": "Cannot access value for name roomController"
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 0,
                             "column": 20,
-                            "durationMicroseconds": 175,
+                            "durationMicroseconds": 209,
                             "functionName": "width",
                             "line": 57,
                             "message": ""
@@ -64,7 +64,7 @@
                         {
                             "codegenResult": 2,
                             "column": 65,
-                            "durationMicroseconds": 80,
+                            "durationMicroseconds": 94,
                             "functionName": "color",
                             "line": 80,
                             "message": "Cannot retrieve a non-object type by ID: searchInput"
@@ -72,7 +72,7 @@
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 104,
+                            "durationMicroseconds": 105,
                             "functionName": "fill",
                             "line": 82,
                             "message": ""
@@ -96,7 +96,7 @@
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 96,
+                            "durationMicroseconds": 68,
                             "functionName": "color",
                             "line": 100,
                             "message": "Cannot access value for name addBtn"
@@ -104,7 +104,7 @@
                         {
                             "codegenResult": 2,
                             "column": 31,
-                            "durationMicroseconds": 118,
+                            "durationMicroseconds": 104,
                             "functionName": "text",
                             "line": 104,
                             "message": "Cannot load property text from (component in C:/Users/Fillin/Documents/course_217/Files/pages/RoomsPage.qml)::parent with type QQuickItem."
@@ -112,7 +112,7 @@
                         {
                             "codegenResult": 0,
                             "column": 46,
-                            "durationMicroseconds": 121,
+                            "durationMicroseconds": 108,
                             "functionName": "horizontalAlignment",
                             "line": 105,
                             "message": ""
@@ -120,7 +120,7 @@
                         {
                             "codegenResult": 0,
                             "column": 84,
-                            "durationMicroseconds": 75,
+                            "durationMicroseconds": 90,
                             "functionName": "verticalAlignment",
                             "line": 105,
                             "message": ""
@@ -128,7 +128,7 @@
                         {
                             "codegenResult": 0,
                             "column": 28,
-                            "durationMicroseconds": 96,
+                            "durationMicroseconds": 100,
                             "functionName": "model",
                             "line": 116,
                             "message": ""
@@ -136,7 +136,7 @@
                         {
                             "codegenResult": 2,
                             "column": 31,
-                            "durationMicroseconds": 50,
+                            "durationMicroseconds": 55,
                             "functionName": "name",
                             "line": 118,
                             "message": "Cannot access value for name model"
@@ -144,7 +144,7 @@
                         {
                             "codegenResult": 2,
                             "column": 31,
-                            "durationMicroseconds": 47,
+                            "durationMicroseconds": 52,
                             "functionName": "type",
                             "line": 119,
                             "message": "Cannot access value for name model"
@@ -152,7 +152,7 @@
                         {
                             "codegenResult": 2,
                             "column": 35,
-                            "durationMicroseconds": 41,
+                            "durationMicroseconds": 44,
                             "functionName": "capacity",
                             "line": 120,
                             "message": "Cannot access value for name model"
@@ -160,7 +160,7 @@
                         {
                             "codegenResult": 2,
                             "column": 35,
-                            "durationMicroseconds": 39,
+                            "durationMicroseconds": 42,
                             "functionName": "batiment",
                             "line": 121,
                             "message": "Cannot access value for name model"
@@ -168,7 +168,7 @@
                         {
                             "codegenResult": 2,
                             "column": 32,
-                            "durationMicroseconds": 114,
+                            "durationMicroseconds": 130,
                             "functionName": "etage",
                             "line": 122,
                             "message": "Cannot access value for name model"
@@ -176,7 +176,7 @@
                         {
                             "codegenResult": 2,
                             "column": 56,
-                            "durationMicroseconds": 34,
+                            "durationMicroseconds": 37,
                             "functionName": "visible",
                             "line": 132,
                             "message": "Cannot access value for name isLoading"
@@ -184,7 +184,7 @@
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 79,
+                            "durationMicroseconds": 108,
                             "functionName": "fill",
                             "line": 132,
                             "message": ""
@@ -192,7 +192,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 92,
+                            "durationMicroseconds": 82,
                             "functionName": "centerIn",
                             "line": 134,
                             "message": ""
@@ -200,7 +200,7 @@
                         {
                             "codegenResult": 0,
                             "column": 62,
-                            "durationMicroseconds": 154,
+                            "durationMicroseconds": 157,
                             "functionName": "alignment",
                             "line": 135,
                             "message": ""
@@ -208,7 +208,7 @@
                         {
                             "codegenResult": 0,
                             "column": 116,
-                            "durationMicroseconds": 86,
+                            "durationMicroseconds": 103,
                             "functionName": "alignment",
                             "line": 136,
                             "message": ""
@@ -216,7 +216,7 @@
                         {
                             "codegenResult": 2,
                             "column": 25,
-                            "durationMicroseconds": 66,
+                            "durationMicroseconds": 73,
                             "functionName": "currentAdminId",
                             "line": 142,
                             "message": "Cannot access value for name root"
@@ -224,7 +224,7 @@
                         {
                             "codegenResult": 2,
                             "column": 22,
-                            "durationMicroseconds": 106,
+                            "durationMicroseconds": 109,
                             "functionName": "onRoomSaved",
                             "line": 143,
                             "message": "Cannot find name isLoading"

@@ -105,75 +105,52 @@ ScrollView {
         return Math.max(totalHours * cellHeight, 60);
     }
 
-    // Placer les cartes
-    function placeSessionCards(sessions) {
-        // Supprimer anciennes cartes
-        for (let i = 0; i < sessionCards.length; i++) {
-            if (sessionCards[i]) {
-                sessionCards[i].destroy();
-            }
-        }
-        sessionCards = [];
+  function placeSessionCards(sessions) {
+    console.log("🔄 placeSessionCards appelé avec", sessions.length, "sessions");
+    
+    // Supprimer anciennes cartes...
+    sessionCards = [];
 
-        if (sessions.length === 0) return;
-
-        for (let i = 0; i < sessions.length; i++) {
-            let session = sessions[i];
-            if (!session.date_seance) continue;
-
-            try {
-                let sessionDate = new Date(session.date_seance + 'T00:00:00');
-                if (isNaN(sessionDate.getTime())) continue;
-
-                let monday = new Date(mondayDate);
-                let friday = new Date(monday);
-                friday.setDate(friday.getDate() + 6);
-
-                if (sessionDate >= monday && sessionDate <= friday) {
-                    let dayOfWeek = sessionDate.getDay();
-                    let columnIndex = dayOfWeek === 0 ? 7 : dayOfWeek;
-                    let columnWidth = gridContainer.width / 7;
-                    let xPos = columnWidth * columnIndex;
-                    let yPos = getYPositionForTime(session.heure_debut);
-                    let cardHeight = getHeightForDuration(session.heure_debut, session.heure_fin);
-
-                    let cardColor = "#6366F1";
-                    if (session.type === "TD") cardColor = "#F59E0B";
-                    if (session.type === "TP") cardColor = "#10B981";
-
-                    let matiereNom = session.matiere ? (session.matiere.intitule || "Matière") : "Matière inconnue";
-                    let matiereCode = session.matiere && session.matiere.code ? (session.matiere.code + " - ") : "";
-                    let profNom = "Prof. Inconnu";
-                    if (session.enseignant && session.enseignant.utilisateurs) {
-                        profNom = "Pr. " + (session.enseignant.utilisateurs.nom || "Inconnu");
-                    }
-                    let salleNom = session.salle ? session.salle.nom : "Salle inconnue";
-
-                    let component = Qt.createComponent("../components/ScheduleCard.qml");
-                    if (component.status === Component.Ready) {
-                        let card = component.createObject(gridContainer, {
-                            x: xPos + 2,
-                            y: yPos + 2,
-                            width: columnWidth - 4,
-                            height: Math.max(cardHeight - 4, 50),
-                            title: matiereCode + matiereNom,
-                            teacher: profNom,
-                            room: salleNom,
-                            baseColor: cardColor,
-                            z: 10
-                        });
-
-                        if (card) {
-                            sessionCards.push(card);
-                        }
-                    }
-                }
-            } catch (e) {
-                console.error("Erreur:", e);
-            }
-        }
+    if (sessions.length === 0) {
+        console.log("⚠️ Aucune session à afficher");
+        return;
     }
 
+    for (let i = 0; i < sessions.length; i++) {
+        let session = sessions[i];
+        console.log("Session", i, ":", JSON.stringify(session).substring(0, 100));
+        
+        if (!session.date_seance) {
+            console.log("❌ Session sans date_seance");
+            continue;
+        }
+
+        try {
+            let sessionDate = new Date(session.date_seance + 'T00:00:00');
+            console.log("📅 Date de session:", session.date_seance, "->", sessionDate.toISOString());
+            
+            if (isNaN(sessionDate.getTime())) {
+                console.log("❌ Date invalide");
+                continue;
+            }
+
+            let monday = new Date(mondayDate);
+            let friday = new Date(monday);
+            friday.setDate(friday.getDate() + 4); // Lundi -> Vendredi (5 jours)
+            
+            console.log("📅 Semaine du", monday.toISOString(), "au", friday.toISOString());
+            
+            if (sessionDate >= monday && sessionDate <= friday) {
+                console.log("✅ Session dans la semaine courante");
+                // ... reste du code ...
+            } else {
+                console.log("❌ Session hors de la semaine courante");
+            }
+        } catch (e) {
+            console.error("🚨 Erreur traitement session:", e);
+        }
+    }
+}
     // Connexions
     Connections {
         target: sessionController
