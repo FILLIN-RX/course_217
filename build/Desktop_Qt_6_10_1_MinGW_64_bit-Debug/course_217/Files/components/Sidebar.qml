@@ -13,6 +13,9 @@ Rectangle {
 
     property int currentIndex: 0
     signal menuSelected(int index, string category)
+    property string userName: root.userProfile.nom
+    property string userRole: root.userProfile.role
+    property string userInitials: root.userProfile.initiales
 
     ColumnLayout {
         anchors.fill: parent
@@ -29,7 +32,9 @@ Rectangle {
                 spacing: 12
 
                 Rectangle {
-                    width: 40; height: 40; radius: 8
+                    width: 40
+                    height: 40
+                    radius: 8
                     color: "#6366F1"
                     Text {
                         anchors.centerIn: parent
@@ -43,11 +48,14 @@ Rectangle {
                 Column {
                     Text {
                         text: "Univ. Yaoundé I"
-                        font.pixelSize: 14; font.bold: true; color: "white"
+                        font.pixelSize: 14
+                        font.bold: true
+                        color: "white"
                     }
                     Text {
                         text: "Gestion Académique"
-                        font.pixelSize: 11; color: "#94A3B8"
+                        font.pixelSize: 11
+                        color: "#94A3B8"
                     }
                 }
             }
@@ -80,8 +88,8 @@ Rectangle {
                     anchors.fill: parent
                     hoverEnabled: true
                     onClicked: {
-                        sidebar.currentIndex = index
-                        sidebar.menuSelected(index, category)
+                        sidebar.currentIndex = index;
+                        sidebar.menuSelected(index, category);
                     }
                 }
 
@@ -92,7 +100,8 @@ Rectangle {
 
                     // --- LOGIQUE D'AFFICHAGE DES ICONES ---
                     Item {
-                        width: 20; height: 20
+                        width: 20
+                        height: 20
 
                         // Si c'est un SVG (Chemin commençant par qrc)
                         Image {
@@ -145,21 +154,51 @@ Rectangle {
                 anchors.margins: 12
 
                 Rectangle {
-                    width: 36; height: 36; radius: 18; color: "#334155"
-                    Text { anchors.centerIn: parent; text: "JD"; color: "white"; font.bold: true }
+                    width: 36
+                    height: 36
+                    radius: 18
+                    color: "#334155"
+                    Text {
+                        anchors.centerIn: parent
+                        text: sidebar.userInitials
+                        color: "white"
+                        font.bold: true
+                    }
                 }
 
                 Column {
                     Layout.fillWidth: true
-                    Text { text: "Dr. Jean Dupont"; color: "white"; font.pixelSize: 12; font.bold: true }
-                    Text { text: "Chef de dépt."; color: "#94A3B8"; font.pixelSize: 10 }
+                    Text {
+                        text: sidebar.userName
+                        color: "white"
+                        font.pixelSize: 12
+                        font.bold: true
+                    }
+                    Text {
+                        text: sidebar.userRole
+                        color: "#94A3B8"
+                        font.pixelSize: 10
+                    }
                 }
 
                 Text {
-                    text: "\ue8ac" // Logout
+                    text: "\ue8ac"
                     font.family: materialFont.name
                     font.pixelSize: 18
                     color: "#64748B"
+
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: {
+                            root.userId = -1;
+                            root.userProfile = {
+                                nom: "Utilisateur",
+                                role: "Étudiant",
+                                initiales: "U"
+                            };
+                            root.currentPage = "login";
+                        }
+                    }
                 }
             }
         }
@@ -169,12 +208,40 @@ Rectangle {
     ListModel {
         id: navModel
         // Utilisez les codes exacts correspondant à Material Icons
-        ListElement { label: "Tableau de bord"; icon: "\ue871"; category: "dashboard" } // dashboard icon
-        ListElement { label: "Emploi du temps"; icon: "\ue916"; category: "schedule" }  // calendar icon
-        ListElement { label: "Séances"; icon: "\ue8df"; category: "sessions" }          // event icon
-        ListElement { label: "Enseignants"; icon: "\ue7ef"; category: "teachers" }      // group icon
-        ListElement { label: "Salles"; icon: "\ue88a"; category: "rooms" }             // meeting room icon
-        ListElement { label: "Rapports"; icon: "\ue85c"; category: "reports" }           // assessment icon
-        ListElement { label: "Paramètres"; icon: "\ue8b8"; category: "settings" }        // settings icon
+        ListElement {
+            label: "Tableau de bord"
+            icon: "\ue871"
+            category: "dashboard"
+        } // dashboard icon
+        ListElement {
+            label: "Emploi du temps"
+            icon: "\ue916"
+            category: "schedule"
+        }  // calendar icon
+        ListElement {
+            label: "Séances"
+            icon: "\ue8df"
+            category: "sessions"
+        }          // event icon
+        ListElement {
+            label: "Enseignants"
+            icon: "\ue7ef"
+            category: "teachers"
+        }      // group icon
+        ListElement {
+            label: "Salles"
+            icon: "\ue88a"
+            category: "rooms"
+        }             // meeting room icon
+        ListElement {
+            label: "Rapports"
+            icon: "\ue85c"
+            category: "reports"
+        }           // assessment icon
+        ListElement {
+            label: "Paramètres"
+            icon: "\ue8b8"
+            category: "settings"
+        }        // settings icon
     }
 }

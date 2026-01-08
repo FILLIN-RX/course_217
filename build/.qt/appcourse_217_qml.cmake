@@ -30,6 +30,8 @@ set(src_and_dest_list
     "C:/Users/Fillin/Documents/course_217/build/course_217/Files/pages/TeachersPage.qml"
     "C:/Users/Fillin/Documents/course_217/controllers/authcontroller.h"
     "C:/Users/Fillin/Documents/course_217/build/course_217/controllers/authcontroller.h"
+    "C:/Users/Fillin/Documents/course_217/controllers/TeacherController.h"
+    "C:/Users/Fillin/Documents/course_217/build/course_217/controllers/TeacherController.h"
     "C:/Users/Fillin/Documents/course_217/Files/components/StatCard.qml"
     "C:/Users/Fillin/Documents/course_217/build/course_217/Files/components/StatCard.qml"
     "C:/Users/Fillin/Documents/course_217/Files/components/DailySessionItem.qml"

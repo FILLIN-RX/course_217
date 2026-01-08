@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 12,
-                            "durationMicroseconds": 363,
+                            "durationMicroseconds": 377,
                             "functionName": "width",
                             "line": 7,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 0,
                             "column": 13,
-                            "durationMicroseconds": 98,
+                            "durationMicroseconds": 113,
                             "functionName": "height",
                             "line": 8,
                             "message": ""
@@ -24,97 +24,81 @@
                         {
                             "codegenResult": 2,
                             "column": 17,
-                            "durationMicroseconds": 136,
+                            "durationMicroseconds": 150,
                             "functionName": "target",
-                            "line": 16,
+                            "line": 14,
                             "message": "Cannot access value for name authController"
                         },
                         {
-                            "codegenResult": 2,
+                            "codegenResult": 0,
                             "column": 9,
-                            "durationMicroseconds": 0,
+                            "durationMicroseconds": 721,
                             "functionName": "onSignUpSuccess",
-                            "line": 19,
-                            "message": "Functions without type annotations won't be compiled"
+                            "line": 15,
+                            "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 9,
                             "durationMicroseconds": 0,
                             "functionName": "onErrorOccurred",
-                            "line": 25,
+                            "line": 19,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 104,
+                            "durationMicroseconds": 116,
                             "functionName": "fill",
-                            "line": 32,
+                            "line": 26,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 78,
+                            "durationMicroseconds": 83,
                             "functionName": "centerIn",
-                            "line": 40,
+                            "line": 34,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 76,
+                            "durationMicroseconds": 72,
                             "functionName": "fill",
-                            "line": 43,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 34,
-                            "durationMicroseconds": 118,
-                            "functionName": "weight",
-                            "line": 50,
+                            "line": 37,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 88,
+                            "durationMicroseconds": 132,
+                            "functionName": "alignment",
+                            "line": 44,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 138,
                             "functionName": "alignment",
                             "line": 51,
                             "message": ""
                         },
                         {
-                            "codegenResult": 0,
-                            "column": 31,
-                            "durationMicroseconds": 94,
-                            "functionName": "wrapMode",
-                            "line": 60,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 42,
-                            "durationMicroseconds": 101,
-                            "functionName": "horizontalAlignment",
-                            "line": 61,
-                            "message": ""
-                        },
-                        {
                             "codegenResult": 2,
-                            "column": 35,
+                            "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "echoMode",
-                            "line": 83,
+                            "line": 76,
                             "message": "Could not find property \"echoMode\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 32,
+                            "column": 28,
                             "durationMicroseconds": 0,
                             "functionName": "model",
-                            "line": 96,
+                            "line": 83,
                             "message": "Could not find property \"model\"."
                         },
                         {
@@ -122,79 +106,31 @@
                             "column": 32,
                             "durationMicroseconds": 0,
                             "functionName": "onClicked",
-                            "line": 120,
+                            "line": 91,
                             "message": "Could not find signal \"clicked\"."
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 31,
-                            "durationMicroseconds": 96,
-                            "functionName": "text",
-                            "line": 108,
-                            "message": "Cannot access value for name registerButton"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 46,
-                            "durationMicroseconds": 149,
-                            "functionName": "horizontalAlignment",
-                            "line": 110,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 44,
-                            "durationMicroseconds": 121,
-                            "functionName": "verticalAlignment",
-                            "line": 111,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 38,
-                            "durationMicroseconds": 78,
-                            "functionName": "weight",
-                            "line": 112,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 32,
-                            "durationMicroseconds": 95,
-                            "functionName": "color",
-                            "line": 116,
-                            "message": "Cannot access value for name registerButton"
                         },
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 118,
+                            "durationMicroseconds": 131,
                             "functionName": "alignment",
-                            "line": 135,
+                            "line": 112,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 42,
-                            "durationMicroseconds": 94,
-                            "functionName": "cursorShape",
-                            "line": 144,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 40,
-                            "durationMicroseconds": 209,
+                            "column": 36,
+                            "durationMicroseconds": 195,
                             "functionName": "onClicked",
-                            "line": 145,
+                            "line": 115,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 43,
-                            "durationMicroseconds": 73,
+                            "column": 39,
+                            "durationMicroseconds": 93,
                             "functionName": "fill",
-                            "line": 143,
+                            "line": 114,
                             "message": ""
                         }
                     ],

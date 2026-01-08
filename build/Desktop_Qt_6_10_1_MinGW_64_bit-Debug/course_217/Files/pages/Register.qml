@@ -7,23 +7,17 @@ Item {
     width: parent.width
     height: parent.height
 
-    // Signaux pour la navigation
     signal registerSuccess()
     signal goToLogin()
 
-    // --- CONNEXION AVEC LE C++ (AuthController) ---
     Connections {
-        target: authController // Nom exposé dans le main.cpp
-
-        // Signal émis par le C++ en cas de succès
-        function onSignUpSuccess(user) {
-            console.log("Inscription réussie pour: " + user.email)
+        target: authController
+        function onSignUpSuccess() {
+            console.log("✅ Inscription réussie en table SQL")
             registerPage.registerSuccess() 
         }
-
-        // Signal émis par le C++ en cas d'erreur
         function onErrorOccurred(error) {
-            errorText.text = "Erreur : " + error
+            errorText.text = error
             errorText.visible = true
         }
     }
@@ -34,7 +28,7 @@ Item {
 
         Rectangle {
             width: 500
-            height: 650
+            height: 750 // Légèrement plus haut pour les nouveaux champs
             radius: 16
             color: "white"
             anchors.centerIn: parent
@@ -42,108 +36,83 @@ Item {
             ColumnLayout {
                 anchors.fill: parent
                 anchors.margins: 40
-                spacing: 15
+                spacing: 12
 
                 Text {
                     text: "Créer un compte"
-                    font.pixelSize: 24
-                    font.weight: Font.DemiBold
+                    font.pixelSize: 24; font.bold: true
                     Layout.alignment: Qt.AlignHCenter
                 }
 
                 Text {
                     id: errorText
+                    color: "red"
                     visible: false
-                    color: "#e74c3c"
-                    font.pixelSize: 13
-                    Layout.fillWidth: true
-                    wrapMode: Text.WordWrap
-                    horizontalAlignment: Text.AlignHCenter
+                    Layout.alignment: Qt.AlignHCenter
                 }
 
-                // --- CHAMP EMAIL ---
-                ColumnLayout {
+                // --- Nouveaux Champs ---
+                TextField {
+                    id: nomField
+                    placeholderText: "Nom"
                     Layout.fillWidth: true
-                    Text { text: "Email"; font.pixelSize: 12; color: "gray" }
-                    TextField {
-                        id: emailField
-                        placeholderText: "votre@email.com"
-                        Layout.fillWidth: true
-                        selectByMouse: true
-                    }
                 }
 
-                // --- CHAMP MOT DE PASSE ---
-                ColumnLayout {
+                TextField {
+                    id: prenomField
+                    placeholderText: "Prénom"
                     Layout.fillWidth: true
-                    Text { text: "Mot de passe"; font.pixelSize: 12; color: "gray" }
-                    TextField {
-                        id: passwordField
-                        placeholderText: "Minimum 6 caractères"
-                        echoMode: TextInput.Password
-                        Layout.fillWidth: true
-                        selectByMouse: true
-                    }
                 }
 
-                // --- CHAMP RÔLE ---
-                ColumnLayout {
+                TextField {
+                    id: emailField
+                    placeholderText: "Email"
                     Layout.fillWidth: true
-                    Text { text: "Vous êtes ?"; font.pixelSize: 12; color: "gray" }
-                    ComboBox {
-                        id: roleComboBox
-                        Layout.fillWidth: true
-                        model: ["Étudiant", "Enseignant", "Admin"]
-                    }
                 }
 
-                // --- BOUTON DE VALIDATION ---
+                TextField {
+                    id: passwordField
+                    placeholderText: "Mot de passe"
+                    echoMode: TextInput.Password
+                    Layout.fillWidth: true
+                }
+
+                ComboBox {
+                    id: typeBox
+                    Layout.fillWidth: true
+                    model: ["Admin", "Enseignant", "Etudiant"]
+                    currentIndex: 0 // "Admin" par défaut
+                }
+
                 Button {
-                    id: registerButton
-                    text: "S'inscrire"
                     Layout.fillWidth: true
-                    Layout.preferredHeight: 45
-                    
-                    contentItem: Text {
-                        text: registerButton.text
-                        color: "white"
-                        horizontalAlignment: Text.AlignHCenter
-                        verticalAlignment: Text.AlignVCenter
-                        font.weight: Font.Bold
-                    }
-
-                    background: Rectangle {
-                        color: registerButton.down ? "#2980b9" : "#3498db"
-                        radius: 8
-                    }
-
+                    height: 45
+                    text: "S'inscrire"
                     onClicked: {
-                        errorText.visible = false
-                        if (emailField.text === "" || passwordField.text === "") {
-                            errorText.text = "Veuillez remplir tous les champs"
+                        if (emailField.text === "" || passwordField.text === "" || nomField.text === "") {
+                            errorText.text = "Veuillez remplir les champs obligatoires"
                             errorText.visible = true
                             return
                         }
                         
-                        // APPEL AU C++ (Supabase)
-                        authController.signUp(emailField.text, passwordField.text)
+                        // Envoi des 5 paramètres au C++
+                        authController.signUp(
+                            nomField.text, 
+                            prenomField.text, 
+                            emailField.text, 
+                            passwordField.text, 
+                            typeBox.currentText.toLowerCase()
+                        )
                     }
                 }
 
-                // Lien vers la connexion
-                RowLayout {
+                Text {
+                    text: "Se connecter"
+                    color: "#3498db"
                     Layout.alignment: Qt.AlignHCenter
-                    spacing: 5
-                    Text { text: "Déjà inscrit ?"; color: "#666666" }
-                    Text {
-                        text: "Se connecter"
-                        color: "#3498db"
-                        font.bold: true
-                        MouseArea {
-                            anchors.fill: parent
-                            cursorShape: Qt.PointingHandCursor
-                            onClicked: registerPage.goToLogin()
-                        }
+                    MouseArea {
+                        anchors.fill: parent
+                        onClicked: registerPage.goToLogin()
                     }
                 }
             }

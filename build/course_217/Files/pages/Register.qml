@@ -8,25 +8,25 @@ Item {
     height: parent.height
 
     // Signaux pour la navigation
-    signal registerSuccess
-    signal goToLogin
+    signal registerSuccess()
+    signal goToLogin()
 
     // --- CONNEXION AVEC LE C++ (AuthController) ---
-   Connections {
-    target: authController
+    Connections {
+        target: authController // Nom exposé dans le main.cpp
 
-    function onSignUpSuccess(user) {
-        registerButton.isLoading = false // Arrêt du loader [cite: 2]
-        console.log("Inscription réussie pour: " + user.email) [cite: 2]
-        registerPage.registerSuccess() 
-    }
+        // Signal émis par le C++ en cas de succès
+        function onSignUpSuccess(user) {
+            console.log("Inscription réussie pour: " + user.email)
+            registerPage.registerSuccess() 
+        }
 
-    function onErrorOccurred(error) {
-        registerButton.isLoading = false // Arrêt du loader en cas d'erreur
-        errorText.text = "Erreur : " + error
-        errorText.visible = true
+        // Signal émis par le C++ en cas d'erreur
+        function onErrorOccurred(error) {
+            errorText.text = "Erreur : " + error
+            errorText.visible = true
+        }
     }
-}
 
     Rectangle {
         anchors.fill: parent
@@ -64,11 +64,7 @@ Item {
                 // --- CHAMP EMAIL ---
                 ColumnLayout {
                     Layout.fillWidth: true
-                    Text {
-                        text: "Email"
-                        font.pixelSize: 12
-                        color: "gray"
-                    }
+                    Text { text: "Email"; font.pixelSize: 12; color: "gray" }
                     TextField {
                         id: emailField
                         placeholderText: "votre@email.com"
@@ -80,11 +76,7 @@ Item {
                 // --- CHAMP MOT DE PASSE ---
                 ColumnLayout {
                     Layout.fillWidth: true
-                    Text {
-                        text: "Mot de passe"
-                        font.pixelSize: 12
-                        color: "gray"
-                    }
+                    Text { text: "Mot de passe"; font.pixelSize: 12; color: "gray" }
                     TextField {
                         id: passwordField
                         placeholderText: "Minimum 6 caractères"
@@ -97,11 +89,7 @@ Item {
                 // --- CHAMP RÔLE ---
                 ColumnLayout {
                     Layout.fillWidth: true
-                    Text {
-                        text: "Vous êtes ?"
-                        font.pixelSize: 12
-                        color: "gray"
-                    }
+                    Text { text: "Vous êtes ?"; font.pixelSize: 12; color: "gray" }
                     ComboBox {
                         id: roleComboBox
                         Layout.fillWidth: true
@@ -110,64 +98,43 @@ Item {
                 }
 
                 // --- BOUTON DE VALIDATION ---
-                // --- BOUTON DE VALIDATION AVEC LOADER ---
-Button {
-    id: registerButton
-    text: "S'inscrire"
-    Layout.fillWidth: true
-    Layout.preferredHeight: 45
-    
-    // Propriété pour suivre l'état de la requête
-    property bool isLoading: false 
+                Button {
+                    id: registerButton
+                    text: "S'inscrire"
+                    Layout.fillWidth: true
+                    Layout.preferredHeight: 45
+                    
+                    contentItem: Text {
+                        text: registerButton.text
+                        color: "white"
+                        horizontalAlignment: Text.AlignHCenter
+                        verticalAlignment: Text.AlignVCenter
+                        font.weight: Font.Bold
+                    }
 
-    contentItem: RowLayout {
-        spacing: 10
-        anchors.centerIn: parent
-        
-        BusyIndicator {
-            id: indicator
-            running: registerButton.isLoading
-            visible: registerButton.isLoading
-            implicitWidth: 24
-            implicitHeight: 24
-        }
+                    background: Rectangle {
+                        color: registerButton.down ? "#2980b9" : "#3498db"
+                        radius: 8
+                    }
 
-        Text {
-            text: registerButton.isLoading ? "Inscription..." : registerButton.text
-            color: "white"
-            font.weight: Font.Bold
-            horizontalAlignment: Text.AlignHCenter
-            verticalAlignment: Text.AlignVCenter
-        }
-    }
+                    onClicked: {
+                        errorText.visible = false
+                        if (emailField.text === "" || passwordField.text === "") {
+                            errorText.text = "Veuillez remplir tous les champs"
+                            errorText.visible = true
+                            return
+                        }
+                        
+                        // APPEL AU C++ (Supabase)
+                        authController.signUp(emailField.text, passwordField.text)
+                    }
+                }
 
-    background: Rectangle {
-        color: registerButton.isLoading ? "#bdc3c7" : (registerButton.down ? "#2980b9" : "#3498db")
-        radius: 8
-    }
-
-    onClicked: {
-        if (isLoading) return; // Empêche les clics multiples
-        
-        errorText.visible = false
-        if (emailField.text === "" || passwordField.text === "") {
-            errorText.text = "Veuillez remplir tous les champs"
-            errorText.visible = true
-            return
-        }
-        
-        isLoading = true // Active le loader visuel
-        authController.signUp(emailField.text, passwordField.text)
-    }
-}
                 // Lien vers la connexion
                 RowLayout {
                     Layout.alignment: Qt.AlignHCenter
                     spacing: 5
-                    Text {
-                        text: "Déjà inscrit ?"
-                        color: "#666666"
-                    }
+                    Text { text: "Déjà inscrit ?"; color: "#666666" }
                     Text {
                         text: "Se connecter"
                         color: "#3498db"

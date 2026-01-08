@@ -14,6 +14,7 @@
     <file alias="Files/pages/SettingsPage.qml">C:/Users/Fillin/Documents/course_217/Files/pages/SettingsPage.qml</file>
     <file alias="Files/pages/TeachersPage.qml">C:/Users/Fillin/Documents/course_217/Files/pages/TeachersPage.qml</file>
     <file alias="controllers/authcontroller.h">C:/Users/Fillin/Documents/course_217/controllers/authcontroller.h</file>
+    <file alias="controllers/TeacherController.h">C:/Users/Fillin/Documents/course_217/controllers/TeacherController.h</file>
     <file alias="Files/components/StatCard.qml">C:/Users/Fillin/Documents/course_217/Files/components/StatCard.qml</file>
     <file alias="Files/components/DailySessionItem.qml">C:/Users/Fillin/Documents/course_217/Files/components/DailySessionItem.qml</file>
     <file alias="Files/components/ScheduleCard.qml">C:/Users/Fillin/Documents/course_217/Files/components/ScheduleCard.qml</file>

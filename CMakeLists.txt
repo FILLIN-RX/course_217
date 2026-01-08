@@ -26,7 +26,10 @@ qt_add_qml_module(appcourse_217
         Files/pages/SessionsPage.qml
         Files/pages/SettingsPage.qml
         Files/pages/TeachersPage.qml
+        QML_FILES Files/pages/TeacherDashboard.qml
+        QML_FILES Files/pages/TeacherSchedule.qml
         controllers/authcontroller.h   # Ajoute-les ici
+        controllers/TeacherController.h
     
     RESOURCES # <-- C'EST ICI QUE TES SVG DOIVENT ÊTRE
         assets/icons/dashboard.svg
@@ -39,6 +42,17 @@ qt_add_qml_module(appcourse_217
         QML_FILES Files/components/LegendItem.qml
         QML_FILES Files/components/RoomCard.qml
         QML_FILES Files/components/SessionCard.qml
+        QML_FILES Files/components/TeacherForm.qml
+        QML_FILES Files/components/RoomForm.qml
+        SOURCES controllers/RoomController.cpp
+        SOURCES controllers/RoomController.cpp
+        QML_FILES Files/layout/TeacherMainPage.qml
+
+        QML_FILES Files/components/VignetteMenu.qml
+        SOURCES controllers/SessionController.h
+        QML_FILES Files/components/SessionForm.qml
+        SOURCES controllers/MatiereController.h
+        SOURCES controllers/GroupeController.h
 )
 
 # 2. On lie Core5Compat ici aussi

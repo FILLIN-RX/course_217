@@ -19,9 +19,16 @@ C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/
 /qt/qml/course_217/Files/pages/SessionsPage.qml
 /qt/qml/course_217/Files/pages/SettingsPage.qml
 /qt/qml/course_217/Files/pages/TeachersPage.qml
+/qt/qml/course_217/Files/pages/TeacherDashboard.qml
+/qt/qml/course_217/Files/pages/TeacherSchedule.qml
 /qt/qml/course_217/Files/components/StatCard.qml
 /qt/qml/course_217/Files/components/DailySessionItem.qml
 /qt/qml/course_217/Files/components/ScheduleCard.qml
 /qt/qml/course_217/Files/components/LegendItem.qml
 /qt/qml/course_217/Files/components/RoomCard.qml
 /qt/qml/course_217/Files/components/SessionCard.qml
+/qt/qml/course_217/Files/components/TeacherForm.qml
+/qt/qml/course_217/Files/components/RoomForm.qml
+/qt/qml/course_217/Files/layout/TeacherMainPage.qml
+/qt/qml/course_217/Files/components/VignetteMenu.qml
+/qt/qml/course_217/Files/components/SessionForm.qml

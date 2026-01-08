@@ -3,96 +3,146 @@ import QtQuick.Controls
 import QtQuick.Layouts
 import "../components"
 
-ScrollView {
-    anchors.fill: parent
-    contentWidth: availableWidth
-    padding: 24
+Item {
+    id: roomsPage
+    // Note: anchors.fill supprimé pour éviter les conflits avec StackView
 
-    ColumnLayout {
-        width: parent.width - 48
-        spacing: 24
+    property bool isLoading: true
+    property string searchQuery: ""
 
-        // --- TITRE ET BOUTON AJOUTER ---
-        RowLayout {
-            Layout.fillWidth: true
-            ColumnLayout {
-                spacing: 4
-                Text { text: "Gestion des salles"; font.pixelSize: 28; font.bold: true; color: "#0F172A" }
-                Text { text: "Attribution et disponibilité des espaces"; font.pixelSize: 14; color: "#64748B" }
-            }
-            Item { Layout.fillWidth: true }
-            Button {
-                id: addRoomBtn
-                contentItem: RowLayout {
-                    spacing: 8
-                    Text { text: "\ue145"; font.family: "Material Icons"; color: "white"; font.pixelSize: 18 }
-                    Text { text: "Ajouter une salle"; color: "white"; font.bold: true }
-                }
-                background: Rectangle { implicitWidth: 160; implicitHeight: 40; radius: 8; color: "#1E40AF" }
+    ListModel { id: roomModel }
+    ListModel { id: filteredRoomModel }
+
+    function applyFilter() {
+        filteredRoomModel.clear();
+        for (var i = 0; i < roomModel.count; i++) {
+            var item = roomModel.get(i);
+            var nameMatch = item.nom.toLowerCase().indexOf(searchQuery.toLowerCase()) !== -1;
+            if (searchQuery === "" || nameMatch) {
+                filteredRoomModel.append(item);
             }
         }
+    }
 
-        // --- STATS RAPIDES (Cartes du haut) ---
-        RowLayout {
-            Layout.fillWidth: true; spacing: 20
-
-            // Exemple Stat: Total
-            Rectangle {
-                Layout.fillWidth: true; height: 100; radius: 12; color: "white"; border.color: "#F1F5F9"
-                ColumnLayout { anchors.fill: parent; anchors.margins: 16; spacing: 4
-                    Text { text: "Total salles"; font.pixelSize: 12; color: "#64748B" }
-                    Text { text: "8"; font.pixelSize: 24; font.bold: true; color: "#1E293B" }
-                }
-            }
-            // Exemple Stat: Disponibles
-            Rectangle {
-                Layout.fillWidth: true; height: 100; radius: 12; color: "white"; border.color: "#F1F5F9"
-                ColumnLayout { anchors.fill: parent; anchors.margins: 16; spacing: 4
-                    Text { text: "Disponibles"; font.pixelSize: 12; color: "#64748B" }
-                    Text { text: "4"; font.pixelSize: 24; font.bold: true; color: "#16A34A" }
-                }
-            }
-            // Exemple Stat: Occupées
-            Rectangle {
-                Layout.fillWidth: true; height: 100; radius: 12; color: "white"; border.color: "#F1F5F9"
-                ColumnLayout { anchors.fill: parent; anchors.margins: 16; spacing: 4
-                    Text { text: "Occupées"; font.pixelSize: 12; color: "#64748B" }
-                    Text { text: "3"; font.pixelSize: 24; font.bold: true; color: "#DC2626" }
-                }
-            }
+    Component.onCompleted: {
+        if (root.userId > 0) {
+            isLoading = true;
+            roomController.fetchRooms(root.userId);
         }
+    }
 
-        // --- BARRE DE RECHERCHE ---
-        Rectangle {
-            Layout.fillWidth: true; height: 44; radius: 8; color: "#F8FAFC"; border.color: "#E2E8F0"
+    Connections {
+        target: roomController
+        function onRoomsLoaded(data) {
+            roomModel.clear();
+            isLoading = false;
+            try {
+                var json = JSON.parse(data);
+                for (var i = 0; i < json.length; i++) {
+                    roomModel.append(json[i]);
+                }
+                applyFilter();
+            } catch (e) { console.error("Erreur parsing salles:", e); }
+        }
+    }
+
+    ScrollView {
+        anchors.fill: parent
+        clip: true
+        visible: !isLoading
+        leftPadding: 20
+        rightPadding: 20
+
+        ColumnLayout {
+            width: parent.width
+            spacing: 35
+            anchors.margins: 25
+            // AJOUT DU PADDING DEMANDÉ
+            Layout.leftMargin: 40
+            Layout.rightMargin: 40
+            Layout.topMargin: 30
+            Layout.bottomMargin: 30
+
+            // --- HEADER ---
             RowLayout {
-                anchors.fill: parent; anchors.leftMargin: 12
-                Text { text: "\ue8b6"; font.family: "Material Icons"; color: "#94A3B8" }
-                TextField { placeholderText: "Rechercher une salle..."; Layout.fillWidth: true; background: null }
+                Layout.fillWidth: true
+                ColumnLayout {
+                    spacing: 4
+                    Text { text: "Salles de classe"; font.pixelSize: 28; font.bold: true; color: "#1E293B" }
+                    Text { text: "Gérez vos espaces et leur capacité en temps réel"; color: "#64748B"; font.pixelSize: 14 }
+                }
+
+                Item { Layout.fillWidth: true }
+
+                // BARRE DE RECHERCHE
+                Rectangle {
+                    Layout.preferredWidth: 300; Layout.preferredHeight: 44
+                    color: "#F1F5F9"; radius: 10; border.color: searchInput.activeFocus ? "#3B82F6" : "#E2E8F0"
+                    RowLayout {
+                        anchors.fill: parent; anchors.leftMargin: 15
+                        Text { text: "\ue8b6"; font.family: "Material Icons"; font.pixelSize: 20; color: "#94A3B8" }
+                        TextField {
+                            id: searchInput
+                            placeholderText: "Rechercher une salle..."
+                            Layout.fillWidth: true; background: null
+                            onTextChanged: { searchQuery = text; applyFilter(); }
+                        }
+                    }
+                }
+
+                // BOUTON AJOUTER
+                Button {
+                    id: addBtn
+                    text: "Ajouter une salle"
+                    Layout.preferredHeight: 44
+                    onClicked: addRoomForm.open()
+                    background: Rectangle { 
+                        color: addBtn.down ? "#1D4ED8" : "#3B82F6"
+                        radius: 10 
+                    }
+                    contentItem: Text { 
+                        text: parent.text; color: "white"; font.bold: true
+                        horizontalAlignment: Text.AlignHCenter; verticalAlignment: Text.AlignVCenter
+                        leftPadding: 20; rightPadding: 20 
+                    }
+                }
+            }
+
+            // --- GRILLE ---
+            Flow {
+                Layout.fillWidth: true
+                spacing: 25
+                Repeater {
+                    model: filteredRoomModel
+                    delegate: RoomCard {
+                        name: model.nom
+                        type: model.type || "Standard"
+                        capacity: model.capacite || 0
+                        batiment: model.batiment || "N/A"
+                        etage: (model.etage !== undefined && model.etage !== null) ? model.etage : -1
+                        status: "Disponible"
+                    }
+                }
             }
         }
+    }
 
-        // --- GRILLE DES SALLES ---
-        Flow {
-            Layout.fillWidth: true; spacing: 16
+    // LOADER DE PAGE
+    Rectangle {
+        anchors.fill: parent; color: "white"; visible: isLoading; z: 999
+        ColumnLayout {
+            anchors.centerIn: parent; spacing: 15
+            BusyIndicator { running: true; Layout.alignment: Qt.AlignHCenter }
+            Text { text: "Synchronisation des espaces..."; font.pixelSize: 14; color: "#64748B"; Layout.alignment: Qt.AlignHCenter }
+        }
+    }
 
-            RoomCard {
-                name: "Amphi 500"; status: "Occupée"; type: "Amphithéâtre"
-                currentCourse: "Génie Logiciel - CM"; occupationPercent: 85
-            }
-            RoomCard {
-                name: "Amphi 300"; status: "Disponible"; type: "Amphithéâtre"; currentCourse: ""
-            }
-            RoomCard {
-                name: "Amphi 200"; status: "Maintenance"; type: "Amphithéâtre"
-                equipment: ["Vidéoprojecteur", "WiFi"]
-            }
-            RoomCard {
-                name: "Salle TD 12"; status: "Occupée"; type: "Salle TD"; capacity: 50
-                equipment: ["Tableau blanc", "WiFi"]
-                currentCourse: "Base de Données - TD"; occupationPercent: 75
-            }
-            // Ajoute les autres ici...
+    RoomForm {
+        id: addRoomForm
+        currentAdminId: root.userId
+        onRoomSaved: {
+            isLoading = true;
+            roomController.fetchRooms(root.userId);
         }
     }
 }

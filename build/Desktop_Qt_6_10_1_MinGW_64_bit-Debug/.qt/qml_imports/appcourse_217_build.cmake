@@ -1,4 +1,4 @@
-set(qml_import_scanner_imports_count 45)
+set(qml_import_scanner_imports_count 47)
 set(qml_import_scanner_import_0 "CLASSNAME;QtQuick2Plugin;LINKTARGET;Qt6::qtquick2plugin;NAME;QtQuick;PATH;C:/Qt/6.10.1/mingw_64/qml/QtQuick;PLUGIN;qtquick2plugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQuick/;RELATIVEPATH;QtQuick;TYPE;module;")
 set(qml_import_scanner_import_1 "CLASSNAME;QtQmlPlugin;LINKTARGET;Qt6::qmlplugin;NAME;QtQml;PATH;C:/Qt/6.10.1/mingw_64/qml/QtQml;PLUGIN;qmlplugin;PLUGINISOPTIONAL;;PREFER;:/qt-project.org/imports/QtQml/;RELATIVEPATH;QtQml;TYPE;module;")
 set(qml_import_scanner_import_2 "NAME;QML;PATH;C:/Qt/6.10.1/mingw_64/qml/QML;PREFER;:/qt-project.org/imports/QML/;RELATIVEPATH;QML;TYPE;module;")
@@ -41,7 +41,9 @@ set(qml_import_scanner_import_38 "NAME;layout;PATH;C:/Users/Fillin/Documents/cou
 set(qml_import_scanner_import_39 "NAME;pages;PATH;C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/pages;TYPE;directory;")
 set(qml_import_scanner_import_40 "NAME;layout;PATH;C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/layout;TYPE;directory;")
 set(qml_import_scanner_import_41 "NAME;../components;PATH;C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/components;TYPE;directory;")
-set(qml_import_scanner_import_42 "NAME;pages;PATH;C:/Users/Fillin/Documents/course_217/Files/pages;TYPE;directory;")
-set(qml_import_scanner_import_43 "NAME;layout;PATH;C:/Users/Fillin/Documents/course_217/Files/layout;TYPE;directory;")
-set(qml_import_scanner_import_44 "NAME;../components;PATH;C:/Users/Fillin/Documents/course_217/Files/components;TYPE;directory;")
+set(qml_import_scanner_import_42 "NAME;../pages;PATH;C:/Users/Fillin/Documents/course_217/build/Desktop_Qt_6_10_1_MinGW_64_bit-Debug/course_217/Files/pages;TYPE;directory;")
+set(qml_import_scanner_import_43 "NAME;pages;PATH;C:/Users/Fillin/Documents/course_217/Files/pages;TYPE;directory;")
+set(qml_import_scanner_import_44 "NAME;layout;PATH;C:/Users/Fillin/Documents/course_217/Files/layout;TYPE;directory;")
+set(qml_import_scanner_import_45 "NAME;../components;PATH;C:/Users/Fillin/Documents/course_217/Files/components;TYPE;directory;")
+set(qml_import_scanner_import_46 "NAME;../pages;PATH;C:/Users/Fillin/Documents/course_217/Files/pages;TYPE;directory;")
 

@@ -13,6 +13,9 @@ Rectangle {
 
     property int currentIndex: 0
     signal menuSelected(int index, string category)
+    property string userName: "Utilisateur"
+    property string userRole: "Rôle non défini"
+    property string userInitials: "U"
 
     ColumnLayout {
         anchors.fill: parent
@@ -133,7 +136,7 @@ Rectangle {
         }
 
         /* ===== USER PROFILE FOOTER ===== */
-        Rectangle {
+       Rectangle {
             height: 80
             Layout.fillWidth: true
             color: "#1E293B"
@@ -146,13 +149,28 @@ Rectangle {
 
                 Rectangle {
                     width: 36; height: 36; radius: 18; color: "#334155"
-                    Text { anchors.centerIn: parent; text: "JD"; color: "white"; font.bold: true }
+                    Text { 
+                        anchors.centerIn: parent
+                        text: sidebar.userInitials // Liaison ici [cite: 63]
+                        color: "white"
+                        font.bold: true 
+                    }
                 }
 
                 Column {
                     Layout.fillWidth: true
-                    Text { text: "Dr. Jean Dupont"; color: "white"; font.pixelSize: 12; font.bold: true }
-                    Text { text: "Chef de dépt."; color: "#94A3B8"; font.pixelSize: 10 }
+                    Text { 
+                        text: sidebar.userName // Liaison ici [cite: 64]
+                        color: "white"
+                        font.pixelSize: 12
+                        font.bold: true 
+                        elide: Text.ElideRight // Pour éviter que le nom dépasse
+                    }
+                    Text { 
+                        text: sidebar.userRole // Liaison ici [cite: 65]
+                        color: "#94A3B8"
+                        font.pixelSize: 10 
+                    }
                 }
 
                 Text {
