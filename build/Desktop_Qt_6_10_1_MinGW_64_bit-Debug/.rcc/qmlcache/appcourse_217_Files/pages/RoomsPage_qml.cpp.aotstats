@@ -7,75 +7,227 @@
                     "entries": [
                         {
                             "codegenResult": 2,
-                            "column": 19,
-                            "durationMicroseconds": 0,
-                            "functionName": "contentWidth",
-                            "line": 8,
-                            "message": "Could not find property \"contentWidth\"."
+                            "column": 5,
+                            "durationMicroseconds": 4026,
+                            "functionName": "applyFilter",
+                            "line": 16,
+                            "message": "Cannot generate efficient code for lookup in QJSValue"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 19,
+                            "column": 28,
+                            "durationMicroseconds": 724,
+                            "functionName": "onCompleted",
+                            "line": 27,
+                            "message": "Cannot access value for name root"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 17,
+                            "durationMicroseconds": 98,
+                            "functionName": "target",
+                            "line": 35,
+                            "message": "Cannot access value for name roomController"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 9,
+                            "durationMicroseconds": 0,
+                            "functionName": "onRoomsLoaded",
+                            "line": 36,
+                            "message": "Functions without type annotations won't be compiled"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 18,
+                            "durationMicroseconds": 0,
+                            "functionName": "visible",
+                            "line": 52,
+                            "message": "Could not find property \"visible\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 23,
                             "durationMicroseconds": 0,
                             "functionName": "fill",
-                            "line": 7,
+                            "line": 50,
                             "message": "Could not find property \"fill\"."
                         },
                         {
                             "codegenResult": 0,
-                            "column": 16,
-                            "durationMicroseconds": 437,
+                            "column": 20,
+                            "durationMicroseconds": 220,
                             "functionName": "width",
-                            "line": 12,
+                            "line": 57,
                             "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 65,
+                            "durationMicroseconds": 83,
+                            "functionName": "color",
+                            "line": 80,
+                            "message": "Cannot retrieve a non-object type by ID: searchInput"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 111,
+                            "functionName": "fill",
+                            "line": 82,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 44,
+                            "durationMicroseconds": 0,
+                            "functionName": "onTextChanged",
+                            "line": 88,
+                            "message": "Could not find signal \"textChanged\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 32,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 98,
+                            "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 32,
+                            "durationMicroseconds": 91,
+                            "functionName": "color",
+                            "line": 100,
+                            "message": "Cannot access value for name addBtn"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 31,
+                            "durationMicroseconds": 97,
+                            "functionName": "text",
+                            "line": 104,
+                            "message": "Cannot load property text from (component in C:/Users/Fillin/Documents/course_217/Files/pages/RoomsPage.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 0,
                             "column": 46,
-                            "durationMicroseconds": 99,
-                            "functionName": "fill",
-                            "line": 42,
+                            "durationMicroseconds": 173,
+                            "functionName": "horizontalAlignment",
+                            "line": 105,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 46,
-                            "durationMicroseconds": 71,
-                            "functionName": "fill",
-                            "line": 50,
+                            "column": 84,
+                            "durationMicroseconds": 83,
+                            "functionName": "verticalAlignment",
+                            "line": 105,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
-                            "column": 46,
-                            "durationMicroseconds": 74,
+                            "column": 28,
+                            "durationMicroseconds": 93,
+                            "functionName": "model",
+                            "line": 116,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 31,
+                            "durationMicroseconds": 50,
+                            "functionName": "name",
+                            "line": 118,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 31,
+                            "durationMicroseconds": 43,
+                            "functionName": "type",
+                            "line": 119,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 35,
+                            "durationMicroseconds": 38,
+                            "functionName": "capacity",
+                            "line": 120,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 35,
+                            "durationMicroseconds": 37,
+                            "functionName": "batiment",
+                            "line": 121,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 32,
+                            "durationMicroseconds": 120,
+                            "functionName": "etage",
+                            "line": 122,
+                            "message": "Cannot access value for name model"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 56,
+                            "durationMicroseconds": 32,
+                            "functionName": "visible",
+                            "line": 132,
+                            "message": "Cannot access value for name isLoading"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 23,
+                            "durationMicroseconds": 80,
                             "functionName": "fill",
-                            "line": 58,
+                            "line": 132,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 67,
-                            "functionName": "fill",
-                            "line": 69,
+                            "durationMicroseconds": 80,
+                            "functionName": "centerIn",
+                            "line": 134,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 62,
+                            "durationMicroseconds": 138,
+                            "functionName": "alignment",
+                            "line": 135,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 116,
+                            "durationMicroseconds": 95,
+                            "functionName": "alignment",
+                            "line": 136,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 225,
-                            "functionName": "equipment",
-                            "line": 88,
-                            "message": "Cannot generate efficient code for storing an array in a non-sequence type"
+                            "column": 25,
+                            "durationMicroseconds": 66,
+                            "functionName": "currentAdminId",
+                            "line": 142,
+                            "message": "Cannot access value for name root"
                         },
                         {
                             "codegenResult": 2,
-                            "column": 28,
-                            "durationMicroseconds": 162,
-                            "functionName": "equipment",
-                            "line": 92,
-                            "message": "Cannot generate efficient code for storing an array in a non-sequence type"
+                            "column": 22,
+                            "durationMicroseconds": 97,
+                            "functionName": "onRoomSaved",
+                            "line": 143,
+                            "message": "Cannot find name isLoading"
                         }
                     ],
                     "filePath": "C:/Users/Fillin/Documents/course_217/Files/pages/RoomsPage.qml"

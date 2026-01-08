@@ -8,7 +8,7 @@
                         {
                             "codegenResult": 0,
                             "column": 19,
-                            "durationMicroseconds": 318,
+                            "durationMicroseconds": 349,
                             "functionName": "fill",
                             "line": 8,
                             "message": ""
@@ -16,7 +16,7 @@
                         {
                             "codegenResult": 2,
                             "column": 20,
-                            "durationMicroseconds": 312,
+                            "durationMicroseconds": 7669,
                             "functionName": "model",
                             "line": 30,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
@@ -32,7 +32,7 @@
                         {
                             "codegenResult": 0,
                             "column": 20,
-                            "durationMicroseconds": 494,
+                            "durationMicroseconds": 255,
                             "functionName": "width",
                             "line": 46,
                             "message": ""
@@ -40,7 +40,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 82,
+                            "durationMicroseconds": 68,
                             "functionName": "onClicked",
                             "line": 51,
                             "message": "Cannot retrieve a non-object type by ID: detailPopup"
@@ -48,7 +48,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 46,
+                            "durationMicroseconds": 38,
                             "functionName": "onClicked",
                             "line": 55,
                             "message": "Cannot retrieve a non-object type by ID: detailPopup"
@@ -56,7 +56,7 @@
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 43,
+                            "durationMicroseconds": 35,
                             "functionName": "onClicked",
                             "line": 59,
                             "message": "Cannot retrieve a non-object type by ID: detailPopup"
@@ -88,7 +88,7 @@
                         {
                             "codegenResult": 0,
                             "column": 27,
-                            "durationMicroseconds": 99,
+                            "durationMicroseconds": 80,
                             "functionName": "fill",
                             "line": 75,
                             "message": ""
@@ -104,7 +104,7 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 123,
+                            "durationMicroseconds": 106,
                             "functionName": "wrapMode",
                             "line": 116,
                             "message": ""
@@ -112,7 +112,7 @@
                         {
                             "codegenResult": 0,
                             "column": 35,
-                            "durationMicroseconds": 102,
+                            "durationMicroseconds": 89,
                             "functionName": "fill",
                             "line": 114,
                             "message": ""

@@ -13,6 +13,10 @@ Item {
         anchors.bottom: parent.bottom
         anchors.left: parent.left
         width: 260
+
+        userName: root.userProfile.nom
+        userRole: root.userProfile.role
+        userInitials: root.userProfile.initiales
         
         onMenuSelected: function(index, category) {
             console.log("Menu selected:", index, category);

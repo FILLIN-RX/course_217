@@ -4,12 +4,16 @@ import QtQuick.Controls
 import "../components"
 
 ScrollView {
-    anchors.fill: parent
+    
     contentWidth: availableWidth
     ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
     leftPadding: 20
     rightPadding: 20
 
+    // Déclaration du Popup (Assurez-vous que le fichier SessionForm.qml existe)
+    SessionForm { 
+        id: sessionPopup 
+    }
 
     ColumnLayout {
         width: parent.width
@@ -26,7 +30,6 @@ ScrollView {
             }
             Item { Layout.fillWidth: true }
 
-            // Sélecteur (Aujourd'hui, flèches)
             RowLayout {
                 spacing: 10
                 Button { text: "<"; flat: true }
@@ -36,6 +39,7 @@ ScrollView {
                     text: "+ Nouvelle séance"
                     background: Rectangle { color: "#6366F1"; radius: 6 }
                     contentItem: Text { text: parent.text; color: "white"; font.bold: true; padding: 10 }
+                    onClicked: sessionPopup.open() // Ouvrir manuellement aussi
                 }
             }
         }
@@ -50,6 +54,7 @@ ScrollView {
 
         // --- GRILLE D'EMPLOI DU TEMPS ---
         Rectangle {
+            id: gridContainer
             Layout.fillWidth: true
             implicitHeight: 600
             color: "white"; radius: 12; border.color: "#F1F5F9"
@@ -57,8 +62,8 @@ ScrollView {
 
             GridLayout {
                 anchors.fill: parent
-                columns: 7 // Heure + 6 Jours (Lundi-Samedi)
-                rows: 11   // En-tête + Heures (08:00 à 18:00)
+                columns: 7 
+                rows: 11   
                 columnSpacing: 0; rowSpacing: 0
 
                 // En-têtes de colonnes (Jours)
@@ -71,43 +76,57 @@ ScrollView {
                     }
                 }
 
-                // Cellules de la grille (Heures et cases vides)
+                // Cellules de la grille cliquables
                 Repeater {
-                    model: 10 * 7 // 10 heures x 7 colonnes
+                    model: 10 * 7 
                     Rectangle {
+                        id: cell
                         Layout.fillWidth: true; Layout.fillHeight: true
                         border.color: "#F8FAFC"
+                        
+                        // Propriétés de calcul pour cette cellule
+                        property int dayIndex: index % 7
+                        property int startHour: 8 + Math.floor(index / 7)
+                        property string dayName: ["Heure", "Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi", "Samedi"][dayIndex]
 
-                        // Affichage de l'heure dans la première colonne uniquement
+                        // Effet visuel au survol
+                        color: (cellMouseArea.containsMouse && dayIndex > 0) ? "#F1F5F9" : "white"
+
                         Text {
-                            visible: index % 7 === 0
+                            visible: parent.dayIndex === 0
                             anchors.centerIn: parent
-                            text: (8 + Math.floor(index / 7)) + ":00"
+                            text: parent.startHour + ":00"
                             color: "#94A3B8"; font.pixelSize: 11
+                        }
+
+                        // --- ZONE D'ACTION ---
+                        MouseArea {
+                            id: cellMouseArea
+                            anchors.fill: parent
+                            hoverEnabled: true
+                            enabled: parent.dayIndex > 0 // Désactive le clic sur la colonne "Heure"
+
+                            onClicked: {
+                                // On formate l'heure (ex: "08:00")
+                                let timeStr = (parent.startHour < 10 ? "0" : "") + parent.startHour + ":00"
+                                
+                                // Injection des données dans le Popup
+                                sessionPopup.selectedDay = parent.dayName
+                                sessionPopup.selectedTime = timeStr
+                                sessionPopup.open()
+                            }
                         }
                     }
                 }
             }
 
-            // --- PLACEMENT DES COURS (Positions absolues basées sur la grille) ---
-            // Exemple : Lundi 8h (Colonne 1, Ligne 1)
+            // --- PLACEMENT DES COURS EXISTANTS ---
             ScheduleCard {
                 x: parent.width / 7 * 1; y: 40
                 width: parent.width / 7 - 4; height: 100
                 title: "Génie Logiciel"; teacher: "Prof. Aboubakar"; room: "Amphi 500"
             }
-
-            ScheduleCard {
-                x: parent.width / 7 * 1; y: 150
-                width: parent.width / 7 - 4; height: 100
-                title: "Base de Données"; teacher: "Dr. Sovanny"; room: "TD 12"; baseColor: "#F59E0B"
-            }
-
-            ScheduleCard {
-                x: parent.width / 7 * 4; y: 250
-                width: parent.width / 7 - 4; height: 120
-                title: "Prog. Web"; teacher: "M. Nguélé"; room: "Labo 1"; baseColor: "#10B981"
-            }
+            // ... autres cartes
         }
     }
 }

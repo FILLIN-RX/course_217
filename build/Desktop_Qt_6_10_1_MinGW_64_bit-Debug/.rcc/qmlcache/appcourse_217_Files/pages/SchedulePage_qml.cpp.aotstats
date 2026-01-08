@@ -15,14 +15,6 @@
                         },
                         {
                             "codegenResult": 2,
-                            "column": 19,
-                            "durationMicroseconds": 0,
-                            "functionName": "fill",
-                            "line": 7,
-                            "message": "Could not find property \"fill\"."
-                        },
-                        {
-                            "codegenResult": 2,
                             "column": 34,
                             "durationMicroseconds": 0,
                             "functionName": "policy",
@@ -32,113 +24,145 @@
                         {
                             "codegenResult": 0,
                             "column": 16,
-                            "durationMicroseconds": 562,
+                            "durationMicroseconds": 395,
                             "functionName": "width",
-                            "line": 15,
+                            "line": 19,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
+                            "column": 32,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 42,
+                            "message": "Could not find signal \"clicked\"."
+                        },
+                        {
+                            "codegenResult": 2,
                             "column": 47,
-                            "durationMicroseconds": 143,
+                            "durationMicroseconds": 138,
                             "functionName": "text",
-                            "line": 38,
+                            "line": 41,
                             "message": "Cannot load property text from (component in C:/Users/Fillin/Documents/course_217/Files/pages/SchedulePage.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 157,
+                            "durationMicroseconds": 200,
                             "functionName": "fill",
-                            "line": 59,
+                            "line": 64,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 28,
-                            "durationMicroseconds": 463,
+                            "durationMicroseconds": 448,
                             "functionName": "model",
-                            "line": 66,
+                            "line": 71,
                             "message": "Cannot generate efficient code for storing an array in a non-sequence type"
                         },
                         {
                             "codegenResult": 2,
                             "column": 64,
-                            "durationMicroseconds": 626,
+                            "durationMicroseconds": 501,
                             "functionName": "text",
-                            "line": 70,
+                            "line": 75,
                             "message": "Cannot access value for name modelData"
                         },
                         {
                             "codegenResult": 0,
                             "column": 50,
-                            "durationMicroseconds": 156,
+                            "durationMicroseconds": 114,
                             "functionName": "centerIn",
-                            "line": 70,
+                            "line": 75,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 28,
-                            "durationMicroseconds": 200,
+                            "durationMicroseconds": 174,
                             "functionName": "model",
-                            "line": 76,
+                            "line": 81,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 48,
+                            "durationMicroseconds": 51,
+                            "functionName": "dayIndex",
+                            "line": 88,
+                            "message": "Cannot access value for name index"
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 49,
+                            "durationMicroseconds": 339,
+                            "functionName": "startHour",
+                            "line": 89,
+                            "message": "Cannot access value for name index"
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 50,
+                            "durationMicroseconds": 924,
+                            "functionName": "dayName",
+                            "line": 90,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 32,
+                            "durationMicroseconds": 773,
+                            "functionName": "color",
+                            "line": 93,
                             "message": ""
                         },
                         {
                             "codegenResult": 2,
                             "column": 38,
-                            "durationMicroseconds": 688,
+                            "durationMicroseconds": 142,
                             "functionName": "visible",
-                            "line": 83,
-                            "message": "Cannot access value for name index"
+                            "line": 96,
+                            "message": "Cannot load property dayIndex from (component in C:/Users/Fillin/Documents/course_217/Files/pages/SchedulePage.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 2,
                             "column": 35,
-                            "durationMicroseconds": 649,
+                            "durationMicroseconds": 84,
                             "functionName": "text",
-                            "line": 85,
-                            "message": "Cannot access value for name index"
+                            "line": 98,
+                            "message": "Cannot load property startHour from (component in C:/Users/Fillin/Documents/course_217/Files/pages/SchedulePage.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 0,
                             "column": 47,
-                            "durationMicroseconds": 107,
+                            "durationMicroseconds": 91,
                             "functionName": "centerIn",
-                            "line": 84,
+                            "line": 97,
                             "message": ""
                         },
                         {
-                            "codegenResult": 0,
-                            "column": 20,
-                            "durationMicroseconds": 243,
-                            "functionName": "x",
-                            "line": 95,
-                            "message": ""
+                            "codegenResult": 2,
+                            "column": 38,
+                            "durationMicroseconds": 91,
+                            "functionName": "enabled",
+                            "line": 107,
+                            "message": "Cannot load property dayIndex from (component in C:/Users/Fillin/Documents/course_217/Files/pages/SchedulePage.qml)::parent with type QQuickItem."
+                        },
+                        {
+                            "codegenResult": 2,
+                            "column": 40,
+                            "durationMicroseconds": 421,
+                            "functionName": "onClicked",
+                            "line": 109,
+                            "message": "Cannot load property startHour from (component in C:/Users/Fillin/Documents/course_217/Files/pages/SchedulePage.qml)::parent with type QQuickItem."
                         },
                         {
                             "codegenResult": 0,
-                            "column": 24,
-                            "durationMicroseconds": 229,
-                            "functionName": "width",
-                            "line": 96,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 20,
-                            "durationMicroseconds": 252,
-                            "functionName": "x",
-                            "line": 101,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 24,
-                            "durationMicroseconds": 248,
-                            "functionName": "width",
-                            "line": 102,
+                            "column": 43,
+                            "durationMicroseconds": 83,
+                            "functionName": "fill",
+                            "line": 105,
                             "message": ""
                         },
                         {
@@ -146,15 +170,15 @@
                             "column": 20,
                             "durationMicroseconds": 274,
                             "functionName": "x",
-                            "line": 107,
+                            "line": 125,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 24,
-                            "durationMicroseconds": 240,
+                            "durationMicroseconds": 209,
                             "functionName": "width",
-                            "line": 108,
+                            "line": 126,
                             "message": ""
                         }
                     ],

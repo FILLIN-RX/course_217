@@ -14,11 +14,18 @@ SchedulePage 254.0 Files/pages/SchedulePage.qml
 SessionsPage 254.0 Files/pages/SessionsPage.qml
 SettingsPage 254.0 Files/pages/SettingsPage.qml
 TeachersPage 254.0 Files/pages/TeachersPage.qml
+TeacherDashboard 254.0 Files/pages/TeacherDashboard.qml
+TeacherSchedule 254.0 Files/pages/TeacherSchedule.qml
 StatCard 254.0 Files/components/StatCard.qml
 DailySessionItem 254.0 Files/components/DailySessionItem.qml
 ScheduleCard 254.0 Files/components/ScheduleCard.qml
 LegendItem 254.0 Files/components/LegendItem.qml
 RoomCard 254.0 Files/components/RoomCard.qml
 SessionCard 254.0 Files/components/SessionCard.qml
+TeacherForm 254.0 Files/components/TeacherForm.qml
+RoomForm 254.0 Files/components/RoomForm.qml
+TeacherMainPage 254.0 Files/layout/TeacherMainPage.qml
+VignetteMenu 254.0 Files/components/VignetteMenu.qml
+SessionForm 254.0 Files/components/SessionForm.qml
 depends QtQuick
 

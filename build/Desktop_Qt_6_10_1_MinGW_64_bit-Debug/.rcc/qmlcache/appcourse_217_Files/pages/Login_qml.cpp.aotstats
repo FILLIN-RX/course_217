@@ -8,25 +8,33 @@
                         {
                             "codegenResult": 0,
                             "column": 12,
-                            "durationMicroseconds": 379,
+                            "durationMicroseconds": 417,
                             "functionName": "width",
                             "line": 7,
                             "message": ""
                         },
                         {
+                            "codegenResult": 0,
+                            "column": 13,
+                            "durationMicroseconds": 115,
+                            "functionName": "height",
+                            "line": 8,
+                            "message": ""
+                        },
+                        {
                             "codegenResult": 2,
                             "column": 17,
-                            "durationMicroseconds": 119,
+                            "durationMicroseconds": 142,
                             "functionName": "target",
-                            "line": 15,
+                            "line": 14,
                             "message": "Cannot access value for name authController"
                         },
                         {
                             "codegenResult": 2,
                             "column": 9,
                             "durationMicroseconds": 0,
-                            "functionName": "onSignUpSuccess",
-                            "line": 18,
+                            "functionName": "onProfileReceived",
+                            "line": 16,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
@@ -34,21 +42,21 @@
                             "column": 9,
                             "durationMicroseconds": 0,
                             "functionName": "onErrorOccurred",
-                            "line": 24,
+                            "line": 26,
                             "message": "Functions without type annotations won't be compiled"
                         },
                         {
                             "codegenResult": 0,
                             "column": 23,
-                            "durationMicroseconds": 119,
+                            "durationMicroseconds": 116,
                             "functionName": "fill",
-                            "line": 32,
+                            "line": 34,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 81,
+                            "durationMicroseconds": 85,
                             "functionName": "centerIn",
                             "line": 42,
                             "message": ""
@@ -56,258 +64,66 @@
                         {
                             "codegenResult": 0,
                             "column": 31,
-                            "durationMicroseconds": 91,
+                            "durationMicroseconds": 77,
                             "functionName": "fill",
-                            "line": 47,
+                            "line": 46,
                             "message": ""
                         },
                         {
                             "codegenResult": 0,
                             "column": 39,
-                            "durationMicroseconds": 133,
+                            "durationMicroseconds": 125,
+                            "functionName": "alignment",
+                            "line": 53,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 80,
                             "functionName": "alignment",
                             "line": 60,
                             "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 43,
-                            "durationMicroseconds": 74,
-                            "functionName": "centerIn",
-                            "line": 63,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 39,
-                            "durationMicroseconds": 100,
-                            "functionName": "alignment",
-                            "line": 72,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 38,
-                            "durationMicroseconds": 105,
-                            "functionName": "weight",
-                            "line": 77,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 43,
-                            "durationMicroseconds": 104,
-                            "functionName": "alignment",
-                            "line": 79,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 43,
-                            "durationMicroseconds": 75,
-                            "functionName": "alignment",
-                            "line": 85,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 39,
-                            "durationMicroseconds": 73,
-                            "functionName": "alignment",
-                            "line": 118,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 35,
-                            "durationMicroseconds": 78,
-                            "functionName": "text",
-                            "line": 128,
-                            "message": "Cannot access value for name rememberMe"
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 42,
-                            "durationMicroseconds": 99,
-                            "functionName": "leftPadding",
-                            "line": 131,
-                            "message": "Cannot access value for name rememberMe"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 48,
-                            "durationMicroseconds": 111,
-                            "functionName": "verticalAlignment",
-                            "line": 132,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 38,
-                            "durationMicroseconds": 110,
-                            "functionName": "weight",
-                            "line": 139,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 42,
-                            "durationMicroseconds": 97,
-                            "functionName": "cursorShape",
-                            "line": 143,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 43,
-                            "durationMicroseconds": 71,
-                            "functionName": "fill",
-                            "line": 142,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 32,
-                            "durationMicroseconds": 0,
-                            "functionName": "onClicked",
-                            "line": 169,
-                            "message": "Could not find signal \"clicked\"."
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 46,
-                            "durationMicroseconds": 127,
-                            "functionName": "horizontalAlignment",
-                            "line": 159,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 44,
-                            "durationMicroseconds": 89,
-                            "functionName": "verticalAlignment",
-                            "line": 160,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 38,
-                            "durationMicroseconds": 114,
-                            "functionName": "weight",
-                            "line": 158,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 32,
-                            "durationMicroseconds": 149,
-                            "functionName": "color",
-                            "line": 165,
-                            "message": "Cannot access value for name loginBtn"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 39,
-                            "durationMicroseconds": 122,
-                            "functionName": "alignment",
-                            "line": 183,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 38,
-                            "durationMicroseconds": 112,
-                            "functionName": "weight",
-                            "line": 193,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 42,
-                            "durationMicroseconds": 94,
-                            "functionName": "cursorShape",
-                            "line": 197,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 40,
-                            "durationMicroseconds": 1989,
-                            "functionName": "onClicked",
-                            "line": 198,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 43,
-                            "durationMicroseconds": 103,
-                            "functionName": "fill",
-                            "line": 196,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 19,
-                            "durationMicroseconds": 55,
-                            "functionName": "text",
-                            "line": 219,
-                            "message": "Cannot access value for name label"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 26,
-                            "durationMicroseconds": 107,
-                            "functionName": "weight",
-                            "line": 221,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 27,
-                            "durationMicroseconds": 77,
-                            "functionName": "color",
-                            "line": 232,
-                            "message": "Cannot retrieve a non-object type by ID: inputField"
-                        },
-                        {
-                            "codegenResult": 0,
-                            "column": 31,
-                            "durationMicroseconds": 125,
-                            "functionName": "fill",
-                            "line": 237,
-                            "message": ""
-                        },
-                        {
-                            "codegenResult": 2,
-                            "column": 38,
-                            "durationMicroseconds": 0,
-                            "functionName": "placeholderText",
-                            "line": 243,
-                            "message": "Could not find property \"placeholderText\"."
                         },
                         {
                             "codegenResult": 2,
                             "column": 31,
                             "durationMicroseconds": 0,
                             "functionName": "echoMode",
-                            "line": 244,
+                            "line": 72,
                             "message": "Could not find property \"echoMode\"."
                         },
                         {
                             "codegenResult": 2,
-                            "column": 27,
-                            "durationMicroseconds": 45,
-                            "functionName": "text",
-                            "line": 252,
-                            "message": "Cannot access value for name icon"
+                            "column": 32,
+                            "durationMicroseconds": 0,
+                            "functionName": "onClicked",
+                            "line": 80,
+                            "message": "Could not find signal \"clicked\"."
                         },
                         {
-                            "codegenResult": 2,
-                            "column": 34,
-                            "durationMicroseconds": 50,
-                            "functionName": "family",
-                            "line": 255,
-                            "message": "Cannot access value for name root"
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 101,
+                            "functionName": "alignment",
+                            "line": 89,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 36,
+                            "durationMicroseconds": 193,
+                            "functionName": "onClicked",
+                            "line": 92,
+                            "message": ""
+                        },
+                        {
+                            "codegenResult": 0,
+                            "column": 39,
+                            "durationMicroseconds": 81,
+                            "functionName": "fill",
+                            "line": 91,
+                            "message": ""
                         }
                     ],
                     "filePath": "C:/Users/Fillin/Documents/course_217/Files/pages/Login.qml"

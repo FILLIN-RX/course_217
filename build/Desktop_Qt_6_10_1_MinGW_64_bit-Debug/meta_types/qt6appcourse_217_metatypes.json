@@ -2,12 +2,470 @@
     {
         "classes": [
             {
-                "className": "SupabaseAuth",
-                "lineNumber": 13,
+                "className": "GroupeController",
+                "lineNumber": 14,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "lineNumber": 23,
+                        "name": "fetchGroupes",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "GroupeController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "json",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 46,
+                        "name": "groupesLoaded",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "GroupeController.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "MatiereController",
+                "lineNumber": 11,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 1,
+                        "lineNumber": 18,
+                        "name": "fetchMatieres",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "MatiereController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "json",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 34,
+                        "name": "matieresLoaded",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "MatiereController.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "RoomController",
+                "lineNumber": 14,
                 "methods": [
                     {
                         "access": "public",
                         "arguments": [
+                            {
+                                "name": "adminId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 26,
+                        "name": "fetchRooms",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "adminId",
+                                "type": "int"
+                            },
+                            {
+                                "name": "nom",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "type",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "capacite",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 53,
+                        "name": "addRoom",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "RoomController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "data",
+                                "type": "QByteArray"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 86,
+                        "name": "roomsLoaded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "success",
+                                "type": "bool"
+                            },
+                            {
+                                "name": "message",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 87,
+                        "name": "roomSaved",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "msg",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 88,
+                        "name": "errorOccurred",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "RoomController.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "SessionController",
+                "lineNumber": 14,
+                "methods": [
+                    {
+                        "access": "public",
+                        "index": 3,
+                        "lineNumber": 23,
+                        "name": "fetchSessionsWithDetails",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "teacherId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 44,
+                        "name": "fetchSessionsByTeacher",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "matiereId",
+                                "type": "int"
+                            },
+                            {
+                                "name": "enseignantId",
+                                "type": "int"
+                            },
+                            {
+                                "name": "salleId",
+                                "type": "int"
+                            },
+                            {
+                                "name": "groupeId",
+                                "type": "int"
+                            },
+                            {
+                                "name": "type",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "date",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "debut",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "fin",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 5,
+                        "lineNumber": 63,
+                        "name": "addSession",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "index": 6,
+                        "lineNumber": 93,
+                        "name": "fetchTeachersList",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "SessionController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "data",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 0,
+                        "lineNumber": 110,
+                        "name": "sessionsLoaded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "success",
+                                "type": "bool"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 111,
+                        "name": "sessionSaved",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "data",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 112,
+                        "name": "teachersLoaded",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "SessionController.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "TeacherController",
+                "lineNumber": 16,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "nom",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "prenom",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "email",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "password",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "specialite",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "grade",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "adminId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 32,
+                        "name": "addTeacher",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "adminId",
+                                "type": "int"
+                            }
+                        ],
+                        "index": 4,
+                        "lineNumber": 72,
+                        "name": "fetchMyTeachers",
+                        "returnType": "void"
+                    }
+                ],
+                "object": true,
+                "qualifiedClassName": "TeacherController",
+                "signals": [
+                    {
+                        "access": "public",
+                        "index": 0,
+                        "lineNumber": 127,
+                        "name": "teacherAdded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "data",
+                                "type": "QByteArray"
+                            }
+                        ],
+                        "index": 1,
+                        "lineNumber": 128,
+                        "name": "teachersLoaded",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "msg",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 2,
+                        "lineNumber": 129,
+                        "name": "errorOccurred",
+                        "returnType": "void"
+                    }
+                ],
+                "superClasses": [
+                    {
+                        "access": "public",
+                        "name": "QObject"
+                    }
+                ]
+            }
+        ],
+        "inputFile": "TeacherController.h",
+        "outputRevision": 69
+    },
+    {
+        "classes": [
+            {
+                "className": "SupabaseAuth",
+                "lineNumber": 15,
+                "methods": [
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "nom",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "prenom",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "email",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "password",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "type",
+                                "type": "QString"
+                            }
+                        ],
+                        "index": 3,
+                        "lineNumber": 28,
+                        "name": "signUp",
+                        "returnType": "void"
+                    },
+                    {
+                        "access": "public",
+                        "arguments": [
+                            {
+                                "name": "nom",
+                                "type": "QString"
+                            },
+                            {
+                                "name": "prenom",
+                                "type": "QString"
+                            },
                             {
                                 "name": "email",
                                 "type": "QString"
@@ -17,8 +475,9 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 3,
-                        "lineNumber": 21,
+                        "index": 4,
+                        "isCloned": true,
+                        "lineNumber": 28,
                         "name": "signUp",
                         "returnType": "void"
                     },
@@ -34,8 +493,8 @@
                                 "type": "QString"
                             }
                         ],
-                        "index": 4,
-                        "lineNumber": 24,
+                        "index": 5,
+                        "lineNumber": 56,
                         "name": "signIn",
                         "returnType": "void"
                     }
@@ -45,14 +504,8 @@
                 "signals": [
                     {
                         "access": "public",
-                        "arguments": [
-                            {
-                                "name": "user",
-                                "type": "QJsonObject"
-                            }
-                        ],
                         "index": 0,
-                        "lineNumber": 30,
+                        "lineNumber": 86,
                         "name": "signUpSuccess",
                         "returnType": "void"
                     },
@@ -60,25 +513,25 @@
                         "access": "public",
                         "arguments": [
                             {
-                                "name": "user",
-                                "type": "QJsonObject"
+                                "name": "data",
+                                "type": "QByteArray"
                             }
                         ],
                         "index": 1,
-                        "lineNumber": 31,
-                        "name": "signInSuccess",
+                        "lineNumber": 87,
+                        "name": "profileReceived",
                         "returnType": "void"
                     },
                     {
                         "access": "public",
                         "arguments": [
                             {
-                                "name": "error",
+                                "name": "msg",
                                 "type": "QString"
                             }
                         ],
                         "index": 2,
-                        "lineNumber": 32,
+                        "lineNumber": 88,
                         "name": "errorOccurred",
                         "returnType": "void"
                     }

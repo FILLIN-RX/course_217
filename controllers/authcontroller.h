@@ -7,6 +7,8 @@
 #include <QNetworkRequest>
 #include <QJsonDocument>
 #include <QJsonObject>
+#include <QJsonArray>
+#include <QCryptographicHash>
 #include <QDebug>
 #include "../config/Config.h"
 
@@ -17,59 +19,76 @@ public:
         manager = new QNetworkAccessManager(this);
     }
 
-    // Q_INVOKABLE permet au bouton "S'inscrire" du QML d'appeler cette fonction
-    Q_INVOKABLE void signUp(const QString &email, const QString &password) {
-        sendRequest(Config::SUPABASE_URL + "/auth/v1/signup", email, password);
-    }
-    Q_INVOKABLE void signIn(const QString &email, const QString &password) {
-        sendRequest(Config::SUPABASE_URL + "/auth/v1/token?grant_type=password", email, password);
+    // Fonction utilitaire pour HASHER le mot de passe
+    QString hashPassword(const QString &password) {
+        return QString(QCryptographicHash::hash(password.toUtf8(), QCryptographicHash::Sha256).toHex());
     }
 
-signals:
-    // Signaux qui seront captés par le bloc "Connections" dans Register.qml
-    void signUpSuccess(const QJsonObject &user);
-    void signInSuccess(const QJsonObject &user);
-    void errorOccurred(const QString &error);
-
-private:
-    QNetworkAccessManager *manager;
-
-    void sendRequest(const QString &endpoint, const QString &email, const QString &password) {
-        QUrl url(endpoint);
+    // --- REGISTER : Avec Nom, Prénom et Hash ---
+    Q_INVOKABLE void signUp(const QString &nom, const QString &prenom, const QString &email, const QString &password, const QString &type = "admin") {
+        QUrl url(Config::SUPABASE_URL + "/rest/v1/utilisateurs");
         QNetworkRequest request(url);
-
         request.setHeader(QNetworkRequest::ContentTypeHeader, "application/json");
         request.setRawHeader("apikey", Config::SUPABASE_KEY.toUtf8());
         request.setRawHeader("Authorization", "Bearer " + Config::SUPABASE_KEY.toUtf8());
 
-        QJsonObject json;
-        json["email"] = email;
-        json["password"] = password;
+        QJsonObject user;
+        user["nom"] = nom;
+        user["prenom"] = prenom;
+        user["email"] = email;
+        user["mot_de_passe_hash"] = hashPassword(password); // On stocke le HASH
+        user["type"] = type;
 
-        QNetworkReply *reply = manager->post(request, QJsonDocument(json).toJson());
-
-        // Utilisation de [this] dans la lambda pour pouvoir émettre des signaux
+        QNetworkReply *reply = manager->post(request, QJsonDocument(user).toJson());
+        
         connect(reply, &QNetworkReply::finished, this, [this, reply]() {
             if (reply->error() == QNetworkReply::NoError) {
-                QByteArray data = reply->readAll();
-                qDebug() << "✅ RÉUSSITE :" << data;
-
-                // On transforme la réponse texte en objet JSON
-                QJsonDocument doc = QJsonDocument::fromJson(data);
-                
-                // --- CRUCIAL : On prévient le QML que c'est réussi ---
-                emit signUpSuccess(doc.object());
+                emit signUpSuccess();
             } else {
-                QString errorMsg = reply->errorString();
-                QByteArray details = reply->readAll();
-                qDebug() << "❌ ERREUR :" << errorMsg << details;
-
-                // --- CRUCIAL : On prévient le QML qu'il y a eu une erreur ---
-                emit errorOccurred(errorMsg);
+                qDebug() << "❌ Erreur SQL :" << reply->readAll();
+                emit errorOccurred("Erreur lors de la création du compte.");
             }
             reply->deleteLater();
         });
     }
+
+    // --- LOGIN : On compare l'email et le HASH du mot de passe saisi ---
+    Q_INVOKABLE void signIn(const QString &email, const QString &password) {
+        QString hashedInput = hashPassword(password);
+        
+        QString query = QString("/rest/v1/utilisateurs?email=eq.%1&mot_de_passe_hash=eq.%2&select=*")
+                            .arg(email).arg(hashedInput);
+        
+        QUrl url(Config::SUPABASE_URL + query);
+        QNetworkRequest request(url);
+        request.setRawHeader("apikey", Config::SUPABASE_KEY.toUtf8());
+        request.setRawHeader("Authorization", "Bearer " + Config::SUPABASE_KEY.toUtf8());
+
+        QNetworkReply *reply = manager->get(request);
+        
+        connect(reply, &QNetworkReply::finished, this, [this, reply]() {
+            if (reply->error() == QNetworkReply::NoError) {
+                QJsonArray users = QJsonDocument::fromJson(reply->readAll()).array();
+                if (!users.isEmpty()) {
+                    // On renvoie l'objet utilisateur complet au QML
+                    emit profileReceived(QJsonDocument(users.at(0).toObject()).toJson());
+                } else {
+                    emit errorOccurred("Email ou mot de passe incorrect.");
+                }
+            } else {
+                emit errorOccurred("Erreur de connexion serveur.");
+            }
+            reply->deleteLater();
+        });
+    }
+
+signals:
+    void signUpSuccess();
+    void profileReceived(const QByteArray &data);
+    void errorOccurred(const QString &msg);
+
+private:
+    QNetworkAccessManager *manager;
 };
 
-#endif // SUPABASEAUTH_H
+#endif

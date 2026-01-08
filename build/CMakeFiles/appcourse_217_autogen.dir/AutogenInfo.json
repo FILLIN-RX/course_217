@@ -891,6 +891,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/Fillin/Documents/course_217/controllers/TeacherController.h",
+			"MU",
+			"7CL2LH2DRO/moc_TeacherController.cpp",
+			null
+		],
+		[
 			"C:/Users/Fillin/Documents/course_217/controllers/authcontroller.h",
 			"MU",
 			"7CL2LH2DRO/moc_authcontroller.cpp",
