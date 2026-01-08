@@ -35,7 +35,10 @@ Popup {
         console.log("Date sélectionnée:", selectedDate);
         console.log("Jour sélectionné:", selectedDay);
         console.log("Heure sélectionnée:", selectedTime);
-        
+        console.log("SessionForm: userId =", root.userId);
+        console.log("SessionForm: roomController =", roomController);
+        roomController.fetchRooms(root.userId);
+
         sessionController.fetchTeachersList();
         roomController.fetchRooms(root.userId);
         matiereController.fetchMatieres();
@@ -71,14 +74,15 @@ Popup {
     }
 
     Connections {
-        target: roomController // Correction du nom de la cible
+        target: roomController
         function onRoomsLoaded(data) {
-            // 'data' est un QByteArray, on le convertit en string avant le JSON.parse
-            let json = data.toString();
-            console.log("Salles reçues: " + json);
+            console.log("DEBUG: onRoomsLoaded appelé dans SessionForm, données:", data);
 
             try {
-                let parsedData = JSON.parse(json);
+                // Parsez les données une seule fois
+                let parsedData = JSON.parse(data);
+                console.log("Salles reçues, nombre:", parsedData.length);
+
                 salleModel.clear();
                 for (let i = 0; i < parsedData.length; i++) {
                     salleModel.append({
@@ -88,6 +92,7 @@ Popup {
                 }
             } catch (e) {
                 console.error("Erreur parsing Salles:", e);
+                console.error("Données brutes:", data);
             }
         }
     }
@@ -330,7 +335,7 @@ Popup {
                     console.error("❌ Erreur: Aucune date sélectionnée!");
                     return;
                 }
-                
+
                 // 1. Extraire l'heure de début (ex: "08:00")
                 let startParts = startHour.text.split(":");
                 let h = parseInt(startParts[0]);
@@ -360,16 +365,8 @@ Popup {
                 console.log("   Type:", cmType.checked ? "CM" : (tdType.checked ? "TD" : "TP"));
 
                 // <-- MODIFICATION: Utiliser selectedDate au lieu de la date codée en dur
-                sessionController.addSession(
-                    matiereModel.get(matiereCombo.currentIndex).id, 
-                    enseignantModel.get(profCombo.currentIndex).id, 
-                    salleModel.get(salleCombo.currentIndex).id, 
-                    groupeModel.get(groupeCombo.currentIndex).id, 
-                    cmType.checked ? "CM" : (tdType.checked ? "TD" : "TP"), 
-                    selectedDate, // <-- DATE DYNAMIQUE
-                    debutISO,
-                    finISO
-                );
+                sessionController.addSession(matiereModel.get(matiereCombo.currentIndex).id, enseignantModel.get(profCombo.currentIndex).id, salleModel.get(salleCombo.currentIndex).id, groupeModel.get(groupeCombo.currentIndex).id, cmType.checked ? "CM" : (tdType.checked ? "TD" : "TP"), selectedDate // <-- DATE DYNAMIQUE
+                , debutISO, finISO);
                 sessionPopup.close();
             }
             background: Rectangle {
